@@ -1,7 +1,7 @@
 --- 
 title: "Vol. 1: Basics in R"
-author: "Sarah Schwarts & Tyson Barrett"
-date: "2018-08-13"
+author: "Sarah Schwartz & Tyson Barrett"
+date: "Last updated: 2018-08-13"
 site: bookdown::bookdown_site
 output:
   bookdown::gitbook:
