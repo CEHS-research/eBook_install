@@ -2,16 +2,16 @@
 title: "Encyclopedia of Quantitative Methods in R"
 subtitle: "Vol. 0: Setting up Your Computer"
 author: "Sarah Schwartz & Tyson Barrett"
-date: "Last updated: 2018-08-13"
+date: "Last updated: 2018-08-14"
 site: bookdown::bookdown_site
 output:
   bookdown::gitbook:
-    highlight: tango
+    split_bib: false
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-github-repo: rstudio/bookdown-demo
+github-repo: cehs-research/eBook_install
 description: "Getting started with R and R Studio: installing software and package management."
 ---
 
@@ -19,9 +19,12 @@ description: "Getting started with R and R Studio: installing software and packa
 
 # Introduction {-}
 
+
 **Helpful Websites**
 
 [Quick R: Basic Statistics](https://www.statmethods.net/stats/index.html)
+
+
 
 -------------
 

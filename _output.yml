@@ -5,8 +5,8 @@ bookdown::gitbook:
       before: |
         <li><a href="./">Vol. 0: Setting up Your Computer</a></li>
       after: |
-        <li><a href="https://cehs-research.github.io/v0_basics/index.html" target="blank">Schwartz & Barret</a></li>
-    edit: https://cehs-research.github.io/v0_basics/index.html %s
+        <li><a href="https://cehs-research.github.io/eBook_install/index.html" target="blank">Schwartz & Barret</a></li>
+    edit: https://cehs-research.github.io/eBook_install/index.html %s
     download: ["pdf", "epub"]
 bookdown::pdf_book:
   includes:
