@@ -3,7 +3,7 @@
 ```{r}
 # set global chunk options...  
 #  this changes the defaults so you don't have to repeat yourself
-knitr::opts_chunk$set(comment     = NA,
+knitr::opts_chunk$set(comment     = "",
                       cache       = TRUE,
                       echo        = TRUE, 
                       warning     = FALSE, 
