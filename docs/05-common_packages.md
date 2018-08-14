@@ -1,5 +1,20 @@
 # Suggested Packages
 
+
+```r
+# set global chunk options...  
+#  this changes the defaults so you don't have to repeat yourself
+knitr::opts_chunk$set(comment     = NA,
+                      cache       = TRUE,
+                      echo        = TRUE, 
+                      warning     = FALSE, 
+                      message     = FALSE,
+                      fig.align   = "center", # center all figures
+                      fig.width   = 6,        # set default figure width to 4 inches
+                      fig.height  = 4)        # set default figure height to 3 inches
+```
+
+
 Here is where we talk about usefull packages...
 
 A curated list of awesome $R$ packages and tools: [https://awesome-r.com/](https://awesome-r.com/)
@@ -22,23 +37,6 @@ The core tidyverse includes the packages that you are likely to use in everyday 
 
 ```r
 library(tidyverse)
-```
-
-```
-## -- Attaching packages ------------ tidyverse 1.2.1 --
-```
-
-```
-## v ggplot2 3.0.0     v purrr   0.2.5
-## v tibble  1.4.2     v dplyr   0.7.6
-## v tidyr   0.8.1     v stringr 1.3.1
-## v readr   1.1.1     v forcats 0.3.0
-```
-
-```
-## -- Conflicts --------------- tidyverse_conflicts() --
-## x dplyr::filter() masks stats::filter()
-## x dplyr::lag()    masks stats::lag()
 ```
 
 | website   | description |   
@@ -389,7 +387,7 @@ package_list_tables
 ```
 
 ```
-## [1] "furniture" "pander"    "stargazer" "texreg"    "xtable"
+[1] "furniture" "pander"    "stargazer" "texreg"    "xtable"   
 ```
 
 ```r
@@ -397,10 +395,10 @@ package_list_visual
 ```
 
 ```
-##  [1] "RColorBrewer" "gghighlight"  "ggthemes"     "ggfortify"   
-##  [5] "ggalt"        "ggExtra"      "GGally"       "ggeffects"   
-##  [9] "corrplot"     "gpairs"       "gridextra"    "likert"      
-## [13] "vcd"          "scales"       "cowplot"      "yarrr"
+ [1] "RColorBrewer" "gghighlight"  "ggthemes"     "ggfortify"   
+ [5] "ggalt"        "ggExtra"      "GGally"       "ggeffects"   
+ [9] "corrplot"     "gpairs"       "gridextra"    "likert"      
+[13] "vcd"          "scales"       "cowplot"      "yarrr"       
 ```
 
 ```r
@@ -408,8 +406,8 @@ package_list_general
 ```
 
 ```
-## [1] "psych"      "polycor"    "corpcor"    "sjlabelled" "sjPlot"    
-## [6] "sjmisc"     "sjstats"    "Hmisc"      "labelled"
+[1] "psych"      "polycor"    "corpcor"    "sjlabelled" "sjPlot"    
+[6] "sjmisc"     "sjstats"    "Hmisc"      "labelled"  
 ```
 
 ```r
@@ -417,8 +415,8 @@ package_list_anova
 ```
 
 ```
-## [1] "afex"         "emmeans"      "corpcor"      "multicomp"   
-## [5] "multcompView"
+[1] "afex"         "emmeans"      "corpcor"      "multicomp"   
+[5] "multcompView"
 ```
 
 ```r
@@ -426,7 +424,7 @@ package_list_regression
 ```
 
 ```
-## [1] "car"          "effects"      "predictmeans"
+[1] "car"          "effects"      "predictmeans"
 ```
 
 ```r
@@ -434,8 +432,8 @@ package_list_multilevel
 ```
 
 ```
-## [1] "nlme"     "lme4"     "lmerTest" "HLMdiag"  "geepack"  "gee"     
-## [7] "gee4"     "optimx"   "MuMIn"
+[1] "nlme"     "lme4"     "lmerTest" "HLMdiag"  "geepack"  "gee"     
+[7] "gee4"     "optimx"   "MuMIn"   
 ```
 
 ```r
@@ -443,7 +441,7 @@ package_list_sem
 ```
 
 ```
-## [1] "lavaan"  "OpenMx"  "sem"     "semPlot"
+[1] "lavaan"  "OpenMx"  "sem"     "semPlot"
 ```
 
 ```r
@@ -451,8 +449,8 @@ package_list_forest
 ```
 
 ```
-## [1] "randomForest"    "randomForestSRC" "ggRandomForests" "party"          
-## [5] "partykit"
+[1] "randomForest"    "randomForestSRC" "ggRandomForests" "party"          
+[5] "partykit"       
 ```
 
 ```r
@@ -460,7 +458,7 @@ package_list_models
 ```
 
 ```
-## [1] "mgcv"     "glmnet"   "survival" "caret"
+[1] "mgcv"     "glmnet"   "survival" "caret"   
 ```
 
 ```r
@@ -468,7 +466,7 @@ package_list_report
 ```
 
 ```
-## [1] "bookdown" "blogdown" "tidytex"  "xaringan" "slidify"  "ReportRs"
+[1] "bookdown" "blogdown" "tidytex"  "xaringan" "slidify"  "ReportRs"
 ```
 
 ```r
@@ -476,7 +474,7 @@ package_list_redcap
 ```
 
 ```
-## [1] "REDCapR"   "redcapAPI"
+[1] "REDCapR"   "redcapAPI"
 ```
 
 ```r
@@ -484,7 +482,7 @@ package_list_package
 ```
 
 ```
-## [1] "devtools" "testthat" "roxygen2"
+[1] "devtools" "testthat" "roxygen2"
 ```
 
 
@@ -548,6 +546,7 @@ In addition, you will be able to:
 
 
 > Website: [GitHub - `unilur`](https://github.com/koncina/unilur)
+
 > Tutorial: [blog post - `unilur`](http://eric.koncina.eu/posts/introducing-the-unilur-rmarkdown-template/)
 
 
@@ -568,6 +567,7 @@ devtools::install_github("koncina/unilur")
 `papaja` has not yet been submitted to $CRAN$ because it is under active development. Currently, there are still a couple of loose ends they would like to tie up before we release the package to a larger audience.  There are two versions you can install from the $GitHub$ website.
 
 > Website: [GitHub - `papaja`](https://github.com/crsh/papaja)
+
 > Tutorial: [eBook - `papaja`](https://crsh.github.io/papaja_man/)
 
 

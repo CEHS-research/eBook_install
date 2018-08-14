@@ -102,12 +102,7 @@ code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Inf
 <li><a href="./">Vol. 0: Setting up Your Computer</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a><ul>
-<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#helpful-websites"><i class="fa fa-check"></i><b>0.1</b> Helpful Websites</a></li>
-<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#what-is-r"><i class="fa fa-check"></i><b>0.2</b> What is R?</a></li>
-<li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#what-is-r-markdown"><i class="fa fa-check"></i><b>0.3</b> What is R Markdown?</a></li>
-<li class="chapter" data-level="0.4" data-path="index.html"><a href="index.html#dynamic-reporting"><i class="fa fa-check"></i><b>0.4</b> Dynamic Reporting</a></li>
-</ul></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a></li>
 <li class="chapter" data-level="1" data-path="install-r.html"><a href="install-r.html"><i class="fa fa-check"></i><b>1</b> Install R</a><ul>
 <li class="chapter" data-level="1.1" data-path="install-r.html"><a href="install-r.html#first-time-installation"><i class="fa fa-check"></i><b>1.1</b> First Time Installation</a></li>
 <li class="chapter" data-level="1.2" data-path="install-r.html"><a href="install-r.html#update-regularly"><i class="fa fa-check"></i><b>1.2</b> Update Regularly</a></li>
@@ -181,6 +176,16 @@ code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Inf
             <section class="normal" id="section-">
 <div id="suggested-packages" class="section level1">
 <h1><span class="header-section-number">Chapter 5</span> Suggested Packages</h1>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># set global chunk options...  </span>
+<span class="co">#  this changes the defaults so you don&#39;t have to repeat yourself</span>
+knitr<span class="op">::</span>opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">comment     =</span> <span class="ot">NA</span>,
+                      <span class="dt">cache       =</span> <span class="ot">TRUE</span>,
+                      <span class="dt">echo        =</span> <span class="ot">TRUE</span>, 
+                      <span class="dt">warning     =</span> <span class="ot">FALSE</span>, 
+                      <span class="dt">message     =</span> <span class="ot">FALSE</span>,
+                      <span class="dt">fig.align   =</span> <span class="st">&quot;center&quot;</span>, <span class="co"># center all figures</span>
+                      <span class="dt">fig.width   =</span> <span class="dv">6</span>,        <span class="co"># set default figure width to 4 inches</span>
+                      <span class="dt">fig.height  =</span> <span class="dv">4</span>)        <span class="co"># set default figure height to 3 inches</span></code></pre></div>
 <p>Here is where we talk about usefull packages…</p>
 <p>A curated list of awesome <span class="math inline">\(R\)</span> packages and tools: <a href="https://awesome-r.com/" class="uri">https://awesome-r.com/</a></p>
 <div id="the-tidy-universe-from-r-studio" class="section level2">
@@ -193,14 +198,6 @@ code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Inf
 <h3><span class="header-section-number">5.1.1</span> Core</h3>
 <p>The core tidyverse includes the packages that you are likely to use in everyday data analyses. As of <code>tidyverse 1.2.0</code>, the following packages are included in the core tidyverse:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)</code></pre></div>
-<pre><code>## -- Attaching packages -------------------------------------- tidyverse 1.2.1 --</code></pre>
-<pre><code>## v ggplot2 3.0.0     v purrr   0.2.5
-## v tibble  1.4.2     v dplyr   0.7.6
-## v tidyr   0.8.1     v stringr 1.3.1
-## v readr   1.1.1     v forcats 0.3.0</code></pre>
-<pre><code>## -- Conflicts ----------------------------------------- tidyverse_conflicts() --
-## x dplyr::filter() masks stats::filter()
-## x dplyr::lag()    masks stats::lag()</code></pre>
 <table>
 <thead>
 <tr class="header">
@@ -820,36 +817,36 @@ code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Inf
 <h2><span class="header-section-number">5.3</span> Installing All the <span class="math inline">\(CRAN\)</span> packages at Once</h2>
 <p>Review the list of all the packages above:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">package_list_tables</code></pre></div>
-<pre><code>## [1] &quot;furniture&quot; &quot;pander&quot;    &quot;stargazer&quot; &quot;texreg&quot;    &quot;xtable&quot;</code></pre>
+<pre><code>[1] &quot;furniture&quot; &quot;pander&quot;    &quot;stargazer&quot; &quot;texreg&quot;    &quot;xtable&quot;   </code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">package_list_visual</code></pre></div>
-<pre><code>##  [1] &quot;RColorBrewer&quot; &quot;gghighlight&quot;  &quot;ggthemes&quot;     &quot;ggfortify&quot;   
-##  [5] &quot;ggalt&quot;        &quot;ggExtra&quot;      &quot;GGally&quot;       &quot;ggeffects&quot;   
-##  [9] &quot;corrplot&quot;     &quot;gpairs&quot;       &quot;gridextra&quot;    &quot;likert&quot;      
-## [13] &quot;vcd&quot;          &quot;scales&quot;       &quot;cowplot&quot;      &quot;yarrr&quot;</code></pre>
+<pre><code> [1] &quot;RColorBrewer&quot; &quot;gghighlight&quot;  &quot;ggthemes&quot;     &quot;ggfortify&quot;   
+ [5] &quot;ggalt&quot;        &quot;ggExtra&quot;      &quot;GGally&quot;       &quot;ggeffects&quot;   
+ [9] &quot;corrplot&quot;     &quot;gpairs&quot;       &quot;gridextra&quot;    &quot;likert&quot;      
+[13] &quot;vcd&quot;          &quot;scales&quot;       &quot;cowplot&quot;      &quot;yarrr&quot;       </code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">package_list_general</code></pre></div>
-<pre><code>## [1] &quot;psych&quot;      &quot;polycor&quot;    &quot;corpcor&quot;    &quot;sjlabelled&quot; &quot;sjPlot&quot;    
-## [6] &quot;sjmisc&quot;     &quot;sjstats&quot;    &quot;Hmisc&quot;      &quot;labelled&quot;</code></pre>
+<pre><code>[1] &quot;psych&quot;      &quot;polycor&quot;    &quot;corpcor&quot;    &quot;sjlabelled&quot; &quot;sjPlot&quot;    
+[6] &quot;sjmisc&quot;     &quot;sjstats&quot;    &quot;Hmisc&quot;      &quot;labelled&quot;  </code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">package_list_anova</code></pre></div>
-<pre><code>## [1] &quot;afex&quot;         &quot;emmeans&quot;      &quot;corpcor&quot;      &quot;multicomp&quot;   
-## [5] &quot;multcompView&quot;</code></pre>
+<pre><code>[1] &quot;afex&quot;         &quot;emmeans&quot;      &quot;corpcor&quot;      &quot;multicomp&quot;   
+[5] &quot;multcompView&quot;</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">package_list_regression</code></pre></div>
-<pre><code>## [1] &quot;car&quot;          &quot;effects&quot;      &quot;predictmeans&quot;</code></pre>
+<pre><code>[1] &quot;car&quot;          &quot;effects&quot;      &quot;predictmeans&quot;</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">package_list_multilevel</code></pre></div>
-<pre><code>## [1] &quot;nlme&quot;     &quot;lme4&quot;     &quot;lmerTest&quot; &quot;HLMdiag&quot;  &quot;geepack&quot;  &quot;gee&quot;     
-## [7] &quot;gee4&quot;     &quot;optimx&quot;   &quot;MuMIn&quot;</code></pre>
+<pre><code>[1] &quot;nlme&quot;     &quot;lme4&quot;     &quot;lmerTest&quot; &quot;HLMdiag&quot;  &quot;geepack&quot;  &quot;gee&quot;     
+[7] &quot;gee4&quot;     &quot;optimx&quot;   &quot;MuMIn&quot;   </code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">package_list_sem</code></pre></div>
-<pre><code>## [1] &quot;lavaan&quot;  &quot;OpenMx&quot;  &quot;sem&quot;     &quot;semPlot&quot;</code></pre>
+<pre><code>[1] &quot;lavaan&quot;  &quot;OpenMx&quot;  &quot;sem&quot;     &quot;semPlot&quot;</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">package_list_forest</code></pre></div>
-<pre><code>## [1] &quot;randomForest&quot;    &quot;randomForestSRC&quot; &quot;ggRandomForests&quot; &quot;party&quot;          
-## [5] &quot;partykit&quot;</code></pre>
+<pre><code>[1] &quot;randomForest&quot;    &quot;randomForestSRC&quot; &quot;ggRandomForests&quot; &quot;party&quot;          
+[5] &quot;partykit&quot;       </code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">package_list_models</code></pre></div>
-<pre><code>## [1] &quot;mgcv&quot;     &quot;glmnet&quot;   &quot;survival&quot; &quot;caret&quot;</code></pre>
+<pre><code>[1] &quot;mgcv&quot;     &quot;glmnet&quot;   &quot;survival&quot; &quot;caret&quot;   </code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">package_list_report</code></pre></div>
-<pre><code>## [1] &quot;bookdown&quot; &quot;blogdown&quot; &quot;tidytex&quot;  &quot;xaringan&quot; &quot;slidify&quot;  &quot;ReportRs&quot;</code></pre>
+<pre><code>[1] &quot;bookdown&quot; &quot;blogdown&quot; &quot;tidytex&quot;  &quot;xaringan&quot; &quot;slidify&quot;  &quot;ReportRs&quot;</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">package_list_redcap</code></pre></div>
-<pre><code>## [1] &quot;REDCapR&quot;   &quot;redcapAPI&quot;</code></pre>
+<pre><code>[1] &quot;REDCapR&quot;   &quot;redcapAPI&quot;</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">package_list_package</code></pre></div>
-<pre><code>## [1] &quot;devtools&quot; &quot;testthat&quot; &quot;roxygen2&quot;</code></pre>
+<pre><code>[1] &quot;devtools&quot; &quot;testthat&quot; &quot;roxygen2&quot;</code></pre>
 <p>Get all the packages from <span class="math inline">\(CRAN\)</span> <em>(updates if new version available)</em>:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="kw">c</span>(<span class="st">&quot;tidyverse&quot;</span>,
                    package_list_tables,
@@ -891,7 +888,10 @@ code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Inf
 <li><p>Create a new <span class="math inline">\(R Markdown\)</span> file with solution chunks replaced by empty ones.</p></li>
 </ul>
 <blockquote>
-<p>Website: <a href="https://github.com/koncina/unilur">GitHub - <code>unilur</code></a> Tutorial: <a href="http://eric.koncina.eu/posts/introducing-the-unilur-rmarkdown-template/">blog post - <code>unilur</code></a></p>
+<p>Website: <a href="https://github.com/koncina/unilur">GitHub - <code>unilur</code></a></p>
+</blockquote>
+<blockquote>
+<p>Tutorial: <a href="http://eric.koncina.eu/posts/introducing-the-unilur-rmarkdown-template/">blog post - <code>unilur</code></a></p>
 </blockquote>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;koncina/unilur&quot;</span>)</code></pre></div>
 <hr />
@@ -901,7 +901,10 @@ code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Inf
 <p><code>papaja</code> is a <span class="math inline">\(R\)</span> package in the making including a <span class="math inline">\(R Markdown\)</span> template that can be used with (or without) <strong><span class="math inline">\(R\)</span> Studio</strong> to produce documents, which conform to the <strong>American Psychological Association (APA)</strong> manuscript guidelines (6th Edition). The package uses the <span class="math inline">\(LaTeX\)</span> document class <code>apa6</code> and a .docx-reference file, so you can create PDF documents, or Word documents if you have to. Moreover, papaja supplies <span class="math inline">\(R\)</span> functions that facilitate reporting results of your analyses in accordance with APA guidelines.</p>
 <p><code>papaja</code> has not yet been submitted to <span class="math inline">\(CRAN\)</span> because it is under active development. Currently, there are still a couple of loose ends they would like to tie up before we release the package to a larger audience. There are two versions you can install from the <span class="math inline">\(GitHub\)</span> website.</p>
 <blockquote>
-<p>Website: <a href="https://github.com/crsh/papaja">GitHub - <code>papaja</code></a> Tutorial: <a href="https://crsh.github.io/papaja_man/">eBook - <code>papaja</code></a></p>
+<p>Website: <a href="https://github.com/crsh/papaja">GitHub - <code>papaja</code></a></p>
+</blockquote>
+<blockquote>
+<p>Tutorial: <a href="https://crsh.github.io/papaja_man/">eBook - <code>papaja</code></a></p>
 </blockquote>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Install the stable development verions from GitHub</span>
 devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;crsh/papaja&quot;</span>)

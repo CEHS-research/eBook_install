@@ -1,5 +1,20 @@
 # Suggested Packages
 
+```{r}
+# set global chunk options...  
+#  this changes the defaults so you don't have to repeat yourself
+knitr::opts_chunk$set(comment     = NA,
+                      cache       = TRUE,
+                      echo        = TRUE, 
+                      warning     = FALSE, 
+                      message     = FALSE,
+                      fig.align   = "center", # center all figures
+                      fig.width   = 6,        # set default figure width to 4 inches
+                      fig.height  = 4)        # set default figure height to 3 inches
+
+```
+
+
 Here is where we talk about usefull packages...
 
 A curated list of awesome $R$ packages and tools: [https://awesome-r.com/](https://awesome-r.com/)
@@ -425,6 +440,7 @@ In addition, you will be able to:
 
 
 > Website: [GitHub - `unilur`](https://github.com/koncina/unilur)
+
 > Tutorial: [blog post - `unilur`](http://eric.koncina.eu/posts/introducing-the-unilur-rmarkdown-template/)
 
 ```{r, eval=FALSE}
@@ -444,6 +460,7 @@ devtools::install_github("koncina/unilur")
 `papaja` has not yet been submitted to $CRAN$ because it is under active development. Currently, there are still a couple of loose ends they would like to tie up before we release the package to a larger audience.  There are two versions you can install from the $GitHub$ website.
 
 > Website: [GitHub - `papaja`](https://github.com/crsh/papaja)
+
 > Tutorial: [eBook - `papaja`](https://crsh.github.io/papaja_man/)
 
 
