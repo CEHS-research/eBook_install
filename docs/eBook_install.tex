@@ -208,7 +208,7 @@ From
 \href{https://onlinecourses.science.psu.edu/statprogram/markdown}{Penn
 State Statistics}:
 
-\textbf{The }traditional way** to write a report**
+\textbf{The traditional way to write a report}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -452,8 +452,8 @@ More information may be found here:
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
 
-\section{INSTALL packages (via the user
-interface)}\label{install-packages-via-the-user-interface}
+\section{Installing packages (via the user
+interface)}\label{installing-packages-via-the-user-interface}
 
 \begin{quote}
 You only need to INSTALL packages ONCE per computer.
@@ -484,20 +484,48 @@ make sure the box for `Installing dependencies' is checked.}
 \caption{}
 \end{figure}
 
+You can \emph{copy-and-paste} the following list into the box (labeled
+3) to load the packages that we use most commonly all at once.
+
+\begin{quote}
+tidyverse, furniture, pander, stargazer, texreg, xtable, RColorBrewer,
+gghighlight, ggthemes, ggfortify, ggalt, ggExtra, GGally, ggeffects,
+corrplot, gpairs, gridextra, likert, vcd, scales, cowplot, yarrr, psych,
+polycor, corpcor, sjlabelled, sjPlot, sjmisc, sjstats, Hmisc, labelled,
+afex, emmeans, corpcor, multicomp, multcompView, car, effects,
+predictmean, nlme, lme4, lmerTest, HLMdiag, geepack, gee, gee4, optimx,
+MuMIn, lavaan, OpenMx, sem, semPlot, randomForest, randomForestSRC,
+ggRandomForests, party, partykit, mgcv, glmnet, survival, caret,
+bookdown, blogdown, tidytex, xaringan, REDCapR, redcapAPI, devtools,
+testthat, roxygen2
+\end{quote}
+
+When you click the \textbf{Install} buttom, a smaller window may asks if
+you would like to re-start \(R\) prior to installing, choose ``no'' and
+manually close and open the \(R Studio\) program once all packages have
+been downloaded, unpacked, and checked. This may take a few minutes,
+especially if you have selected multiple packages.
+
+\begin{quote}
+See Chapter 6 for more information on how to install packages another
+way (via syntax code), as well as website links for each package.
+\end{quote}
+
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\section{Updating packages}\label{updating-packages}
+
+\chapter{Loading Packages}\label{loading-packages}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\begin{quote}
+While you only need to INSTALL a package ONCE per computer, you will
+need to LOAD each package in EVERY SESSION you want to use them in.
+\end{quote}
 
 \section{\texorpdfstring{LOAD packages (via \(R\)
 code)}{LOAD packages (via R code)}}\label{load-packages-via-r-code}
-
-\begin{quote}
-You will need to LOAD packages in EVERY SESSION you want to use them in.
-\end{quote}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{library}\NormalTok{(tidyverse)}
-\end{Highlighting}
-\end{Shaded}
 
 Please don't get confused: \texttt{library()} is the command used to
 \textbf{load a package}, and it refers to the \textbf{place} where the
@@ -513,6 +541,12 @@ R''} DataCamp course (December 8, 2014):
 \texttt{library()} to check a package out of the library''
 \end{quote}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(tidyverse)}
+\end{Highlighting}
+\end{Shaded}
+
 Here is link to an AWSOME
 \href{http://datacamp-community.s3.amazonaws.com/e63a8f6b-2aa3-4006-89e0-badc294b179c}{`cheat
 sheet' for begginers working with the \texttt{tidyverse} package}. I
@@ -521,28 +555,11 @@ highly suggest checking it out.
 More `cheat sheets' are available under the ``Help'' menu option in
 \textbf{R Studio}
 
-\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
-
-\section{Updating packages}\label{updating-packages}
-
-\chapter{Suggested Packages}\label{suggested-packages}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{# set global chunk options...  }
-\CommentTok{#  this changes the defaults so you don't have to repeat yourself}
-\NormalTok{knitr}\OperatorTok{::}\NormalTok{opts_chunk}\OperatorTok{$}\KeywordTok{set}\NormalTok{(}\DataTypeTok{comment     =} \StringTok{""}\NormalTok{,}
-                      \DataTypeTok{cache       =} \OtherTok{TRUE}\NormalTok{,}
-                      \DataTypeTok{echo        =} \OtherTok{TRUE}\NormalTok{, }
-                      \DataTypeTok{warning     =} \OtherTok{FALSE}\NormalTok{, }
-                      \DataTypeTok{message     =} \OtherTok{FALSE}\NormalTok{,}
-                      \DataTypeTok{fig.align   =} \StringTok{"center"}\NormalTok{, }\CommentTok{# center all figures}
-                      \DataTypeTok{fig.width   =} \DecValTok{6}\NormalTok{,        }\CommentTok{# set default figure width to 4 inches}
-                      \DataTypeTok{fig.height  =} \DecValTok{4}\NormalTok{)        }\CommentTok{# set default figure height to 3 inches}
-\end{Highlighting}
-\end{Shaded}
+\chapter{Commonly Used Packages}\label{commonly-used-packages}
 
 Here is where we talk about usefull packages\ldots{}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
 
 A curated list of awesome \(R\) packages and tools:
 \url{https://awesome-r.com/}
@@ -645,17 +662,7 @@ Frames\tabularnewline
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
 
-\subsection{Creating Nice Tables}\label{creating-nice-tables}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{package_list_tables <-}\StringTok{  }\KeywordTok{c}\NormalTok{(}\StringTok{"furniture"}\NormalTok{, }
-                          \StringTok{"pander"}\NormalTok{, }
-                          \StringTok{"stargazer"}\NormalTok{, }
-                          \StringTok{"texreg"}\NormalTok{,}
-                          \StringTok{"xtable"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+\subsection{Creating Tables}\label{creating-tables}
 
 \begin{longtable}[]{@{}rl@{}}
 \toprule
@@ -679,27 +686,6 @@ Tables\tabularnewline
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
 
 \subsection{Visualization}\label{visualization}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{package_list_visual <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"RColorBrewer"}\NormalTok{,}
-                         \StringTok{"gghighlight"}\NormalTok{,}
-                         \StringTok{"ggthemes"}\NormalTok{, }
-                         \StringTok{"ggfortify"}\NormalTok{,}
-                         \StringTok{"ggalt"}\NormalTok{,}
-                         \StringTok{"ggExtra"}\NormalTok{,}
-                         \StringTok{"GGally"}\NormalTok{, }
-                         \StringTok{"ggeffects"}\NormalTok{, }
-                         \StringTok{"corrplot"}\NormalTok{,}
-                         \StringTok{"gpairs"}\NormalTok{,}
-                         \StringTok{"gridextra"}\NormalTok{,}
-                         \StringTok{"likert"}\NormalTok{,}
-                         \StringTok{"vcd"}\NormalTok{,}
-                         \StringTok{"scales"}\NormalTok{,}
-                         \StringTok{"cowplot"}\NormalTok{,}
-                         \StringTok{"yarrr"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
 
 \begin{longtable}[]{@{}rl@{}}
 \toprule
@@ -744,20 +730,6 @@ The Pirate's Guide to \(R\)\tabularnewline
 
 \subsection{Generally Handy}\label{generally-handy}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{package_list_general <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"psych"}\NormalTok{,}
-                          \StringTok{"polycor"}\NormalTok{, }
-                          \StringTok{"corpcor"}\NormalTok{,}
-                          \StringTok{"sjlabelled"}\NormalTok{, }
-                          \StringTok{"sjPlot"}\NormalTok{, }
-                          \StringTok{"sjmisc"}\NormalTok{,}
-                          \StringTok{"sjstats"}\NormalTok{,}
-                          \StringTok{"Hmisc"}\NormalTok{,}
-                          \StringTok{"labelled"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
 \begin{longtable}[]{@{}rl@{}}
 \toprule
 website & description\tabularnewline
@@ -788,16 +760,6 @@ Manipulating Labelled Data\tabularnewline
 \subsection{t-Tests, ANOVA, and RM
 ANOVA}\label{t-tests-anova-and-rm-anova}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{package_list_anova <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"afex"}\NormalTok{,}
-                        \StringTok{"emmeans"}\NormalTok{, }
-                        \StringTok{"corpcor"}\NormalTok{,}
-                        \StringTok{"multicomp"}\NormalTok{, }
-                        \StringTok{"multcompView"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
 \begin{longtable}[]{@{}rl@{}}
 \toprule
 website & description\tabularnewline
@@ -818,14 +780,6 @@ Comparisons\tabularnewline
 
 \subsection{Regression (ML, GLM)}\label{regression-ml-glm}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{package_list_regression <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"car"}\NormalTok{,}
-                             \StringTok{"effects"}\NormalTok{,}
-                             \StringTok{"predictmeans"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
 \begin{longtable}[]{@{}rl@{}}
 \toprule
 website & description\tabularnewline
@@ -845,20 +799,6 @@ Models\tabularnewline
 
 \subsection{Multilevel Models (MLM, HLM,
 GEE)}\label{multilevel-models-mlm-hlm-gee}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{package_list_multilevel <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"nlme"}\NormalTok{,}
-                             \StringTok{"lme4"}\NormalTok{,}
-                             \StringTok{"lmerTest"}\NormalTok{,}
-                             \StringTok{"HLMdiag"}\NormalTok{,}
-                             \StringTok{"geepack"}\NormalTok{,}
-                             \StringTok{"gee"}\NormalTok{,}
-                             \StringTok{"gee4"}\NormalTok{,}
-                             \StringTok{"optimx"}\NormalTok{,}
-                             \StringTok{"MuMIn"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
 
 \begin{longtable}[]{@{}rl@{}}
 \toprule
@@ -892,15 +832,6 @@ Function\tabularnewline
 \subsection{Structural Equation Modeling
 (SEM)}\label{structural-equation-modeling-sem}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{package_list_sem <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"lavaan"}\NormalTok{,}
-                      \StringTok{"OpenMx"}\NormalTok{,}
-                      \StringTok{"sem"}\NormalTok{,}
-                      \StringTok{"semPlot"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
 \begin{longtable}[]{@{}rl@{}}
 \toprule
 website & description\tabularnewline
@@ -922,65 +853,27 @@ Output\tabularnewline
 
 \subsection{Random Forests}\label{random-forests}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{package_list_forest <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"randomForest"}\NormalTok{,}
-                         \StringTok{"randomForestSRC"}\NormalTok{,}
-                         \StringTok{"ggRandomForests"}\NormalTok{,}
-                         \StringTok{"party"}\NormalTok{,}
-                         \StringTok{"partykit"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
 \begin{longtable}[]{@{}rl@{}}
 \toprule
-\begin{minipage}[b]{0.18\columnwidth}\raggedleft\strut
-website\strut
-\end{minipage} & \begin{minipage}[b]{0.18\columnwidth}\raggedright\strut
-description\strut
-\end{minipage}\tabularnewline
+website & description\tabularnewline
 \midrule
 \endhead
-\begin{minipage}[t]{0.18\columnwidth}\raggedleft\strut
-\href{https://www.guru99.com/r-random-forest-tutorial.html}{\texttt{randomForest}}\strut
-\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
-Random Forests for Classification and Regression\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.18\columnwidth}\raggedleft\strut
-\href{http://www.riptutorial.com/r/example/13086/random-forest-survival-analysis-with-randomforestsrc}{\texttt{randomForestSRC}}\strut
-\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
-Random Forests for Survival, Regression, and Classification\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.18\columnwidth}\raggedleft\strut
-\href{https://arxiv.org/pdf/1612.08974.pdf}{\texttt{ggRandomForests}}\strut
-\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
-Visually Exploring Random Forests\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.18\columnwidth}\raggedleft\strut
-\href{http://party.r-forge.r-project.org/}{\texttt{party}}\strut
-\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
-A Laboratory for Recursive Partytioning\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.18\columnwidth}\raggedleft\strut
-\href{}{\texttt{partykit}}\strut
-\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright\strut
-A Toolkit for Recursive Partytioning\strut
-\end{minipage}\tabularnewline
+\href{https://www.guru99.com/r-random-forest-tutorial.html}{\texttt{randomForest}}
+& Random Forests for Classification and Regression\tabularnewline
+\href{http://www.riptutorial.com/r/example/13086/random-forest-survival-analysis-with-randomforestsrc}{\texttt{randomForestSRC}}
+& for Survival, Regression, and Classification\tabularnewline
+\href{https://arxiv.org/pdf/1612.08974.pdf}{\texttt{ggRandomForests}} &
+Visually Exploring Random Forests\tabularnewline
+\href{http://party.r-forge.r-project.org/}{\texttt{party}} & A
+Laboratory for Recursive Partytioning\tabularnewline
+\href{}{\texttt{partykit}} & A Toolkit for Recursive
+Partytioning\tabularnewline
 \bottomrule
 \end{longtable}
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
 
 \subsection{Other Models}\label{other-models}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{package_list_models <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"mgcv"}\NormalTok{,}
-                         \StringTok{"glmnet"}\NormalTok{,}
-                         \StringTok{"survival"}\NormalTok{,}
-                         \StringTok{"caret"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
 
 \begin{longtable}[]{@{}rl@{}}
 \toprule
@@ -1005,41 +898,28 @@ Classification and Regression Training\tabularnewline
 \subsection{Reproducibility and
 Reporting}\label{reproducibility-and-reporting}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{package_list_report <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"bookdown"}\NormalTok{,}
-                         \StringTok{"blogdown"}\NormalTok{,}
-                         \StringTok{"tidytex"}\NormalTok{,}
-                         \StringTok{"xaringan"}\NormalTok{,}
-                         \StringTok{"slidify"}\NormalTok{,}
-                         \StringTok{"ReportRs"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
 \begin{longtable}[]{@{}rl@{}}
 \toprule
 website & description\tabularnewline
 \midrule
 \endhead
-\href{}{\texttt{bookdown}} &\tabularnewline
-\href{}{\texttt{blogdown}} &\tabularnewline
-\href{}{\texttt{tidytex}} &\tabularnewline
-\href{}{\texttt{xaringan}} &\tabularnewline
-\href{}{\texttt{slidify}} &\tabularnewline
-\href{}{\texttt{ReportRs}} &\tabularnewline
+\href{https://bookdown.org/}{\texttt{bookdown}} & Authoring Books and
+Technical Documents\tabularnewline
+\href{https://bookdown.org/yihui/blogdown/}{\texttt{blogdown}} & Create
+Blogs and Websites\tabularnewline
+\href{https://yihui.name/tinytex/}{\texttt{tidytex}} & Helper
+Functionsfor \(TeX Live\), Compile \(LaTeX\) Documents\tabularnewline
+\href{https://github.com/yihui/xaringan}{\texttt{xaringan}} &
+Presentation Ninja\tabularnewline
 \bottomrule
 \end{longtable}
+
+\emph{Note: \texttt{slidify} \& \texttt{ReportRs} have been removed from
+\(CRAN\)}
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
 
 \subsection{REDCap Interface}\label{redcap-interface}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{package_list_redcap <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"REDCapR"}\NormalTok{,}
-                         \StringTok{"redcapAPI"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
 
 \begin{longtable}[]{@{}rl@{}}
 \toprule
@@ -1047,9 +927,9 @@ website & description\tabularnewline
 \midrule
 \endhead
 \href{https://github.com/nutterb/redcapAPI/wiki}{\texttt{redcapAPI}} &
-Interface to `REDCap'\tabularnewline
+Interface to \(REDCap\)\tabularnewline
 \href{https://github.com/OuhscBbmc/REDCapR}{\texttt{REDCapR}} &
-Interaction Between R and REDCap\tabularnewline
+Interaction Between \(R\) and \(REDCap\)\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -1058,29 +938,25 @@ Interaction Between R and REDCap\tabularnewline
 \subsection{Creating Your Own
 Packages}\label{creating-your-own-packages}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{package_list_package <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"devtools"}\NormalTok{,}
-                          \StringTok{"testthat"}\NormalTok{,}
-                          \StringTok{"roxygen2"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
 \begin{longtable}[]{@{}rl@{}}
 \toprule
 website & description\tabularnewline
 \midrule
 \endhead
-\href{}{\texttt{devtools}} &\tabularnewline
-\href{}{\texttt{testthat}} &\tabularnewline
-\href{}{\texttt{roxygen2}} &\tabularnewline
+\href{https://github.com/r-lib/devtools}{\texttt{devtools}} & Tools to
+Make Developing \(R\) Packages Easier\tabularnewline
+\href{https://github.com/r-lib/testthat}{\texttt{testthat}} & Unit
+Testing for \(R\)\tabularnewline
+\href{https://cran.r-project.org/web/packages/roxygen2/vignettes/roxygen2.html}{\texttt{roxygen2}}
+& In-Line Documentation for \(R\)\tabularnewline
 \bottomrule
 \end{longtable}
 
 \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
 
-\section{\texorpdfstring{Installing All the \(CRAN\) packages at
-Once}{Installing All the CRAN packages at Once}}\label{installing-all-the-cran-packages-at-once}
+\section{\texorpdfstring{Install All the \(CRAN\) Packages at Once (via
+syntax
+code)}{Install All the CRAN Packages at Once (via syntax code)}}\label{install-all-the-cran-packages-at-once-via-syntax-code}
 
 Review the list of all the packages above:
 

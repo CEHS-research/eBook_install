@@ -1,6 +1,6 @@
-# Suggested Packages
+# Commonly Used Packages
 
-```{r}
+```{r, echo=FALSE, include=FALSE}
 # set global chunk options...  
 #  this changes the defaults so you don't have to repeat yourself
 knitr::opts_chunk$set(comment     = "",
@@ -16,6 +16,8 @@ knitr::opts_chunk$set(comment     = "",
 
 
 Here is where we talk about usefull packages...
+
+----------
 
 A curated list of awesome $R$ packages and tools: [https://awesome-r.com/](https://awesome-r.com/)
 
@@ -77,9 +79,9 @@ library(haven) # example...may replace with any individual package name
 
 -------------------------------------
 
-### Creating Nice Tables
+### Creating Tables
 
-```{r}
+```{r, include=FALSE}
 package_list_tables <-  c("furniture", 
                           "pander", 
                           "stargazer", 
@@ -99,7 +101,7 @@ package_list_tables <-  c("furniture",
 
 ### Visualization
 
-```{r}
+```{r, include=FALSE}
 package_list_visual <- c("RColorBrewer",
                          "gghighlight",
                          "ggthemes", 
@@ -142,7 +144,7 @@ package_list_visual <- c("RColorBrewer",
 
 ### Generally Handy
 
-```{r}
+```{r, include=FALSE}
 package_list_general <- c("psych",
                           "polycor", 
                           "corpcor",
@@ -173,7 +175,7 @@ package_list_general <- c("psych",
 
 ### t-Tests, ANOVA, and RM ANOVA
 
-```{r}
+```{r, include=FALSE}
 package_list_anova <- c("afex",
                         "emmeans", 
                         "corpcor",
@@ -194,7 +196,7 @@ package_list_anova <- c("afex",
 ### Regression (ML, GLM)
 
 
-```{r}
+```{r, include=FALSE}
 package_list_regression <- c("car",
                              "effects",
                              "predictmeans")
@@ -213,7 +215,7 @@ package_list_regression <- c("car",
 ### Multilevel Models (MLM, HLM, GEE)
 
 
-```{r}
+```{r, include=FALSE}
 package_list_multilevel <- c("nlme",
                              "lme4",
                              "lmerTest",
@@ -243,7 +245,7 @@ package_list_multilevel <- c("nlme",
 
 ### Structural Equation Modeling (SEM)
 
-```{r}
+```{r, include=FALSE}
 package_list_sem <- c("lavaan",
                       "OpenMx",
                       "sem",
@@ -263,7 +265,7 @@ package_list_sem <- c("lavaan",
 
 ### Random Forests
 
-```{r}
+```{r, include=FALSE}
 package_list_forest <- c("randomForest",
                          "randomForestSRC",
                          "ggRandomForests",
@@ -274,7 +276,7 @@ package_list_forest <- c("randomForest",
 | website     | description |   
 |------------:|:------------|         
 | [`randomForest`](https://www.guru99.com/r-random-forest-tutorial.html) | Random Forests for Classification and Regression |
-| [`randomForestSRC`](http://www.riptutorial.com/r/example/13086/random-forest-survival-analysis-with-randomforestsrc) | Random Forests for Survival, Regression, and Classification |
+| [`randomForestSRC`](http://www.riptutorial.com/r/example/13086/random-forest-survival-analysis-with-randomforestsrc) | for Survival, Regression, and Classification |
 | [`ggRandomForests`](https://arxiv.org/pdf/1612.08974.pdf) | Visually Exploring Random Forests |
 | [`party`](http://party.r-forge.r-project.org/) | A Laboratory for Recursive Partytioning |
 | [`partykit`]() | A Toolkit for Recursive Partytioning |
@@ -284,7 +286,7 @@ package_list_forest <- c("randomForest",
 
 ### Other Models
 
-```{r}
+```{r, include=FALSE}
 package_list_models <- c("mgcv",
                          "glmnet",
                          "survival",
@@ -305,31 +307,28 @@ package_list_models <- c("mgcv",
 ### Reproducibility and Reporting
 
 
-```{r}
+```{r, include=FALSE}
 package_list_report <- c("bookdown",
                          "blogdown",
                          "tidytex",
-                         "xaringan",
-                         "slidify",
-                         "ReportRs")
+                         "xaringan")
 ```
 
 
 | website     | description |   
 |------------:|:------------|  
-| [`bookdown`]() ||
-| [`blogdown`]() ||
-| [`tidytex`]() ||
-| [`xaringan`]() ||
-| [`slidify`]() ||
-| [`ReportRs`]() ||
+| [`bookdown`](https://bookdown.org/) | Authoring Books and Technical Documents |
+| [`blogdown`](https://bookdown.org/yihui/blogdown/) | Create Blogs and Websites|
+| [`tidytex`](https://yihui.name/tinytex/) | Helper Functionsfor $TeX Live$, Compile $LaTeX$ Documents |
+| [`xaringan`](https://github.com/yihui/xaringan) | Presentation Ninja |
 
+*Note: `slidify` & `ReportRs` have been removed from $CRAN$*
 
 -------------------------------------
 
 ### REDCap Interface
 
-```{r}
+```{r, include=FALSE}
 package_list_redcap <- c("REDCapR",
                          "redcapAPI")
 ```
@@ -337,8 +336,8 @@ package_list_redcap <- c("REDCapR",
 
 | website     | description |   
 |------------:|:------------|     
-| [`redcapAPI`](https://github.com/nutterb/redcapAPI/wiki) | Interface to 'REDCap'  |
-| [`REDCapR`](https://github.com/OuhscBbmc/REDCapR) | Interaction Between R and REDCap |
+| [`redcapAPI`](https://github.com/nutterb/redcapAPI/wiki) | Interface to $REDCap$  |
+| [`REDCapR`](https://github.com/OuhscBbmc/REDCapR) | Interaction Between $R$ and $REDCap$ |
 
 
 
@@ -346,7 +345,7 @@ package_list_redcap <- c("REDCapR",
 
 ### Creating Your Own Packages
 
-```{r}
+```{r, include=FALSE}
 package_list_package <- c("devtools",
                           "testthat",
                           "roxygen2")
@@ -355,14 +354,14 @@ package_list_package <- c("devtools",
 
 | website     | description |   
 |------------:|:------------|  
-| [`devtools`]() ||
-| [`testthat`]() ||
-| [`roxygen2`]() ||
+| [`devtools`](https://github.com/r-lib/devtools) | Tools to Make Developing $R$ Packages Easier|
+| [`testthat`](https://github.com/r-lib/testthat) | Unit Testing for $R$ |
+| [`roxygen2`](https://cran.r-project.org/web/packages/roxygen2/vignettes/roxygen2.html) | In-Line Documentation for $R$ |
 
 
 -------------------------------------
 
-## Installing All the $CRAN$ packages at Once
+## Install All the $CRAN$ Packages at Once (via syntax code)
 
 Review the list of all the packages above:
 

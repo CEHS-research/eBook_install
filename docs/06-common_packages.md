@@ -1,4 +1,4 @@
-# Suggested Packages
+# Commonly Used Packages
 
 
 
@@ -73,13 +73,6 @@ library(haven) # example...may replace with any individual package name
 ### Creating Tables
 
 
-```r
-package_list_tables <-  c("furniture", 
-                          "pander", 
-                          "stargazer", 
-                          "texreg",
-                          "xtable")
-```
 
 | website     | description |   
 |------------:|:------------|   
@@ -94,24 +87,6 @@ package_list_tables <-  c("furniture",
 ### Visualization
 
 
-```r
-package_list_visual <- c("RColorBrewer",
-                         "gghighlight",
-                         "ggthemes", 
-                         "ggfortify",
-                         "ggalt",
-                         "ggExtra",
-                         "GGally", 
-                         "ggeffects", 
-                         "corrplot",
-                         "gpairs",
-                         "gridextra",
-                         "likert",
-                         "vcd",
-                         "scales",
-                         "cowplot",
-                         "yarrr")
-```
 
 
 | website     | description |   
@@ -138,17 +113,6 @@ package_list_visual <- c("RColorBrewer",
 ### Generally Handy
 
 
-```r
-package_list_general <- c("psych",
-                          "polycor", 
-                          "corpcor",
-                          "sjlabelled", 
-                          "sjPlot", 
-                          "sjmisc",
-                          "sjstats",
-                          "Hmisc",
-                          "labelled")
-```
 
 | website     | description |    
 |------------:|:------------|       
@@ -170,13 +134,6 @@ package_list_general <- c("psych",
 ### t-Tests, ANOVA, and RM ANOVA
 
 
-```r
-package_list_anova <- c("afex",
-                        "emmeans", 
-                        "corpcor",
-                        "multicomp", 
-                        "multcompView")
-```
 
 | website     | description |   
 |------------:|:------------|     
@@ -192,11 +149,6 @@ package_list_anova <- c("afex",
 
 
 
-```r
-package_list_regression <- c("car",
-                             "effects",
-                             "predictmeans")
-```
 
 | website     | description |   
 |------------:|:------------|     
@@ -212,17 +164,6 @@ package_list_regression <- c("car",
 
 
 
-```r
-package_list_multilevel <- c("nlme",
-                             "lme4",
-                             "lmerTest",
-                             "HLMdiag",
-                             "geepack",
-                             "gee",
-                             "gee4",
-                             "optimx",
-                             "MuMIn")
-```
 
 | website     | description |   
 |------------:|:------------|     
@@ -243,12 +184,6 @@ package_list_multilevel <- c("nlme",
 ### Structural Equation Modeling (SEM)
 
 
-```r
-package_list_sem <- c("lavaan",
-                      "OpenMx",
-                      "sem",
-                      "semPlot")
-```
 
 | website     | description |   
 |------------:|:------------|     
@@ -264,13 +199,6 @@ package_list_sem <- c("lavaan",
 ### Random Forests
 
 
-```r
-package_list_forest <- c("randomForest",
-                         "randomForestSRC",
-                         "ggRandomForests",
-                         "party",
-                         "partykit")
-```
 
 | website     | description |   
 |------------:|:------------|         
@@ -286,12 +214,6 @@ package_list_forest <- c("randomForest",
 ### Other Models
 
 
-```r
-package_list_models <- c("mgcv",
-                         "glmnet",
-                         "survival",
-                         "caret")
-```
 
 | website     | description |   
 |------------:|:------------| 
@@ -308,41 +230,28 @@ package_list_models <- c("mgcv",
 
 
 
-```r
-package_list_report <- c("bookdown",
-                         "blogdown",
-                         "tidytex",
-                         "xaringan",
-                         "slidify",
-                         "ReportRs")
-```
 
 
 | website     | description |   
 |------------:|:------------|  
-| [`bookdown`]() ||
-| [`blogdown`]() ||
-| [`tidytex`]() ||
-| [`xaringan`]() ||
-| [`slidify`]() ||
-| [`ReportRs`]() ||
+| [`bookdown`](https://bookdown.org/) | Authoring Books and Technical Documents |
+| [`blogdown`](https://bookdown.org/yihui/blogdown/) | Create Blogs and Websites|
+| [`tidytex`](https://yihui.name/tinytex/) | Helper Functionsfor $TeX Live$, Compile $LaTeX$ Documents |
+| [`xaringan`](https://github.com/yihui/xaringan) | Presentation Ninja |
 
+*Note: `slidify` & `ReportRs` have been removed from $CRAN$*
 
 -------------------------------------
 
 ### REDCap Interface
 
 
-```r
-package_list_redcap <- c("REDCapR",
-                         "redcapAPI")
-```
 
 
 | website     | description |   
 |------------:|:------------|     
-| [`redcapAPI`](https://github.com/nutterb/redcapAPI/wiki) | Interface to 'REDCap'  |
-| [`REDCapR`](https://github.com/OuhscBbmc/REDCapR) | Interaction Between R and REDCap |
+| [`redcapAPI`](https://github.com/nutterb/redcapAPI/wiki) | Interface to $REDCap$  |
+| [`REDCapR`](https://github.com/OuhscBbmc/REDCapR) | Interaction Between $R$ and $REDCap$ |
 
 
 
@@ -351,18 +260,13 @@ package_list_redcap <- c("REDCapR",
 ### Creating Your Own Packages
 
 
-```r
-package_list_package <- c("devtools",
-                          "testthat",
-                          "roxygen2")
-```
 
 
 | website     | description |   
 |------------:|:------------|  
-| [`devtools`]() ||
-| [`testthat`]() ||
-| [`roxygen2`]() ||
+| [`devtools`](https://github.com/r-lib/devtools) | Tools to Make Developing $R$ Packages Easier|
+| [`testthat`](https://github.com/r-lib/testthat) | Unit Testing for $R$ |
+| [`roxygen2`](https://cran.r-project.org/web/packages/roxygen2/vignettes/roxygen2.html) | In-Line Documentation for $R$ |
 
 
 -------------------------------------

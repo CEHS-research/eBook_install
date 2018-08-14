@@ -52,7 +52,7 @@ According to [R Studio](www.rstudio.com):
 
 From [Penn State Statistics](https://onlinecourses.science.psu.edu/statprogram/markdown): 
 
-**The **traditional way** to write a report**
+**The traditional way to write a report**
 
 1. Run your analysis in software, like SPSS or R and manually save our output
     * *i.e. saving the ANOVA table or using pdf() to save the graphs*  

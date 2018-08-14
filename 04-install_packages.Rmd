@@ -13,7 +13,7 @@ More information may be found here:  https://www.datacamp.com/community/tutorial
 
 -----------
 
-## INSTALL packages (via the user interface)
+## Installing packages (via the user interface)
 
 > You only need to INSTALL packages ONCE per computer.
 
@@ -29,25 +29,14 @@ In **R Stuido**:
 ![](img/Install_Package_Screenshot.png)
 
 
------------
+You can *copy-and-paste* the following list into the box (labeled 3) to load the packages that we use most commonly all at once. 
 
-## LOAD packages (via $R$ code) 
+> tidyverse, furniture, pander, stargazer, texreg, xtable, RColorBrewer, gghighlight, ggthemes, ggfortify, ggalt, ggExtra, GGally, ggeffects, corrplot, gpairs, gridextra, likert, vcd, scales, cowplot, yarrr, psych, polycor, corpcor, sjlabelled, sjPlot, sjmisc, sjstats, Hmisc, labelled, afex, emmeans, corpcor, multicomp, multcompView, car, effects, predictmean, nlme, lme4, lmerTest, HLMdiag, geepack, gee, gee4, optimx, MuMIn, lavaan, OpenMx, sem, semPlot, randomForest, randomForestSRC, ggRandomForests, party, partykit, mgcv, glmnet, survival, caret, bookdown, blogdown, tidytex, xaringan, REDCapR, redcapAPI, devtools, testthat, roxygen2
 
-> You will need to LOAD packages in EVERY SESSION you want to use them in.
+When you click the **Install** buttom, a smaller window may asks if you would like to re-start $R$ prior to installing, choose "no" and manually close and open the $R Studio$ program once all packages have been downloaded, unpacked, and checked.  This may take a few minutes, especially if you have selected multiple packages.  
 
-```{r, eval=FALSE}
-library(tidyverse)
-```
 
-Please don’t get confused: `library()` is the command used to **load a package**, and it refers to the **place** where the package is contained, usually a folder on your computer, while a package is the collection of functions bundled conveniently.
-
-Maybe it can help a quote from **Hadley Wickham**, Chief data scientist at RStudio, and instructor of the *“Writing functions in R”* DataCamp course (December 8, 2014):
-
-> "a package is a like a book, a library is like a library; you use `library()` to check a package out of the library"
-
-Here is link to an AWSOME ['cheat sheet' for begginers working with the `tidyverse` package](http://datacamp-community.s3.amazonaws.com/e63a8f6b-2aa3-4006-89e0-badc294b179c).  I highly suggest checking it out.
-
-More 'cheat sheets' are available under the "Help" menu option in **R Studio**
+> See Chapter 6 for more information on how to install packages another way (via syntax code), as well as website links for each package.
 
 
 
