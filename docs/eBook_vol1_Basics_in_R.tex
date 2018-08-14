@@ -24,7 +24,7 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{hyperref}
 \hypersetup{unicode=true,
-            pdftitle={Vol. 1: Basics in R},
+            pdftitle={Vol. 0: Basics in R},
             pdfauthor={Sarah Schwartz \& Tyson Barrett},
             pdfborder={0 0 0},
             breaklinks=true}
@@ -77,7 +77,7 @@
 
 \setlength{\droptitle}{-2em}
 
-  \title{Vol. 1: Basics in R}
+  \title{Vol. 0: Basics in R}
     \pretitle{\vspace{\droptitle}\centering\huge}
   \posttitle{\par}
     \author{Sarah Schwartz \& Tyson Barrett}
@@ -105,7 +105,134 @@
 }
 \chapter{Introduction}\label{introduction}
 
-This is the first volume in the eBook encyclopedia.
+\textbf{What is R?}
+
+R is a language and environment for statistical computing and graphics.
+\citep{R-base}
+
+R provides a wide variety of statistical (linear and nonlinear
+modelling, classical statistical tests, time-series analysis,
+classification, clustering, \ldots{}) and graphical techniques, and is
+highly extensible. The S language is often the vehicle of choice for
+research in statistical methodology, and R provides an Open Source route
+to participation in that activity.
+
+One of R's strengths is the ease with which well-designed
+publication-quality plots can be produced, including mathematical
+symbols and formulae where needed. Great care has been taken over the
+defaults for the minor design choices in graphics, but the user retains
+full control.
+
+\textbf{What is R Markdown?}
+
+According to \href{www.rstudio.com}{R Studio}:
+
+\begin{quote}
+``R Markdown is a format that enables easy authoring of reproducible web
+reports from R. It combines the core syntax of Markdown (an
+easy-to-write \textbf{plain text} format for web content) with embedded
+\textbf{R code chunks} that are run so their output can be included in
+the final document''.
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\textbf{Dynamic Reporting}
+
+From
+\href{https://onlinecourses.science.psu.edu/statprogram/markdown}{Penn
+State Statistics}:
+
+\textbf{The }traditional way** to write a report**
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Run your analysis in software, like SPSS or R and manually save our
+  output
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{i.e.~saving the ANOVA table or using pdf() to save the graphs}
+  \end{itemize}
+\item
+  Type your your description and interpretation in a text editor like
+  \emph{Word}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{either drag/drop tables and figures, or worse copy-paste and
+    retype all the numbers}
+  \end{itemize}
+\end{enumerate}
+
+A report written in this way can be problematic. For instance, imagine
+your \emph{Mentor/collaborator/journal reviewer} telling you that they
+want to use a sub-sample instead of the entire sample. Or to include a
+nother variable. You would have to redo all of your work!!
+
+Therefore, in this way \textbf{dynamic also means reproducible}, in the
+sense that people who get the file from you can reproduce the entire
+work in the report.
+
+\textbf{How does R Markdown work out to be a .pdf or .html file?}
+
+\texttt{R\ Markdown} is a file with the file extension \textbf{.Rmd},
+the \texttt{knitr} package will then transform the file into a
+\textbf{Markdown} file with the extension \textbf{.md.} Then Rstudio can
+\citep{xie2015}:
+
+\begin{itemize}
+\item
+  Use \texttt{LaTeX} to transform the file into a \textbf{.pdf}
+\item
+  Load another package called \texttt{markdown} to transform the file
+  into \textbf{.html}
+\item
+  Use Pandoc to even convert to file to a \textbf{Word} document (ugly)
+\end{itemize}
+
+\textbf{Is this a }popular** method for creating reports?**
+
+Check out \href{http://rpubs.com/}{Rpubs}. This website shares lots of
+documents written in the way we will introduce below.
+
+\begin{figure}
+\centering
+\includegraphics{img/processRStudio.png}
+\caption{}
+\end{figure}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\begin{figure}
+\centering
+\includegraphics{img/hex/rmarkdown-200x232.png}
+\caption{}
+\end{figure}
+
+\begin{quote}
+\texttt{R\ Markdown} documents are fully reproducible. Use a productive
+\textbf{notebook} interface to weave together narrative text and code to
+produce elegantly formatted output. Use multiple languages including R,
+Python, and SQL \citep{R-rmarkdown}.
+\end{quote}
+
+\begin{figure}
+\centering
+\includegraphics{img/hex/knitr-200x232.png}
+\caption{}
+\end{figure}
+
+\begin{quote}
+\texttt{knitr} is an engine for dynamic report generation with R. It is
+a package in the statistical programming language R that enables
+integration of \textbf{R code} into LaTeX, LyX, HTML, Markdown,
+AsciiDoc, and \textbf{text} documents \citep{R-knitr}.
+\end{quote}
 
 \chapter{Software Installation}\label{software-installation}
 

@@ -1,14 +1,12 @@
-# Software Installation
+# Installing R
 
 Here is where we talk about installing software.
 
 -----------
 
-## R
+## First Time Installation
 
-### First Time Installation
-
-### Periotic Updating
+## Regularly Updating
 
 
 -----------

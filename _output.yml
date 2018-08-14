@@ -3,10 +3,10 @@ bookdown::gitbook:
   config:
     toc:
       before: |
-        <li><a href="./">Vol. 1 - Basics in R</a></li>
+        <li><a href="./">Vol. 0: Setting up Your Computer</a></li>
       after: |
-        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-    edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
+        <li><a href="https://cehs-research.github.io/v0_basics/index.html" target="blank">Schwartz & Barret</a></li>
+    edit: https://cehs-research.github.io/v0_basics/index.html %s
     download: ["pdf", "epub"]
 bookdown::pdf_book:
   includes:

@@ -5,21 +5,21 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Vol. 1: Basics in R</title>
-  <meta name="description" content="Getting started with R and R Studio: installing software, package management, and data wrangling">
+  <title>Encyclopedia of Quantitative Methods in R</title>
+  <meta name="description" content="Getting started with R and R Studio: installing software and package management.">
   <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
 
-  <meta property="og:title" content="Vol. 1: Basics in R" />
+  <meta property="og:title" content="Encyclopedia of Quantitative Methods in R" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="Getting started with R and R Studio: installing software, package management, and data wrangling" />
+  <meta property="og:description" content="Getting started with R and R Studio: installing software and package management." />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Vol. 1: Basics in R" />
+  <meta name="twitter:title" content="Encyclopedia of Quantitative Methods in R" />
   
-  <meta name="twitter:description" content="Getting started with R and R Studio: installing software, package management, and data wrangling" />
+  <meta name="twitter:description" content="Getting started with R and R Studio: installing software and package management." />
   
 
 <meta name="author" content="Sarah Schwartz &amp; Tyson Barrett">
@@ -32,7 +32,7 @@
   
   
 
-<link rel="next" href="software-installation.html">
+<link rel="next" href="install-r.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -62,59 +62,91 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">Vol. 1 - Basics in R</a></li>
+<li><a href="./">Vol. 0: Setting up Your Computer</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
-<li class="chapter" data-level="2" data-path="software-installation.html"><a href="software-installation.html"><i class="fa fa-check"></i><b>2</b> Software Installation</a><ul>
-<li class="chapter" data-level="2.1" data-path="software-installation.html"><a href="software-installation.html#r"><i class="fa fa-check"></i><b>2.1</b> R</a><ul>
-<li class="chapter" data-level="2.1.1" data-path="software-installation.html"><a href="software-installation.html#first-time-installation"><i class="fa fa-check"></i><b>2.1.1</b> First Time Installation</a></li>
-<li class="chapter" data-level="2.1.2" data-path="software-installation.html"><a href="software-installation.html#periotic-updating"><i class="fa fa-check"></i><b>2.1.2</b> Periotic Updating</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="1" data-path="install-r.html"><a href="install-r.html"><i class="fa fa-check"></i><b>1</b> Install R</a><ul>
+<li class="chapter" data-level="1.1" data-path="install-r.html"><a href="install-r.html#first-time-installation"><i class="fa fa-check"></i><b>1.1</b> First Time Installation</a></li>
+<li class="chapter" data-level="1.2" data-path="install-r.html"><a href="install-r.html#update-regularly"><i class="fa fa-check"></i><b>1.2</b> Update Regularly</a></li>
 </ul></li>
-<li class="chapter" data-level="2.2" data-path="software-installation.html"><a href="software-installation.html#r-studio"><i class="fa fa-check"></i><b>2.2</b> R Studio</a><ul>
-<li class="chapter" data-level="2.2.1" data-path="software-installation.html"><a href="software-installation.html#first-time-installation-1"><i class="fa fa-check"></i><b>2.2.1</b> First Time Installation</a></li>
-<li class="chapter" data-level="2.2.2" data-path="software-installation.html"><a href="software-installation.html#periotic-updating-1"><i class="fa fa-check"></i><b>2.2.2</b> Periotic Updating</a></li>
-<li class="chapter" data-level="2.2.3" data-path="software-installation.html"><a href="software-installation.html#panel-layout"><i class="fa fa-check"></i><b>2.2.3</b> Panel Layout</a></li>
+<li class="chapter" data-level="2" data-path="install-r-studio.html"><a href="install-r-studio.html"><i class="fa fa-check"></i><b>2</b> Install R Studio</a><ul>
+<li class="chapter" data-level="2.1" data-path="install-r-studio.html"><a href="install-r-studio.html#first-time-installation-1"><i class="fa fa-check"></i><b>2.1</b> First Time Installation</a></li>
+<li class="chapter" data-level="2.2" data-path="install-r-studio.html"><a href="install-r-studio.html#update-regularly-1"><i class="fa fa-check"></i><b>2.2</b> Update Regularly</a></li>
+<li class="chapter" data-level="2.3" data-path="install-r-studio.html"><a href="install-r-studio.html#panel-layout"><i class="fa fa-check"></i><b>2.3</b> Panel Layout</a></li>
 </ul></li>
-<li class="chapter" data-level="2.3" data-path="software-installation.html"><a href="software-installation.html#tex-optional"><i class="fa fa-check"></i><b>2.3</b> TeX (optional)</a><ul>
-<li class="chapter" data-level="2.3.1" data-path="software-installation.html"><a href="software-installation.html#tinytex"><i class="fa fa-check"></i><b>2.3.1</b> TinyTeX</a></li>
-<li class="chapter" data-level="2.3.2" data-path="software-installation.html"><a href="software-installation.html#mac"><i class="fa fa-check"></i><b>2.3.2</b> MAc</a></li>
-<li class="chapter" data-level="2.3.3" data-path="software-installation.html"><a href="software-installation.html#windows"><i class="fa fa-check"></i><b>2.3.3</b> Windows</a></li>
+<li class="chapter" data-level="3" data-path="install-tex.html"><a href="install-tex.html"><i class="fa fa-check"></i><b>3</b> Install TeX</a><ul>
+<li class="chapter" data-level="3.1" data-path="install-tex.html"><a href="install-tex.html#use-tinytex-package"><i class="fa fa-check"></i><b>3.1</b> Use <code>tinytex</code> package</a></li>
+<li class="chapter" data-level="3.2" data-path="install-tex.html"><a href="install-tex.html#mac---use-mactex"><i class="fa fa-check"></i><b>3.2</b> Mac - use <code>MacTeX</code></a></li>
+<li class="chapter" data-level="3.3" data-path="install-tex.html"><a href="install-tex.html#windows---use-miktex"><i class="fa fa-check"></i><b>3.3</b> Windows - use <code>MikTeX</code></a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="install-packages.html"><a href="install-packages.html"><i class="fa fa-check"></i><b>4</b> Install Packages</a><ul>
+<li class="chapter" data-level="4.1" data-path="install-packages.html"><a href="install-packages.html#what-are-packages"><i class="fa fa-check"></i><b>4.1</b> What are packages</a></li>
+<li class="chapter" data-level="4.2" data-path="install-packages.html"><a href="install-packages.html#install-packages-via-the-user-interface"><i class="fa fa-check"></i><b>4.2</b> INSTALL packages (via the user interface)</a></li>
+<li class="chapter" data-level="4.3" data-path="install-packages.html"><a href="install-packages.html#load-packages-via-r-code"><i class="fa fa-check"></i><b>4.3</b> LOAD packages (via <span class="math inline">\(R\)</span> code)</a></li>
+<li class="chapter" data-level="4.4" data-path="install-packages.html"><a href="install-packages.html#updating-packages"><i class="fa fa-check"></i><b>4.4</b> Updating packages</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="suggested-packages.html"><a href="suggested-packages.html"><i class="fa fa-check"></i><b>5</b> Suggested Packages</a><ul>
+<li class="chapter" data-level="5.1" data-path="suggested-packages.html"><a href="suggested-packages.html#the-tidy-universe-from-r-studio"><i class="fa fa-check"></i><b>5.1</b> The Tidy-Universe from <span class="math inline">\(R Studio\)</span></a><ul>
+<li class="chapter" data-level="5.1.1" data-path="suggested-packages.html"><a href="suggested-packages.html#core"><i class="fa fa-check"></i><b>5.1.1</b> Core</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="suggested-packages.html"><a href="suggested-packages.html#attaching-packages-tidyverse-1.2.1"><i class="fa fa-check"></i><b>5.2</b> – Attaching packages ———— tidyverse 1.2.1 –</a></li>
+<li class="chapter" data-level="5.3" data-path="suggested-packages.html"><a href="suggested-packages.html#v-ggplot2-3.0.0-v-purrr-0.2.5"><i class="fa fa-check"></i><b>5.3</b> v ggplot2 3.0.0 v purrr 0.2.5</a></li>
+<li class="chapter" data-level="5.4" data-path="suggested-packages.html"><a href="suggested-packages.html#v-tibble-1.4.2-v-dplyr-0.7.6"><i class="fa fa-check"></i><b>5.4</b> v tibble 1.4.2 v dplyr 0.7.6</a></li>
+<li class="chapter" data-level="5.5" data-path="suggested-packages.html"><a href="suggested-packages.html#v-tidyr-0.8.1-v-stringr-1.3.1"><i class="fa fa-check"></i><b>5.5</b> v tidyr 0.8.1 v stringr 1.3.1</a></li>
+<li class="chapter" data-level="5.6" data-path="suggested-packages.html"><a href="suggested-packages.html#v-readr-1.1.1-v-forcats-0.3.0"><i class="fa fa-check"></i><b>5.6</b> v readr 1.1.1 v forcats 0.3.0</a></li>
+<li class="chapter" data-level="5.7" data-path="suggested-packages.html"><a href="suggested-packages.html#conflicts-tidyverse_conflicts"><i class="fa fa-check"></i><b>5.7</b> – Conflicts ————— tidyverse_conflicts() –</a></li>
+<li class="chapter" data-level="5.8" data-path="suggested-packages.html"><a href="suggested-packages.html#x-dplyrfilter-masks-statsfilter"><i class="fa fa-check"></i><b>5.8</b> x dplyr::filter() masks stats::filter()</a></li>
+<li class="chapter" data-level="5.9" data-path="suggested-packages.html"><a href="suggested-packages.html#x-dplyrlag-masks-statslag"><i class="fa fa-check"></i><b>5.9</b> x dplyr::lag() masks stats::lag()</a><ul>
+<li class="chapter" data-level="5.9.1" data-path="suggested-packages.html"><a href="suggested-packages.html#supplemental"><i class="fa fa-check"></i><b>5.9.1</b> Supplemental</a></li>
+</ul></li>
+<li class="chapter" data-level="5.10" data-path="suggested-packages.html"><a href="suggested-packages.html#groups-of-individual-packages-on-cran"><i class="fa fa-check"></i><b>5.10</b> Groups of Individual Packages on <span class="math inline">\(CRAN\)</span></a><ul>
+<li class="chapter" data-level="5.10.1" data-path="suggested-packages.html"><a href="suggested-packages.html#creating-nice-tables"><i class="fa fa-check"></i><b>5.10.1</b> Creating Nice Tables</a></li>
+<li class="chapter" data-level="5.10.2" data-path="suggested-packages.html"><a href="suggested-packages.html#visualization"><i class="fa fa-check"></i><b>5.10.2</b> Visualization</a></li>
+<li class="chapter" data-level="5.10.3" data-path="suggested-packages.html"><a href="suggested-packages.html#generally-handy"><i class="fa fa-check"></i><b>5.10.3</b> Generally Handy</a></li>
+<li class="chapter" data-level="5.10.4" data-path="suggested-packages.html"><a href="suggested-packages.html#t-tests-anova-and-rm-anova"><i class="fa fa-check"></i><b>5.10.4</b> t-Tests, ANOVA, and RM ANOVA</a></li>
+<li class="chapter" data-level="5.10.5" data-path="suggested-packages.html"><a href="suggested-packages.html#regression-ml-glm"><i class="fa fa-check"></i><b>5.10.5</b> Regression (ML, GLM)</a></li>
+<li class="chapter" data-level="5.10.6" data-path="suggested-packages.html"><a href="suggested-packages.html#multilevel-models-mlm-hlm-gee"><i class="fa fa-check"></i><b>5.10.6</b> Multilevel Models (MLM, HLM, GEE)</a></li>
+<li class="chapter" data-level="5.10.7" data-path="suggested-packages.html"><a href="suggested-packages.html#structural-equation-modeling-sem"><i class="fa fa-check"></i><b>5.10.7</b> Structural Equation Modeling (SEM)</a></li>
+<li class="chapter" data-level="5.10.8" data-path="suggested-packages.html"><a href="suggested-packages.html#random-forests"><i class="fa fa-check"></i><b>5.10.8</b> Random Forests</a></li>
+<li class="chapter" data-level="5.10.9" data-path="suggested-packages.html"><a href="suggested-packages.html#other-models"><i class="fa fa-check"></i><b>5.10.9</b> Other Models</a></li>
+<li class="chapter" data-level="5.10.10" data-path="suggested-packages.html"><a href="suggested-packages.html#reproducibility-and-reporting"><i class="fa fa-check"></i><b>5.10.10</b> Reproducibility and Reporting</a></li>
+<li class="chapter" data-level="5.10.11" data-path="suggested-packages.html"><a href="suggested-packages.html#redcap-interface"><i class="fa fa-check"></i><b>5.10.11</b> REDCap Interface</a></li>
+<li class="chapter" data-level="5.10.12" data-path="suggested-packages.html"><a href="suggested-packages.html#creating-your-own-packages"><i class="fa fa-check"></i><b>5.10.12</b> Creating Your Own Packages</a></li>
+</ul></li>
+<li class="chapter" data-level="5.11" data-path="suggested-packages.html"><a href="suggested-packages.html#installing-all-the-cran-packages-at-once"><i class="fa fa-check"></i><b>5.11</b> Installing All the <span class="math inline">\(CRAN\)</span> packages at Once</a></li>
+<li class="chapter" data-level="5.12" data-path="suggested-packages.html"><a href="suggested-packages.html#furniture-pander-stargazer-texreg-xtable"><i class="fa fa-check"></i><b>5.12</b> [1] “furniture” “pander” “stargazer” “texreg” “xtable”</a></li>
+<li class="chapter" data-level="5.13" data-path="suggested-packages.html"><a href="suggested-packages.html#rcolorbrewer-gghighlight-ggthemes-ggfortify"><i class="fa fa-check"></i><b>5.13</b> [1] “RColorBrewer” “gghighlight” “ggthemes” “ggfortify”</a></li>
+<li class="chapter" data-level="5.14" data-path="suggested-packages.html"><a href="suggested-packages.html#ggalt-ggextra-ggally-ggeffects"><i class="fa fa-check"></i><b>5.14</b> [5] “ggalt” “ggExtra” “GGally” “ggeffects”</a></li>
+<li class="chapter" data-level="5.15" data-path="suggested-packages.html"><a href="suggested-packages.html#corrplot-gpairs-gridextra-likert"><i class="fa fa-check"></i><b>5.15</b> [9] “corrplot” “gpairs” “gridextra” “likert”</a></li>
+<li class="chapter" data-level="5.16" data-path="suggested-packages.html"><a href="suggested-packages.html#vcd-scales-cowplot-yarrr"><i class="fa fa-check"></i><b>5.16</b> [13] “vcd” “scales” “cowplot” “yarrr”</a></li>
+<li class="chapter" data-level="5.17" data-path="suggested-packages.html"><a href="suggested-packages.html#psych-polycor-corpcor-sjlabelled-sjplot"><i class="fa fa-check"></i><b>5.17</b> [1] “psych” “polycor” “corpcor” “sjlabelled” “sjPlot”</a></li>
+<li class="chapter" data-level="5.18" data-path="suggested-packages.html"><a href="suggested-packages.html#sjmisc-sjstats-hmisc-labelled"><i class="fa fa-check"></i><b>5.18</b> [6] “sjmisc” “sjstats” “Hmisc” “labelled”</a></li>
+<li class="chapter" data-level="5.19" data-path="suggested-packages.html"><a href="suggested-packages.html#afex-emmeans-corpcor-multicomp"><i class="fa fa-check"></i><b>5.19</b> [1] “afex” “emmeans” “corpcor” “multicomp”</a></li>
+<li class="chapter" data-level="5.20" data-path="suggested-packages.html"><a href="suggested-packages.html#multcompview"><i class="fa fa-check"></i><b>5.20</b> [5] “multcompView”</a></li>
+<li class="chapter" data-level="5.21" data-path="suggested-packages.html"><a href="suggested-packages.html#car-effects-predictmeans"><i class="fa fa-check"></i><b>5.21</b> [1] “car” “effects” “predictmeans”</a></li>
+<li class="chapter" data-level="5.22" data-path="suggested-packages.html"><a href="suggested-packages.html#nlme-lme4-lmertest-hlmdiag-geepack-gee"><i class="fa fa-check"></i><b>5.22</b> [1] “nlme” “lme4” “lmerTest” “HLMdiag” “geepack” “gee”</a></li>
+<li class="chapter" data-level="5.23" data-path="suggested-packages.html"><a href="suggested-packages.html#gee4-optimx-mumin"><i class="fa fa-check"></i><b>5.23</b> [7] “gee4” “optimx” “MuMIn”</a></li>
+<li class="chapter" data-level="5.24" data-path="suggested-packages.html"><a href="suggested-packages.html#lavaan-openmx-sem-semplot"><i class="fa fa-check"></i><b>5.24</b> [1] “lavaan” “OpenMx” “sem” “semPlot”</a></li>
+<li class="chapter" data-level="5.25" data-path="suggested-packages.html"><a href="suggested-packages.html#randomforest-randomforestsrc-ggrandomforests-party"><i class="fa fa-check"></i><b>5.25</b> [1] “randomForest” “randomForestSRC” “ggRandomForests” “party”</a></li>
+<li class="chapter" data-level="5.26" data-path="suggested-packages.html"><a href="suggested-packages.html#partykit"><i class="fa fa-check"></i><b>5.26</b> [5] “partykit”</a></li>
+<li class="chapter" data-level="5.27" data-path="suggested-packages.html"><a href="suggested-packages.html#mgcv-glmnet-survival-caret"><i class="fa fa-check"></i><b>5.27</b> [1] “mgcv” “glmnet” “survival” “caret”</a></li>
+<li class="chapter" data-level="5.28" data-path="suggested-packages.html"><a href="suggested-packages.html#bookdown-blogdown-tidytex-xaringan-slidify-reportrs"><i class="fa fa-check"></i><b>5.28</b> [1] “bookdown” “blogdown” “tidytex” “xaringan” “slidify” “ReportRs”</a></li>
+<li class="chapter" data-level="5.29" data-path="suggested-packages.html"><a href="suggested-packages.html#redcapr-redcapapi"><i class="fa fa-check"></i><b>5.29</b> [1] “REDCapR” “redcapAPI”</a></li>
+<li class="chapter" data-level="5.30" data-path="suggested-packages.html"><a href="suggested-packages.html#devtools-testthat-roxygen2"><i class="fa fa-check"></i><b>5.30</b> [1] “devtools” “testthat” “roxygen2”</a></li>
+<li class="chapter" data-level="5.31" data-path="suggested-packages.html"><a href="suggested-packages.html#other-developmental-non-cran-packages-on-github"><i class="fa fa-check"></i><b>5.31</b> Other Developmental non-<span class="math inline">\(CRAN\)</span> Packages on <span class="math inline">\(GitHub\)</span></a><ul>
+<li class="chapter" data-level="5.31.1" data-path="suggested-packages.html"><a href="suggested-packages.html#templates-for-writing-tutorials-practicals-or-examination-papers-with-r-markdown"><i class="fa fa-check"></i><b>5.31.1</b> Templates for writing tutorials, practicals or examination papers with <span class="math inline">\(R Markdown\)</span></a></li>
+<li class="chapter" data-level="5.31.2" data-path="suggested-packages.html"><a href="suggested-packages.html#prepare-apa-journal-articles-with-r-markdown"><i class="fa fa-check"></i><b>5.31.2</b> Prepare APA journal articles with <span class="math inline">\(R Markdown\)</span></a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="packages-management.html"><a href="packages-management.html"><i class="fa fa-check"></i><b>3</b> Packages Management</a><ul>
-<li class="chapter" data-level="3.1" data-path="packages-management.html"><a href="packages-management.html#what-are-packages"><i class="fa fa-check"></i><b>3.1</b> What are packages</a></li>
-<li class="chapter" data-level="3.2" data-path="packages-management.html"><a href="packages-management.html#how-to-install-packages"><i class="fa fa-check"></i><b>3.2</b> How to install packages</a></li>
-<li class="chapter" data-level="3.3" data-path="packages-management.html"><a href="packages-management.html#updating-packages"><i class="fa fa-check"></i><b>3.3</b> Updating packages</a></li>
-<li class="chapter" data-level="3.4" data-path="packages-management.html"><a href="packages-management.html#suggested-packages"><i class="fa fa-check"></i><b>3.4</b> Suggested packages</a></li>
-</ul></li>
-<li class="chapter" data-level="4" data-path="data-management.html"><a href="data-management.html"><i class="fa fa-check"></i><b>4</b> Data Management</a><ul>
-<li class="chapter" data-level="4.1" data-path="data-management.html"><a href="data-management.html#importing-data-from-various-formats"><i class="fa fa-check"></i><b>4.1</b> Importing Data From Various Formats</a><ul>
-<li class="chapter" data-level="4.1.1" data-path="data-management.html"><a href="data-management.html#text-format-.csv-tab-delimited-ect."><i class="fa fa-check"></i><b>4.1.1</b> Text Format (.csv, tab-delimited, ect.)</a></li>
-<li class="chapter" data-level="4.1.2" data-path="data-management.html"><a href="data-management.html#excel-format-.xls-.xlsx"><i class="fa fa-check"></i><b>4.1.2</b> Excel Format (.xls, .xlsx)</a></li>
-<li class="chapter" data-level="4.1.3" data-path="data-management.html"><a href="data-management.html#spss-format-.sav"><i class="fa fa-check"></i><b>4.1.3</b> SPSS Format (.sav)</a></li>
-<li class="chapter" data-level="4.1.4" data-path="data-management.html"><a href="data-management.html#redcap-api-directly"><i class="fa fa-check"></i><b>4.1.4</b> REDCap (API directly)</a></li>
-</ul></li>
-<li class="chapter" data-level="4.2" data-path="data-management.html"><a href="data-management.html#viewing-data-within-r-studio"><i class="fa fa-check"></i><b>4.2</b> Viewing Data Within R Studio</a><ul>
-<li class="chapter" data-level="4.2.1" data-path="data-management.html"><a href="data-management.html#the-environment-tab"><i class="fa fa-check"></i><b>4.2.1</b> The Environment Tab</a></li>
-<li class="chapter" data-level="4.2.2" data-path="data-management.html"><a href="data-management.html#notebook-display"><i class="fa fa-check"></i><b>4.2.2</b> Notebook Display</a></li>
-</ul></li>
-<li class="chapter" data-level="4.3" data-path="data-management.html"><a href="data-management.html#saving-data-in-r-format"><i class="fa fa-check"></i><b>4.3</b> Saving Data in R Format</a></li>
-</ul></li>
-<li class="chapter" data-level="5" data-path="data-wrangling.html"><a href="data-wrangling.html"><i class="fa fa-check"></i><b>5</b> Data Wrangling</a><ul>
-<li class="chapter" data-level="5.1" data-path="data-wrangling.html"><a href="data-wrangling.html#subseting-data"><i class="fa fa-check"></i><b>5.1</b> Subseting Data</a><ul>
-<li class="chapter" data-level="5.1.1" data-path="data-wrangling.html"><a href="data-wrangling.html#select-variables-columns"><i class="fa fa-check"></i><b>5.1.1</b> Select Variables (columns)</a></li>
-<li class="chapter" data-level="5.1.2" data-path="data-wrangling.html"><a href="data-wrangling.html#select-observations-rows"><i class="fa fa-check"></i><b>5.1.2</b> Select Observations (rows)</a></li>
-</ul></li>
-<li class="chapter" data-level="5.2" data-path="data-wrangling.html"><a href="data-wrangling.html#symbol-opporators"><i class="fa fa-check"></i><b>5.2</b> Symbol Opporators</a><ul>
-<li class="chapter" data-level="5.2.1" data-path="data-wrangling.html"><a href="data-wrangling.html#logical-opporators"><i class="fa fa-check"></i><b>5.2.1</b> Logical Opporators</a></li>
-<li class="chapter" data-level="5.2.2" data-path="data-wrangling.html"><a href="data-wrangling.html#the-assignemnt-opporator--"><i class="fa fa-check"></i><b>5.2.2</b> The Assignemnt Opporator ( <code>&lt;-</code> )</a></li>
-<li class="chapter" data-level="5.2.3" data-path="data-wrangling.html"><a href="data-wrangling.html#the-pipe-opporator"><i class="fa fa-check"></i><b>5.2.3</b> The Pipe Opporator ( <code>%&gt;%</code> )</a></li>
-</ul></li>
+<li class="chapter" data-level="6" data-path="kniting-notebooks.html"><a href="kniting-notebooks.html"><i class="fa fa-check"></i><b>6</b> Kniting Notebooks</a><ul>
+<li class="chapter" data-level="6.1" data-path="kniting-notebooks.html"><a href="kniting-notebooks.html#storing-all-associated-files"><i class="fa fa-check"></i><b>6.1</b> Storing all associated files</a></li>
+<li class="chapter" data-level="6.2" data-path="kniting-notebooks.html"><a href="kniting-notebooks.html#setting-the-working-directory"><i class="fa fa-check"></i><b>6.2</b> Setting the working directory</a></li>
+<li class="chapter" data-level="6.3" data-path="kniting-notebooks.html"><a href="kniting-notebooks.html#press-the-knit-button"><i class="fa fa-check"></i><b>6.3</b> Press the <span class="math inline">\(Knit\)</span> button</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
-<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+<li><a href="https://cehs-research.github.io/v0_basics/index.html" target="blank">Schwartz & Barret</a></li>
 
 </ul>
 
@@ -125,7 +157,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Vol. 1: Basics in R</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Encyclopedia of Quantitative Methods in R</a>
           </h1>
         </div>
 
@@ -134,14 +166,86 @@
 
             <section class="normal" id="section-">
 <div id="header">
-<h1 class="title">Vol. 1: Basics in R</h1>
+<h1 class="title">Encyclopedia of Quantitative Methods in R</h1>
+<h3 class="subtitle"><em>Vol. 0: Setting up Your Computer</em></h3>
 <h4 class="author"><em>Sarah Schwartz &amp; Tyson Barrett</em></h4>
 <h4 class="date"><em>Last updated: 2018-08-13</em></h4>
 </div>
-<div id="introduction" class="section level1">
-<h1><span class="header-section-number">Chapter 1</span> Introduction</h1>
-<p>This is the first volume in the eBook encyclopedia.</p>
+<div id="introduction" class="section level1 unnumbered">
+<h1>Introduction</h1>
+<p><strong>Helpful Websites</strong></p>
+<p><a href="https://www.statmethods.net/stats/index.html">Quick R: Basic Statistics</a></p>
+<hr />
+<p><strong>What is R?</strong></p>
+<p>R is a language and environment for statistical computing and graphics. <span class="citation">(R Core Team <a href="#ref-R-base">2018</a>)</span></p>
+<p>R provides a wide variety of statistical (linear and nonlinear modelling, classical statistical tests, time-series analysis, classification, clustering, …) and graphical techniques, and is highly extensible. The S language is often the vehicle of choice for research in statistical methodology, and R provides an Open Source route to participation in that activity.</p>
+<p>One of R’s strengths is the ease with which well-designed publication-quality plots can be produced, including mathematical symbols and formulae where needed. Great care has been taken over the defaults for the minor design choices in graphics, but the user retains full control.</p>
+<hr />
+<p><strong>What is R Markdown?</strong></p>
+<p>According to <a href="www.rstudio.com">R Studio</a>:</p>
+<blockquote>
+<p>“R Markdown is a format that enables easy authoring of reproducible web reports from R. It combines the core syntax of Markdown (an easy-to-write <strong>plain text</strong> format for web content) with embedded <strong>R code chunks</strong> that are run so their output can be included in the final document”.</p>
+</blockquote>
+<hr />
+<p><strong>Dynamic Reporting</strong></p>
+<p>From <a href="https://onlinecourses.science.psu.edu/statprogram/markdown">Penn State Statistics</a>:</p>
+<p><strong>The </strong>traditional way** to write a report**</p>
+<ol style="list-style-type: decimal">
+<li>Run your analysis in software, like SPSS or R and manually save our output
+<ul>
+<li><em>i.e. saving the ANOVA table or using pdf() to save the graphs</em></li>
+</ul></li>
+<li>Type your your description and interpretation in a text editor like <em>Word</em>
+<ul>
+<li><em>either drag/drop tables and figures, or worse copy-paste and retype all the numbers</em></li>
+</ul></li>
+</ol>
+<p>A report written in this way can be problematic. For instance, imagine your <em>Mentor/collaborator/journal reviewer</em> telling you that they want to use a sub-sample instead of the entire sample. Or to include a nother variable. You would have to redo all of your work!!</p>
+<p>Therefore, in this way <strong>dynamic also means reproducible</strong>, in the sense that people who get the file from you can reproduce the entire work in the report.</p>
+<p><strong>How does R Markdown work out to be a .pdf or .html file?</strong></p>
+<p><code>R Markdown</code> is a file with the file extension <strong>.Rmd</strong>, the <code>knitr</code> package will then transform the file into a <strong>Markdown</strong> file with the extension <strong>.md.</strong> Then Rstudio can <span class="citation">(Xie <a href="#ref-xie2015">2015</a>)</span>:</p>
+<ul>
+<li><p>Use <code>LaTeX</code> to transform the file into a <strong>.pdf</strong></p></li>
+<li><p>Load another package called <code>markdown</code> to transform the file into <strong>.html</strong></p></li>
+<li><p>Use Pandoc to even convert to file to a <strong>Word</strong> document (ugly)</p></li>
+</ul>
+<p><strong>Is this a </strong>popular** method for creating reports?**</p>
+<p>Check out <a href="http://rpubs.com/">Rpubs</a>. This website shares lots of documents written in the way we will introduce below.</p>
+<div class="figure">
+<img src="img/processRStudio.png" />
 
+</div>
+<hr />
+<div class="figure">
+<img src="img/hex/rmarkdown-200x232.png" />
+
+</div>
+<blockquote>
+<p><code>R Markdown</code> documents are fully reproducible. Use a productive <strong>notebook</strong> interface to weave together narrative text and code to produce elegantly formatted output. Use multiple languages including R, Python, and SQL <span class="citation">(Allaire et al. <a href="#ref-R-rmarkdown">2018</a>)</span>.</p>
+</blockquote>
+<div class="figure">
+<img src="img/hex/knitr-200x232.png" />
+
+</div>
+<blockquote>
+<p><code>knitr</code> is an engine for dynamic report generation with R. It is a package in the statistical programming language R that enables integration of <strong>R code</strong> into LaTeX, LyX, HTML, Markdown, AsciiDoc, and <strong>text</strong> documents <span class="citation">(Xie <a href="#ref-R-knitr">2018</a>)</span>.</p>
+</blockquote>
+
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-R-base">
+<p>R Core Team. 2018. <em>R: A Language and Environment for Statistical Computing</em>. Vienna, Austria: R Foundation for Statistical Computing. <a href="https://www.R-project.org/" class="uri">https://www.R-project.org/</a>.</p>
+</div>
+<div id="ref-xie2015">
+<p>Xie, Yihui. 2015. <em>Dynamic Documents with R and Knitr</em>. 2nd ed. Boca Raton, Florida: Chapman; Hall/CRC. <a href="http://yihui.name/knitr/" class="uri">http://yihui.name/knitr/</a>.</p>
+</div>
+<div id="ref-R-rmarkdown">
+<p>Allaire, JJ, Yihui Xie, Jonathan McPherson, Javier Luraschi, Kevin Ushey, Aron Atkins, Hadley Wickham, Joe Cheng, and Winston Chang. 2018. <em>Rmarkdown: Dynamic Documents for R</em>. <a href="https://CRAN.R-project.org/package=rmarkdown" class="uri">https://CRAN.R-project.org/package=rmarkdown</a>.</p>
+</div>
+<div id="ref-R-knitr">
+<p>Xie, Yihui. 2018. <em>Knitr: A General-Purpose Package for Dynamic Report Generation in R</em>. <a href="https://CRAN.R-project.org/package=knitr" class="uri">https://CRAN.R-project.org/package=knitr</a>.</p>
+</div>
 </div>
             </section>
 
@@ -149,7 +253,7 @@
         </div>
       </div>
 
-<a href="software-installation.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="install-r.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -179,10 +283,10 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/index.Rmd",
+"link": "https://cehs-research.github.io/v0_basics/index.html index.Rmd",
 "text": "Edit"
 },
-"download": ["eBook vol1 Basics in R.pdf", "eBook vol1 Basics in R.epub"],
+"download": ["V0_Setting_up.pdf", "V0_Setting_up.epub"],
 "toc": {
 "collapse": "subsection"
 }
@@ -190,6 +294,19 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>
