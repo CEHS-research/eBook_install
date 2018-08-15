@@ -1,6 +1,6 @@
 # Install TeX
 
-![](img/latex.png)
+![](images/latex.png)
 
 
 Here is where we talk about installing Tex.

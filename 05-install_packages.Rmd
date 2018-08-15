@@ -26,7 +26,7 @@ In **R Stuido**:
 
 *Note: Leave the installation library path as the default.  Also, make sure the box for 'Installing dependencies' is checked.*
 
-![](img/Install_Package_Screenshot.png)
+![](images/Install_Package_Screenshot.png)
 
 
 You can *copy-and-paste* the following list into the box (labeled 3) to load the packages that we use most commonly all at once. 

@@ -19,7 +19,7 @@ To ensure that R Studio knows where to find the files, you can manually set the 
 * Select `Set Working Directory` by hovering your mouse over it
 * Click on `To Source File Location`
 
-![](img/Set_wd_source.png)
+![](images/Set_wd_source.png)
 
 You can double check that you were successful by 
 
@@ -29,7 +29,7 @@ You can double check that you were successful by
 
 At this point you should see all the files that reside in the folder location where the open `.Rmd` files is also saved. 
 
-![](img/files_goto_wd.png)
+![](images/files_goto_wd.png)
 
 ------------
 

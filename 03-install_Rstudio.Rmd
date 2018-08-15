@@ -1,6 +1,6 @@
 # Install R Studio
 
-![](img/rstudiosticker.png)
+![](images/rstudiosticker.png)
 
 Here is where we talk about installing R Studio.
 

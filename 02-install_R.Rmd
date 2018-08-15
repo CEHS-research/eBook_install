@@ -1,6 +1,6 @@
 # Install R
 
-![](img/Rlogo_200.png)
+![](images/Rlogo_200.png)
 
 Here is where we talk about installing R.
 
