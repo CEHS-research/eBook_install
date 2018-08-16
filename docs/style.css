@@ -19,8 +19,8 @@
   padding: 1em 1em 1em 4em;
   margin-bottom: 10px;
   font-weight: bold;
-  background: #ffff80 5px center/3em no-repeat;
-  background-image: url("../images/consturction_cone.png");
+  
+  background: /* #99FF99 */ url("images/consturction_cone.png") left center/3em no-repeat !important;
 }
 
 image{
