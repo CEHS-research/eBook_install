@@ -20,7 +20,7 @@
   margin-bottom: 10px;
   font-weight: bold;
   
-  background: /* #99FF99 */ url("images/consturction_cone.png") left center/3em no-repeat !important;
+  background: /* #99FF99 */ url("images/consturction_cone.png") center/3em no-repeat;
 }
 
 image{
