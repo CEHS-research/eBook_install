@@ -74,15 +74,18 @@ $R Markdown$ documents are fully reproducible. Use a productive **notebook** int
 
 
 
-```{block type='rmdlink', echo=TRUE}
-Helpful Website: [Quick R: Basic Statistics](https://www.statmethods.net/stats/index.html)
-```
-
-
-
 -------------
 
 ## Additional FAQs 
+
+
+```{block type='rmdlink', echo=TRUE}
+Helpful Websites: 
+
+[Quick R: Basic Statistics](https://www.statmethods.net/stats/index.html)
+
+[Introduction to R](https://libguides.library.kent.edu/statconsulting/r)
+```
 
 
 
