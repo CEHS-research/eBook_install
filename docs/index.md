@@ -1,19 +1,19 @@
 --- 
 title: "Encyclopedia of Quantitative Methods in R, vol. 0: Setting up Your Computer"
 author: "Sarah Schwartz & Tyson Barrett"
-date: "Last updated: 2018-08-14"
+date: "Last updated: 2018-08-15"
+documentclass: book
+description: "Getting started with R and R Studio: installing software and package management."
+knit: "bookdown::render_book"
+cover-image: "EQM_v0_cover.png"
+github-repo: cehs-research/eBook_install
 site: bookdown::bookdown_site
 output:
   bookdown::gitbook:
     split_bib: false
-documentclass: book
 bibliography: [book.bib, packages.bib]
-biblio-style: apalike
+biblio-style: "apalike"
 link-citations: yes
-github-repo: cehs-research/eBook_install
-description: "Getting started with R and R Studio: installing software and package management."
-url: https://github.com/CEHS-research/eBook_install
-cover-image: "EQM_v0_cover.png"
 ---
 
 
@@ -24,81 +24,119 @@ cover-image: "EQM_v0_cover.png"
 
 
 
+
+
+
+
+
+
 ## Preface {-}
 
-This encyclopedia of eBooks is being developed by [Sarah Schwartz](http://www.sarahschwartzstats.com/) and [Tyson Barrett](http://tysonbarrett.com/), of the [Office of Research Services](https://cehs.usu.edu/research/index), to support faculty and graduate students in the [College of Education and Human Services](https://cehs.usu.edu/) at [Utah State University](http://www.usu.edu/).  It serves as reference material for graduate courses (EDUC/PSY 6600, EDUC/PSY 7610, PSY 7650, ect.), as well as college wide workshops and individualized consultation from the [Statistical Consulting Studio](https://cehs.usu.edu/research/statstudio/index) and the [Data Science and Discover Unit](https://cehs.usu.edu/research/dsdu/index).
-
-
-![](images/cehs_statstudio_dsdu.PNG)
-
-
--------------
-
-## Background FAQs {-}
+This encyclopedia of eBooks is being developed by the [Office of Research Services](https://cehs.usu.edu/research/index) to serves the faculty and graduate students in the [College of Education and Human Services](https://cehs.usu.edu/) at [Utah State University](http://www.usu.edu/).  
 
 
 
-### What is R ? {-}
+The three main purposes are to: 
 
-> $R$ is a language and environment for statistical computing and graphics. [@R-base]
-
-$R$ provides a wide variety of **statistical** *(linear and nonlinear modelling, classical statistical tests, time-series analysis, classification, clustering, ...)* and **graphical** techniques, and is highly extensible. The $S$ language is often the vehicle of choice for research in statistical methodology, and $R$ provides an Open Source route to participation in that activity.
-
-One of $R$’s strengths is the ease with which well-designed publication-quality plots can be produced, including mathematical symbols and formulae where needed. Great care has been taken over the defaults for the minor design choices in graphics, but the user retains full control.
-
--------------------------
-
-### What is R Markdown ? {-}
-
-According to [R Studio](www.rstudio.com):
-
-> "R Markdown is a format that enables easy authoring of reproducible web reports from R. It combines the core syntax of Markdown (an easy-to-write *plain text* format for web content) with embedded *$R$ code chunks* that are run so their output can be included in the final document".
+* Provide reference material for graduate quantitative methods courses *(EDUC/PSY 6600, EDUC/PSY 7610, PSY 7650, ect.)*  
+* Support college wide workshops given by the [Statistical Consulting Studio](https://cehs.usu.edu/research/statstudio/index) and [Data Science and Discover Unit](https://cehs.usu.edu/research/dsdu/index)
+* Facilitate individual consultations with the authors pertaining to research.
 
 
 
--------------------------------
-
-### What is Dynamic Reporting? {-}
-
-From [Penn State Statistics](https://onlinecourses.science.psu.edu/statprogram/markdown): 
-
-The traditional way to write a report:
-
-1. Run your analysis in software, like SPSS or R and manually save our output
-    * *i.e. saving the ANOVA table or using `pdf()` to save the graphs*  
+This massive undertaking started during the summer of 2018 and is far from complete.  The outline of seven volumes is given below despite any one being complete.  Feedback is welcome via either author's email.
 
 
-2. Type your your description and interpretation in a text editor like *Word*
-    * *either drag/drop tables and figures, or worse copy-paste and retype all the numbers*
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Volumne </th>
+   <th style="text-align:left;"> Link </th>
+   <th style="text-align:left;"> Content </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> ![](images/EQM_img/EQM_v0_button.png){width=150px} </td>
+   <td style="text-align:left;"> [Vol. 0](https://cehs-research.github.io/eBook_install/) </td>
+   <td style="text-align:left;"> **Setting up Your Computer:** Installing R, R Studio, and Packages </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> ![](images/EQM_img/EQM_v1_button.png){width=150px} </td>
+   <td style="text-align:left;"> Vol. 1 </td>
+   <td style="text-align:left;"> **Data Management:** Importing, Sub-Setting, Creating Variables, and Saving </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> ![](images/EQM_img/EQM_v2_button.png){width=150px} </td>
+   <td style="text-align:left;"> Vol. 2 </td>
+   <td style="text-align:left;"> **Exploratory Data Analysis:** Summary Statistics and Descriptive Visualizations </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> ![](images/EQM_img/EQM_v3_button.png){width=150px} </td>
+   <td style="text-align:left;"> Vol. 3 </td>
+   <td style="text-align:left;"> **Testing Mean Differences:** t-tests, ANOVA, RM ANOVA, and post hoc tests </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> ![](images/EQM_img/EQM_v4_button.png){width=150px} </td>
+   <td style="text-align:left;"> Vol. 4 </td>
+   <td style="text-align:left;"> **Multiple Linear Regression:** Correlation, Model Fit, Generalize, and Plot </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> ![](images/EQM_img/EQM_v5_button.png){width=150px} </td>
+   <td style="text-align:left;"> Vol. 5 </td>
+   <td style="text-align:left;"> **Multilevel Models (RM Regression):** ICCs, MLM/HLM, and GEEs </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> ![](images/EQM_img/EQM_v6_button.png){width=150px} </td>
+   <td style="text-align:left;"> Vol. 6 </td>
+   <td style="text-align:left;"> **Structural Equation Modeling:** EFA, CFA, Path Analysis, and SEM </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> ![](images/EQM_img/EQM_v7_button.png){width=150px} </td>
+   <td style="text-align:left;"> Vol. 7 </td>
+   <td style="text-align:left;"> **Additional Topics:** Room for Future Expansio </td>
+  </tr>
+</tbody>
+</table>
 
 
-A report written in this way can be problematic.  For instance, imagine your *Mentor/collaborator/journal reviewer*  telling you that they want to use a sub-sample instead of the entire sample. Or to include a nother variable.  You would have to redo all of your work!! 
-
-Therefore, in this way **dynamic also means reproducible**, in the sense that people who get the file from you can reproduce the entire work in the report.
-
-
--------------------
-
-### How does R Markdown work out to be a `.pdf` or `.html` file? {-}
-
-$R Markdown$ is a file with the file extension `.Rmd`, the `knitr` package will then transform the file into a *Markdown* file with the extension `.md.` Then $R Studio$ can [@xie2015]:
-
-  * Use $LaTeX$ to transform the file into a `.pdf` 
-    
-  * Load another package called $markdown$ to transform the file into `.html`   
-    
-  * Use Pandoc to even convert to file to a `Word` document (ugly)
-
-![](images/processRStudio.png)
-
-
-The professionals ar $R Studio$ show it better at their [website](https://rmarkdown.rstudio.com/index.html).
-
-----------------------
-
-### Is this a popular method for creating reports? {-}
-
-Check out [Rpubs](http://rpubs.com/). This website shares lots of documents written in the way we will introduce below.
 
 
 
+
+## Authors {-}
+
+
+| [Dr. Sarah Schwartz](http://www.sarahschwartzstats.com/) | [Dr. Tyson Barrett](http://tysonbarrett.com/) |
+|:----:|:----:|
+| ![](images/Sarah_headshot.jpg){width=300px} | ![](images/Tyson_headshot.jpg){width=300px} |
+| Sarah.Schwartz@usu.edu | Tyson.Battett@usu.edu |
+| [Statistical Consulting Studio](https://cehs.usu.edu/research/statstudio/index)  | [Data Science and Discover Unit](https://cehs.usu.edu/research/dsdu/index) |
+| ![](images/StatStudioLogo_dark_small.png){width=300px}  |![](images/dsdu_logo.PNG){width=300px} |
+
+
+
+
+
+
+
+## Why R ?  {-}
+
+
+
+<div class="rmdconstruct">
+<p><strong>ADD SECTION:</strong> R vs. SPSS, SAS, Stata, ect...</p>
+</div>
+
+
+
+
+## FYI  {-}
+
+The entire encyclopedia is written in $R Markdown$, using $R Studio$ as the text editor and the `bookdown` package to turn a collection of markdown documents into a coherent whole. The book's source code is hosted on GitHub, at https://github.com/cehs-research/eBook_install. If you notice typos or other issues, feel free to open an issue on GitHub or send me a pull request. If you do the latter, in your commit message, please add the sentence "I assign the copyright of this contribution to Dr.s Schwartz and Barrett," so that I can maintain the option of publishing this book in other forms.
+
+This work is licensed under the [Attribution-NonCommercial-NoDerivatives 4.0 International](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode) License. 
+
+
+
+![](images/Education_Logo_WHITE-02.png){width=250px}

@@ -1,0 +1,37 @@
+# Update Regularly
+
+```{block type='rmdconstruct', echo=TRUE}
+**ADD SECTION:** has not been started yet 
+```
+
+
+## The R Programing Language
+
+![](images/Rlogo_200.png)
+
+
+ ```{block type='rmdlink', echo=TRUE}
+Go to: [www.r-project.org](http://www.r-project.org) 
+```
+
+---------------------------------
+
+## The R Studio IDE
+
+
+![](images/rstudiosticker.png)
+ 
+ ```{block type='rmdlink', echo=TRUE}
+Go to: [www.rstudio.com](http://www.rstudio.com) 
+```
+
+
+---------------------------------
+
+## Your R Packages
+
+
+
+
+
+

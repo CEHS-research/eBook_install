@@ -1,0 +1,47 @@
+# Orientation
+
+
+
+```{block type='rmdconstruct', echo=TRUE}
+**ADD SECTION:** has not been started yet 
+```
+
+
+-----------------------
+
+## Cheatsheets
+
+
+
+
+-----------------------
+
+## Global Options Menu
+
+### Appearance
+
+
+
+### Pane Layout
+
+
+
+
+
+-----------------------
+
+## Various Tabs
+
+
+### Files
+
+
+### Packages
+
+
+### Help 
+
+
+### Environment
+
+

@@ -86,7 +86,8 @@ package_list_tables <-  c("furniture",
                           "pander", 
                           "stargazer", 
                           "texreg",
-                          "xtable")
+                          "xtable",
+                          "kableExtra")
 ```
 
 | website     | description |   
@@ -96,6 +97,7 @@ package_list_tables <-  c("furniture",
 | [`stargazer`](https://www.jakeruss.com/cheatsheets/stargazer/) | Well-Formatted Regression and Summary Statistics Tables |
 | [`texreg`](https://diffuseprior.wordpress.com/2013/01/20/texreg-a-package-for-beautiful-and-easily-customizable-latex-regression-tables-from-r/)    | Conversion of R Regression Output to LaTeX or HTML Tables |
 | [`xtable`](https://cran.r-project.org/web/packages/xtable/vignettes/xtableGallery.pdf) | Export Tables to LaTeX or HTML |
+| [`kableExtra`](https://haozhu233.github.io/kableExtra/awesome_table_in_html.html#overview) | Construct Complex Table with `kable` and Pipe Syntax |
 
 -------------------------------------
 
