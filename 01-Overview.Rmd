@@ -1,6 +1,6 @@
 # Overview
 
-
+![](images/headers/manyRs.png)
 
 
 Before we get busy downloading and installing the actual software, here is the big picture.

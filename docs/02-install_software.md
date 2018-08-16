@@ -1,6 +1,8 @@
 # Install Software
 
 ![](images/headers/R_studio_LaTeX_header.png)
+You will need to install both $R$ and $R Studio$, but $\LaTeX$ is optional.
+
 
 ## The R Programing Language
 
@@ -30,7 +32,7 @@ Get the latest released version of FREE **Base** $R$ from $CRAN$
  </div>
 
 
-Get the latest version of the FREE Open Source **Desktop** Edition of R Studio
+Get the latest version of the FREE Open Source **Desktop** Edition of $R Studio$
 
 * The defaults are good...don't change them...just keep clicking *'Next'*
 
@@ -39,6 +41,9 @@ Get the latest version of the FREE Open Source **Desktop** Edition of R Studio
 ## TeX (optional)
 
 ![](images/latex.png)
+
+TeX is a typesetting or formatting system that is commonly used in printing and publishing, especially anything with formulas (see https://texfaq.org/FAQ-whatTeX).  It is NOT NEEDED to run $R$, but $R Stuido$ must have access to it in order to `knit` a $R Notebook$ into a `.pdf` file.
+
 
 
 ### Mac - use `MacTeX`

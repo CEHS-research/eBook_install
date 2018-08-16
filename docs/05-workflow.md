@@ -1,6 +1,14 @@
 # Workflow
 
 
+![](images/headers/workflow.png)
+Dive in feet first and create your first R Notebook.
+
+<div class="rmdconstruct">
+<p><strong>ADD SECTION:</strong> this chapter needs lots of attention.</p>
+</div>
+
+
 ## Create a New Notebook 
 
 ### YAML header
@@ -17,10 +25,6 @@
 
 ## Interact within a Notebook
 
-
-<div class="rmdconstruct">
-<p><strong>ADD SECTION:</strong> has not been started yet</p>
-</div>
 
 
 

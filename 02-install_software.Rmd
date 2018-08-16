@@ -1,6 +1,8 @@
 # Install Software
 
 ![](images/headers/R_studio_LaTeX_header.png)
+You will need to install both $R$ and $R Studio$, but $\LaTeX$ is optional.
+
 
 ## The R Programing Language
 

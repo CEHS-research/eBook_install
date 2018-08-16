@@ -1,7 +1,13 @@
 # Update Regularly
 
+
+![](images/headers/update.png)
+Periodically you will need to update: R, R Studio, and your packages.
+
+
+
 <div class="rmdconstruct">
-<p><strong>ADD SECTION:</strong> has not been started yet</p>
+<p><strong>ADD SECTION:</strong> This chapter has not been started yet.</p>
 </div>
 
 

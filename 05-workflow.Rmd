@@ -1,6 +1,14 @@
 # Workflow
 
 
+![](images/headers/workflow.png)
+Dive in feet first and create your first R Notebook.
+
+```{block type='rmdconstruct', echo=TRUE}
+**ADD SECTION:** this chapter needs lots of attention.
+```
+
+
 ## Create a New Notebook 
 
 ### YAML header
@@ -17,10 +25,6 @@
 
 ## Interact within a Notebook
 
-
-```{block type='rmdconstruct', echo=TRUE}
-**ADD SECTION:** has not been started yet 
-```
 
 
 

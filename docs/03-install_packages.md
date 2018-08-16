@@ -1,20 +1,30 @@
 # Install Packages
 
 
-![](images/headers/library.png)
+![](images/headers/packages.png)
 
-We describe packages and their management
+Learn what packages are and how to get them.
 
 -----------
 
-## What are packages
+## What are packages ?
 
 **R packages** are collections of functions and data sets developed by the community. They increase the power of **R** by improving existing base **R** functionalities, or by adding new ones.
+
+When you download $R$ you are only getting the bare-bones, most basic files.  
 
 <div class="rmdlink">
 <p>More information may be found here: <a href="https://www.datacamp.com/community/tutorials/r-packages-guide" class="uri">https://www.datacamp.com/community/tutorials/r-packages-guide</a></p>
 </div>
 
+-----------
+
+## Where can you get packages ?
+
+
+<div class="rmdconstruct">
+<p><strong>ADD SECTION:</strong> CRAN, GitHub, ect.</p>
+</div>
 
 -----------
 
@@ -41,7 +51,7 @@ You can *copy-and-paste* the following list into the box (labeled 3) to load the
 When you click the **Install** buttom, a smaller window may asks if you would like to re-start $R$ prior to installing, choose "no" and manually close and open the $R Studio$ program once all packages have been downloaded, unpacked, and checked.  This may take a few minutes, especially if you have selected multiple packages.  
 
 
-## Useful Packages
+## A List of Useful Packages
 
 
 
@@ -50,7 +60,7 @@ When you click the **Install** buttom, a smaller window may asks if you would li
 </div>
 
 
-### The Tidy-Universe from $R Studio$
+### The Tidy-Universe, from $R Studio$
 
 
 ```r

@@ -1,6 +1,6 @@
 # Overview
 
-
+![](images/headers/manyRs.png)
 
 
 Before we get busy downloading and installing the actual software, here is the big picture.
@@ -74,15 +74,16 @@ $R Markdown$ documents are fully reproducible. Use a productive **notebook** int
 
 
 
-<div class="rmdlink">
-<p>Helpful Website: <a href="https://www.statmethods.net/stats/index.html">Quick R: Basic Statistics</a></p>
-</div>
-
-
-
 -------------
 
 ## Additional FAQs 
+
+
+<div class="rmdlink">
+<p>Helpful Websites:</p>
+<p><a href="https://www.statmethods.net/stats/index.html">Quick R: Basic Statistics</a></p>
+<p><a href="https://libguides.library.kent.edu/statconsulting/r">Introduction to R</a></p>
+</div>
 
 
 

@@ -1,9 +1,12 @@
 # Orientation
 
+![](images/headers/orient.png)
+Get a feel for the lay of the land.
+
 
 
 ```{block type='rmdconstruct', echo=TRUE}
-**ADD SECTION:** has not been started yet 
+**ADD SECTION:** This chapter has not been started yet. 
 ```
 
 
