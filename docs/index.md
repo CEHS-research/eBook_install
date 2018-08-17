@@ -1,7 +1,7 @@
 --- 
 title: "Encyclopedia of Quantitative Methods in R, vol. 0: Setting up Your Computer"
 author: "Sarah Schwartz & Tyson Barrett"
-date: "Last updated: 2018-08-15"
+date: "Last updated: 2018-08-16"
 documentclass: book
 description: "Getting started with R and R Studio: installing software and package management."
 knit: "bookdown::render_book"
@@ -28,8 +28,6 @@ link-citations: yes
 
 
 
-
-
 ## Preface {-}
 
 This encyclopedia of eBooks is being developed by the [Office of Research Services](https://cehs.usu.edu/research/index) to serves the faculty and graduate students in the [College of Education and Human Services](https://cehs.usu.edu/) at [Utah State University](http://www.usu.edu/).  
@@ -43,77 +41,97 @@ The three main purposes are to:
 * Facilitate individual consultations with the authors pertaining to research.
 
 
-
-This massive undertaking started during the summer of 2018 and is far from complete.  The outline of seven volumes is given below despite any one being complete.  Feedback is welcome via either author's email.
-
-
 <table>
  <thead>
   <tr>
-   <th style="text-align:left;"> Volumne </th>
-   <th style="text-align:left;"> Link </th>
+   <th style="text-align:center;"> Volume </th>
+   <th style="text-align:left;"> Title </th>
    <th style="text-align:left;"> Content </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;"> ![](images/EQM_img/EQM_v0_button.png){width=150px} </td>
-   <td style="text-align:left;"> [Vol. 0](https://cehs-research.github.io/eBook_install/) </td>
-   <td style="text-align:left;"> **Setting up Your Computer:** Installing R, R Studio, and Packages </td>
+   <td style="text-align:center;"> 0. Software </td>
+   <td style="text-align:left;"> [Setting up Your Computer](https://cehs-research.github.io/eBook_install/) </td>
+   <td style="text-align:left;"> Installing R, R Studio, and Packages </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> ![](images/EQM_img/EQM_v1_button.png){width=150px} </td>
-   <td style="text-align:left;"> Vol. 1 </td>
-   <td style="text-align:left;"> **Data Management:** Importing, Sub-Setting, Creating Variables, and Saving </td>
+   <td style="text-align:center;"> 1. Wrangling </td>
+   <td style="text-align:left;"> Data Management </td>
+   <td style="text-align:left;"> Importing, Sub-Setting, Creating Variables, and Saving </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> ![](images/EQM_img/EQM_v2_button.png){width=150px} </td>
-   <td style="text-align:left;"> Vol. 2 </td>
-   <td style="text-align:left;"> **Exploratory Data Analysis:** Summary Statistics and Descriptive Visualizations </td>
+   <td style="text-align:center;"> 2. Exploratory </td>
+   <td style="text-align:left;"> Exploratory Data Analysis </td>
+   <td style="text-align:left;"> Summary Statistics and Descriptive Visualizations </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> ![](images/EQM_img/EQM_v3_button.png){width=150px} </td>
-   <td style="text-align:left;"> Vol. 3 </td>
-   <td style="text-align:left;"> **Testing Mean Differences:** t-tests, ANOVA, RM ANOVA, and post hoc tests </td>
+   <td style="text-align:center;"> 3. ANOVA </td>
+   <td style="text-align:left;"> Testing Mean Differences </td>
+   <td style="text-align:left;"> t-tests, ANOVA, RM ANOVA, and post hoc tests </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> ![](images/EQM_img/EQM_v4_button.png){width=150px} </td>
-   <td style="text-align:left;"> Vol. 4 </td>
-   <td style="text-align:left;"> **Multiple Linear Regression:** Correlation, Model Fit, Generalize, and Plot </td>
+   <td style="text-align:center;"> 4. Regression </td>
+   <td style="text-align:left;"> Regression </td>
+   <td style="text-align:left;"> Correlation, Model Fit, Generalize, and Plot </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> ![](images/EQM_img/EQM_v5_button.png){width=150px} </td>
-   <td style="text-align:left;"> Vol. 5 </td>
-   <td style="text-align:left;"> **Multilevel Models (RM Regression):** ICCs, MLM/HLM, and GEEs </td>
+   <td style="text-align:center;"> 5. Multilevel </td>
+   <td style="text-align:left;"> Multilevel Models </td>
+   <td style="text-align:left;"> Clustered and Longitudinal - ICCs, MLM/HLM, and GEEs </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> ![](images/EQM_img/EQM_v6_button.png){width=150px} </td>
-   <td style="text-align:left;"> Vol. 6 </td>
-   <td style="text-align:left;"> **Structural Equation Modeling:** EFA, CFA, Path Analysis, and SEM </td>
+   <td style="text-align:center;"> 6. SEM </td>
+   <td style="text-align:left;"> Structural Equation Modeling </td>
+   <td style="text-align:left;"> EFA, CFA, Path Analysis, and SEM </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> ![](images/EQM_img/EQM_v7_button.png){width=150px} </td>
-   <td style="text-align:left;"> Vol. 7 </td>
-   <td style="text-align:left;"> **Additional Topics:** Room for Future Expansio </td>
+   <td style="text-align:center;"> 7. Other </td>
+   <td style="text-align:left;"> Additional Topics </td>
+   <td style="text-align:left;"> Room for Future Expansion </td>
   </tr>
 </tbody>
 </table>
 
 
-
-
+<div class="rmdconstruct">
+<p><strong>This eBook is under construction: check back often.</strong> This massive undertaking started during the summer of 2018 and is far from complete. The outline of seven volumes is given above despite any one being complete. Feedback is welcome via either author's email.</p>
+</div>
 
 
 ## Authors {-}
 
 
-| [Dr. Sarah Schwartz](http://www.sarahschwartzstats.com/) | [Dr. Tyson Barrett](http://tysonbarrett.com/) |
-|:----:|:----:|
-| ![](images/Sarah_headshot.jpg){width=300px} | ![](images/Tyson_headshot.jpg){width=300px} |
-| Sarah.Schwartz@usu.edu | Tyson.Battett@usu.edu |
-| [Statistical Consulting Studio](https://cehs.usu.edu/research/statstudio/index)  | [Data Science and Discover Unit](https://cehs.usu.edu/research/dsdu/index) |
-| ![](images/StatStudioLogo_dark_small.png){width=300px}  |![](images/dsdu_logo.PNG){width=300px} |
-
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:center;font-size: 20px;"> Dr. Sarah Schwartz </th>
+   <th style="text-align:center;font-size: 20px;"> Dr. Tyson Barrett </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:center;"> ![](images/Sarah_headshot.jpg){width=300px} </td>
+   <td style="text-align:center;"> ![](images/Tyson_headshot.jpg){width=300px} </td>
+  </tr>
+  <tr>
+   <td style="text-align:center;"> [www.SarahSchwartzStats.com](http://www.sarahschwartzstats.com/) </td>
+   <td style="text-align:center;"> [www.TysonBarrett.com](http://tysonbarrett.com/) </td>
+  </tr>
+  <tr>
+   <td style="text-align:center;"> Sarah.Schwartz@usu.edu </td>
+   <td style="text-align:center;"> Tyson.Battett@usu.edu </td>
+  </tr>
+  <tr>
+   <td style="text-align:center;"> [Statistical Consulting Studio](https://cehs.usu.edu/research/statstudio/index) </td>
+   <td style="text-align:center;"> [Data Science and Discover Unit](https://cehs.usu.edu/research/dsdu/index) </td>
+  </tr>
+  <tr>
+   <td style="text-align:center;"> ![](images/StatStudioLogo_dark_small.png){width=300px} </td>
+   <td style="text-align:center;"> ![](images/dsdu_logo.PNG){width=300px} </td>
+  </tr>
+</tbody>
+</table>
 
 
 
@@ -126,12 +144,13 @@ This massive undertaking started during the summer of 2018 and is far from compl
 
 <div class="rmdconstruct">
 <p><strong>ADD SECTION:</strong> R vs. SPSS, SAS, Stata, ect...</p>
+<p>FREE, accessable, not any harder than others to learn reproducibity</p>
 </div>
 
 
-
-
-[No more excuses: R is better than SPSS for psychology undergrads, and students agree](https://datahowler.wordpress.com/2016/09/10/no-more-excuses-r-is-better-than-spss-for-psychology-undergrads-and-students-agree/)
+<div class="rmdlink">
+<p><strong>Check it out:</strong> an article from Fall 2016... <a href="https://datahowler.wordpress.com/2016/09/10/no-more-excuses-r-is-better-than-spss-for-psychology-undergrads-and-students-agree/">No more excuses: R is better than SPSS for psychology undergrads, and students agree</a></p>
+</div>
 
 
 

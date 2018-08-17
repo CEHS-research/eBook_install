@@ -1,5 +1,8 @@
 # Overview
 
+
+
+
 ![](images/headers/manyRs.png)
 
 
@@ -11,11 +14,28 @@ Before we get busy downloading and installing the actual software, here is the b
 
 First time users often confuse by all the different uses of the letter "R". 
 
-| $R$ | $R Studio$ |
-|:---:|:-----------:|
-| Engine | Dashboard |
-| Install and Ignore | Interact with Constantly | 
-| ![](images/car_engine.jpg){width=500px} | ![](images/car_dashboard.jpg){width=500px} |
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:center;"> R </th>
+   <th style="text-align:center;"> R.Studio </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:center;"> Engine </td>
+   <td style="text-align:center;"> Dashboard </td>
+  </tr>
+  <tr>
+   <td style="text-align:center;"> Install and Ignore </td>
+   <td style="text-align:center;"> Interact with Constantly </td>
+  </tr>
+  <tr>
+   <td style="text-align:center;"> ![](images/car_engine.jpg){width=500px} </td>
+   <td style="text-align:center;"> ![](images/car_dashboard.jpg){width=500px} </td>
+  </tr>
+</tbody>
+</table>
 
 
 More precisely, $R$ is a *programming language* that runs computations while $R Studio$ is an *integrated development environment (IDE)* that provides an interface by adding many convenient features and tools. So the way of having access to a speedometer, rearview mirrors, and a navigation system makes driving much easier, using $RStudio’s$ interface makes using $R$ much easier as well.  - [Chester Ismay and Albert Y. Kim](https://ismayc.github.io/moderndive/index.html)
@@ -80,9 +100,7 @@ $R Markdown$ documents are fully reproducible. Use a productive **notebook** int
 
 
 <div class="rmdlink">
-<p>Helpful Websites:</p>
-<p><a href="https://www.statmethods.net/stats/index.html">Quick R: Basic Statistics</a></p>
-<p><a href="https://libguides.library.kent.edu/statconsulting/r">Introduction to R</a></p>
+<p><strong>Helpful Websites:</strong> <a href="https://www.statmethods.net/stats/index.html">Quick R: Basic Statistics</a> and <a href="https://libguides.library.kent.edu/statconsulting/r">Introduction to R</a></p>
 </div>
 
 

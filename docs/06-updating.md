@@ -34,7 +34,7 @@ Periodically you will need to update: R, R Studio, and your packages.
 
 ---------------------------------
 
-## Your R Packages
+## All Your R Packages
 
 
 

@@ -9,8 +9,8 @@ You will need to install both $R$ and $R Studio$, but $\LaTeX$ is optional.
 ![](images/Rlogo_200.png)
 
 
- ```{block type='rmdlink', echo=TRUE}
-Go to: [www.r-project.org](http://www.r-project.org) 
+```{block type='rmdimportant', echo=TRUE}
+**Go to:** [www.r-project.org](http://www.r-project.org) 
 ```
 
 Get the latest released version of FREE **Base** $R$ from $CRAN$ 
@@ -18,6 +18,10 @@ Get the latest released version of FREE **Base** $R$ from $CRAN$
 * Choose a mirror close to your geographical location
 * Select **base** $R$ for your computer *(Windows, Mac, ect.)*
 * The defaults are good...don't change them...just keep clicking *'Next'*
+
+```{block type='rmdlightbulb', echo=TRUE}
+Each new release of $R$ is given a name that references a Peanuts strip or film.  Read some of the past names and find out where they came from: [blog post](https://livefreeordichotomize.com/2017/09/28/r-release-names/)
+```
 
 
 ---------------------------------
@@ -27,8 +31,8 @@ Get the latest released version of FREE **Base** $R$ from $CRAN$
 
 ![](images/rstudiosticker.png)
  
- ```{block type='rmdlink', echo=TRUE}
-Go to: [www.rstudio.com](http://www.rstudio.com) 
+```{block type='rmdimportant', echo=TRUE}
+**Go to:** [www.rstudio.com](http://www.rstudio.com) 
 ```
 
 
@@ -49,8 +53,8 @@ TeX is a typesetting or formatting system that is commonly used in printing and 
 ### Mac - use `MacTeX`
 
 
- ```{block type='rmdlink', echo=TRUE}
-Go to: [http://tug.org/mactex/](http://tug.org/mactex/) 
+```{block type='rmdimportant', echo=TRUE}
+**Go to:** [http://tug.org/mactex/](http://tug.org/mactex/) 
 ```
 
 
@@ -62,8 +66,8 @@ Go to: [http://tug.org/mactex/](http://tug.org/mactex/)
 
 ### Windows - use `MikTeX`
 
- ```{block type='rmdlink', echo=TRUE}
-Go to: [http://miktex.org/download](http://miktex.org/download)
+```{block type='rmdimportant', echo=TRUE}
+**Go to:** [http://miktex.org/download](http://miktex.org/download)
 ```
 
 

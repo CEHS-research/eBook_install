@@ -26,11 +26,9 @@ link-citations: yes
 
 
 ```{r, echo=FALSE, include=FALSE, comment=FALSE, message=FALSE}
-library(tidyverse)
+library(tidyverse, quietly = TRUE)
 library(kableExtra)
 ```
-
-
 
 
 ## Preface {-}
@@ -46,56 +44,62 @@ The three main purposes are to:
 * Facilitate individual consultations with the authors pertaining to research.
 
 
-
-This massive undertaking started during the summer of 2018 and is far from complete.  The outline of seven volumes is given below despite any one being complete.  Feedback is welcome via either author's email.
-
-
 ```{r, echo=FALSE}
-Volumne <- c(paste0("![](images/EQM_img/EQM_v0_button.png){width=150px}"),
-             paste0("![](images/EQM_img/EQM_v1_button.png){width=150px}"),
-             paste0("![](images/EQM_img/EQM_v2_button.png){width=150px}"),
-             paste0("![](images/EQM_img/EQM_v3_button.png){width=150px}"),
-             paste0("![](images/EQM_img/EQM_v4_button.png){width=150px}"),
-             paste0("![](images/EQM_img/EQM_v5_button.png){width=150px}"),
-             paste0("![](images/EQM_img/EQM_v6_button.png){width=150px}"),
-             paste0("![](images/EQM_img/EQM_v7_button.png){width=150px}"))
-
-Link <- c(paste0("[Vol. 0](https://cehs-research.github.io/eBook_install/)"),
-          "Vol. 1",
-          "Vol. 2",
-          "Vol. 3",
-          "Vol. 4",
-          "Vol. 5",
-          "Vol. 6",
-          "Vol. 7")
-
-Content <- c("**Setting up Your Computer:** Installing R, R Studio, and Packages",
-             "**Data Management:** Importing, Sub-Setting, Creating Variables, and Saving",
-             "**Exploratory Data Analysis:** Summary Statistics and Descriptive Visualizations",
-             "**Testing Mean Differences:** t-tests, ANOVA, RM ANOVA, and post hoc tests",
-             "**Multiple Linear Regression:** Correlation, Model Fit, Generalize, and Plot",
-             "**Multilevel Models (RM Regression):** ICCs, MLM/HLM, and GEEs",
-             "**Structural Equation Modeling:** EFA, CFA, Path Analysis, and SEM",
-             "**Additional Topics:** Room for Future Expansio")
-
-data.frame(Volumne, Link, Content) %>% kableExtra::kable()
+tribble( ~Volume, ~Title, ~Content,
+      "0. Software", 
+         "[Setting up Your Computer](https://cehs-research.github.io/eBook_install/)", 
+         "Installing R, R Studio, and Packages",
+      "1. Wrangling ", 
+         "Data Management", 
+         "Importing, Sub-Setting, Creating Variables, and Saving",
+      "2. Exploratory", 
+         "Exploratory Data Analysis", 
+         "Summary Statistics and Descriptive Visualizations",
+      "3. ANOVA", 
+         "Testing Mean Differences",
+         "t-tests, ANOVA, RM ANOVA, and post hoc tests",
+      "4. Regression", 
+         "Regression",
+         "Correlation, Model Fit, Generalize, and Plot",
+      "5. Multilevel", 
+         "Multilevel Models",
+         "Clustered and Longitudinal - ICCs, MLM/HLM, and GEEs",
+      "6. SEM", 
+         "Structural Equation Modeling", 
+         "EFA, CFA, Path Analysis, and SEM",
+      "7. Other", 
+         "Additional Topics",
+         "Room for Future Expansion") %>% 
+  kableExtra::kable(align = c("c", "l", "l"))
 ```
 
 
-
-
+```{block type='rmdconstruct', echo=TRUE}
+**This eBook is under construction: check back often.** This massive undertaking started during the summer of 2018 and is far from complete.  The outline of seven volumes is given above despite any one being complete.  Feedback is welcome via either author's email.
+```
 
 
 ## Authors {-}
 
 
-| [Dr. Sarah Schwartz](http://www.sarahschwartzstats.com/) | [Dr. Tyson Barrett](http://tysonbarrett.com/) |
-|:----:|:----:|
-| ![](images/Sarah_headshot.jpg){width=300px} | ![](images/Tyson_headshot.jpg){width=300px} |
-| Sarah.Schwartz@usu.edu | Tyson.Battett@usu.edu |
-| [Statistical Consulting Studio](https://cehs.usu.edu/research/statstudio/index)  | [Data Science and Discover Unit](https://cehs.usu.edu/research/dsdu/index) |
-| ![](images/StatStudioLogo_dark_small.png){width=300px}  |![](images/dsdu_logo.PNG){width=300px} |
-
+```{r, echo=FALSE}
+tribble( ~Sarah, ~Tyson,
+      "![](images/Sarah_headshot.jpg){width=300px}",
+      "![](images/Tyson_headshot.jpg){width=300px}",
+      "[www.SarahSchwartzStats.com](http://www.sarahschwartzstats.com/) ",
+      "[www.TysonBarrett.com](http://tysonbarrett.com/)",
+      "Sarah.Schwartz@usu.edu",
+      "Tyson.Battett@usu.edu",
+      "[Statistical Consulting Studio](https://cehs.usu.edu/research/statstudio/index)",
+      "[Data Science and Discover Unit](https://cehs.usu.edu/research/dsdu/index)",
+      "![](images/StatStudioLogo_dark_small.png){width=300px}",
+      "![](images/dsdu_logo.PNG){width=300px}") %>% 
+  kableExtra::kable(col.names = c("Dr. Sarah Schwartz", 
+                                  "Dr. Tyson Barrett"),
+                    align = "c") %>% 
+  kableExtra::row_spec(row = 0,
+                       font_size = 20)
+```
 
 
 
@@ -108,12 +112,16 @@ data.frame(Volumne, Link, Content) %>% kableExtra::kable()
 
 ```{block type='rmdconstruct', echo=TRUE}
 **ADD SECTION:** R vs. SPSS, SAS, Stata, ect...
+
+FREE, accessable, 
+not any harder than others to learn
+reproducibity
 ```
 
 
-
-
-[No more excuses: R is better than SPSS for psychology undergrads, and students agree](https://datahowler.wordpress.com/2016/09/10/no-more-excuses-r-is-better-than-spss-for-psychology-undergrads-and-students-agree/)
+```{block type='rmdlink', echo=TRUE}
+**Check it out:** an article from Fall 2016... [No more excuses: R is better than SPSS for psychology undergrads, and students agree](https://datahowler.wordpress.com/2016/09/10/no-more-excuses-r-is-better-than-spss-for-psychology-undergrads-and-students-agree/)
+```
 
 
 

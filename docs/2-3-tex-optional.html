@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:title" content="Encyclopedia of Quantitative Methods in R, vol. 0: Setting up Your Computer" />
+<meta property="og:type" content="book" />
+
+<meta property="og:image" content="EQM_v0_cover.png" />
+<meta property="og:description" content="Getting started with R and R Studio: installing software and package management." />
+<meta name="github-repo" content="cehs-research/eBook_install" />
+
+<meta name="author" content="Sarah Schwartz &amp; Tyson Barrett" />
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+
+<meta name="description" content="Getting started with R and R Studio: installing software and package management.">
+
+<title>Encyclopedia of Quantitative Methods in R, vol. 0: Setting up Your Computer</title>
+
+<script src="libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; background-color: #2a211c; color: #bdae9d; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; background-color: #2a211c; color: #bdae9d; border-right: 1px solid #bdae9d; }
+td.sourceCode { padding-left: 5px; }
+pre, code { color: #bdae9d; background-color: #2a211c; }
+code > span.kw { color: #43a8ed; font-weight: bold; } /* Keyword */
+code > span.dt { text-decoration: underline; } /* DataType */
+code > span.dv { color: #44aa43; } /* DecVal */
+code > span.bn { color: #44aa43; } /* BaseN */
+code > span.fl { color: #44aa43; } /* Float */
+code > span.ch { color: #049b0a; } /* Char */
+code > span.st { color: #049b0a; } /* String */
+code > span.co { color: #0066ff; font-style: italic; } /* Comment */
+code > span.al { color: #ffff00; } /* Alert */
+code > span.fu { color: #ff9358; font-weight: bold; } /* Function */
+code > span.er { color: #ffff00; font-weight: bold; } /* Error */
+code > span.wa { color: #ffff00; font-weight: bold; } /* Warning */
+code > span.cn { } /* Constant */
+code > span.sc { color: #049b0a; } /* SpecialChar */
+code > span.vs { color: #049b0a; } /* VerbatimString */
+code > span.ss { color: #049b0a; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { } /* Variable */
+code > span.cf { color: #43a8ed; font-weight: bold; } /* ControlFlow */
+code > span.op { } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { font-weight: bold; } /* Preprocessor */
+code > span.at { } /* Attribute */
+code > span.do { color: #0066ff; font-style: italic; } /* Documentation */
+code > span.an { color: #0066ff; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.co { color: #0066ff; font-weight: bold; font-style: italic; } /* Comment */
+code > span.in { color: #0066ff; font-weight: bold; font-style: italic; } /* Information */
+</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+
+
+<link rel="stylesheet" href="toc.css" type="text/css" />
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container-fluid main-container">
+
+
+<div class="row">
+<div class="col-sm-12">
+<div id="TOC">
+<ul>
+<li class="has-sub"><a href="index.html#welcome">Welcome</a><ul>
+<li><a href="preface.html#preface">Preface</a></li>
+<li><a href="authors.html#authors">Authors</a></li>
+<li><a href="why-r.html#why-r">Why R ?</a></li>
+<li><a href="fyi.html#fyi">FYI</a></li>
+</ul></li>
+<li class="has-sub"><a href="1-overview.html#overview"><span class="toc-section-number">1</span> Overview</a><ul>
+<li><a href="1-1-r-vs-r-studio.html#r-vs.r-studio"><span class="toc-section-number">1.1</span> R vs. R Studio</a></li>
+<li><a href="1-2-r-markdown-vs-r-notebook.html#r-markdown-vs.r-notebook"><span class="toc-section-number">1.2</span> R Markdown vs. R Notebook</a></li>
+<li><a href="1-3-the-magic-of-kniting.html#the-magic-of-kniting"><span class="toc-section-number">1.3</span> The Magic of Knit’ing</a></li>
+<li class="has-sub"><a href="1-4-additional-faqs.html#additional-faqs"><span class="toc-section-number">1.4</span> Additional FAQs</a><ul>
+<li><a href="1-4-additional-faqs.html#what-is-r">What is R ?</a></li>
+<li><a href="1-4-additional-faqs.html#what-is-r-markdown">What is R Markdown ?</a></li>
+<li><a href="1-4-additional-faqs.html#what-is-dynamic-reporting">What is Dynamic Reporting?</a></li>
+<li><a href="1-4-additional-faqs.html#is-this-a-popular-method-for-creating-reports">Is this a popular method for creating reports?</a></li>
+</ul></li>
+</ul></li>
+<li class="has-sub"><a href="2-software.html#software"><span class="toc-section-number">2</span> Software</a><ul>
+<li><a href="2-1-the-r-programing-language.html#the-r-programing-language"><span class="toc-section-number">2.1</span> The R Programing Language</a></li>
+<li><a href="2-2-the-r-studio-ide.html#the-r-studio-ide"><span class="toc-section-number">2.2</span> The R Studio IDE</a></li>
+<li class="has-sub"><a href="2-3-tex-optional.html#tex-optional"><span class="toc-section-number">2.3</span> TeX (optional)</a><ul>
+<li><a href="2-3-tex-optional.html#mac---use-mactex"><span class="toc-section-number">2.3.1</span> Mac - use <code>MacTeX</code></a></li>
+<li><a href="2-3-tex-optional.html#windows---use-miktex"><span class="toc-section-number">2.3.2</span> Windows - use <code>MikTeX</code></a></li>
+<li><a href="2-3-tex-optional.html#use-tinytex-package"><span class="toc-section-number">2.3.3</span> Use <code>tinytex</code> package</a></li>
+</ul></li>
+</ul></li>
+<li class="has-sub"><a href="3-packages.html#packages"><span class="toc-section-number">3</span> Packages</a><ul>
+<li><a href="3-1-what-are-packages.html#what-are-packages"><span class="toc-section-number">3.1</span> What are packages ?</a></li>
+<li><a href="3-2-where-can-you-get-packages.html#where-can-you-get-packages"><span class="toc-section-number">3.2</span> Where can you get packages ?</a></li>
+<li><a href="3-3-installing-packages-via-the-user-interface.html#installing-packages-via-the-user-interface"><span class="toc-section-number">3.3</span> Installing packages (via the user interface)</a></li>
+<li class="has-sub"><a href="3-4-a-list-of-useful-packages.html#a-list-of-useful-packages"><span class="toc-section-number">3.4</span> A List of Useful Packages</a><ul>
+<li><a href="3-4-a-list-of-useful-packages.html#the-tidy-universe-from-r-studio"><span class="toc-section-number">3.4.1</span> The Tidy-Universe, from <span class="math inline">\(R Studio\)</span></a></li>
+<li><a href="3-4-a-list-of-useful-packages.html#groups-of-individual-packages-on-cran"><span class="toc-section-number">3.4.2</span> Groups of Individual Packages on <span class="math inline">\(CRAN\)</span></a></li>
+<li><a href="3-4-a-list-of-useful-packages.html#installing-packages-via-syntax-code"><span class="toc-section-number">3.4.3</span> Installing packages (via syntax code)</a></li>
+</ul></li>
+<li class="has-sub"><a href="3-5-other-developmental-non-cran-packages-on-github.html#other-developmental-non-cran-packages-on-github"><span class="toc-section-number">3.5</span> Other Developmental non-<span class="math inline">\(CRAN\)</span> Packages on <span class="math inline">\(GitHub\)</span></a><ul>
+<li><a href="3-5-other-developmental-non-cran-packages-on-github.html#templates-for-writing-tutorials-practicals-or-examination-papers-with-r-markdown"><span class="toc-section-number">3.5.1</span> Templates for writing tutorials, practicals or examination papers with <span class="math inline">\(R Markdown\)</span></a></li>
+<li><a href="3-5-other-developmental-non-cran-packages-on-github.html#prepare-apa-journal-articles-with-r-markdown"><span class="toc-section-number">3.5.2</span> Prepare APA journal articles with <span class="math inline">\(R Markdown\)</span></a></li>
+</ul></li>
+</ul></li>
+<li class="has-sub"><a href="4-orientation.html#orientation"><span class="toc-section-number">4</span> Orientation</a><ul>
+<li><a href="4-1-cheatsheets.html#cheatsheets"><span class="toc-section-number">4.1</span> Cheatsheets</a></li>
+<li class="has-sub"><a href="4-2-global-options-menu.html#global-options-menu"><span class="toc-section-number">4.2</span> Global Options Menu</a><ul>
+<li><a href="4-2-global-options-menu.html#appearance"><span class="toc-section-number">4.2.1</span> Appearance</a></li>
+<li><a href="4-2-global-options-menu.html#pane-layout"><span class="toc-section-number">4.2.2</span> Pane Layout</a></li>
+</ul></li>
+<li class="has-sub"><a href="4-3-various-tabs.html#various-tabs"><span class="toc-section-number">4.3</span> Various Tabs</a><ul>
+<li><a href="4-3-various-tabs.html#files"><span class="toc-section-number">4.3.1</span> Files</a></li>
+<li><a href="4-3-various-tabs.html#packages-1"><span class="toc-section-number">4.3.2</span> Packages</a></li>
+<li><a href="4-3-various-tabs.html#help"><span class="toc-section-number">4.3.3</span> Help</a></li>
+<li><a href="4-3-various-tabs.html#environment"><span class="toc-section-number">4.3.4</span> Environment</a></li>
+</ul></li>
+</ul></li>
+<li class="has-sub"><a href="5-workflow.html#workflow"><span class="toc-section-number">5</span> Workflow</a><ul>
+<li class="has-sub"><a href="5-1-create-a-new-notebook.html#create-a-new-notebook"><span class="toc-section-number">5.1</span> Create a New Notebook</a><ul>
+<li><a href="5-1-create-a-new-notebook.html#yaml-header"><span class="toc-section-number">5.1.1</span> YAML header</a></li>
+<li><a href="5-1-create-a-new-notebook.html#plain-text"><span class="toc-section-number">5.1.2</span> Plain Text</a></li>
+<li><a href="5-1-create-a-new-notebook.html#code-chunks"><span class="toc-section-number">5.1.3</span> Code Chunks</a></li>
+</ul></li>
+<li class="has-sub"><a href="5-2-interact-within-a-notebook.html#interact-within-a-notebook"><span class="toc-section-number">5.2</span> Interact within a Notebook</a><ul>
+<li><a href="5-2-interact-within-a-notebook.html#run-code-chunks"><span class="toc-section-number">5.2.1</span> Run Code Chunks</a></li>
+<li><a href="5-2-interact-within-a-notebook.html#chunk-options"><span class="toc-section-number">5.2.2</span> Chunk Options</a></li>
+</ul></li>
+<li class="has-sub"><a href="5-3-knit-a-notebook.html#knit-a-notebook"><span class="toc-section-number">5.3</span> Knit a Notebook</a><ul>
+<li><a href="5-3-knit-a-notebook.html#storing-all-associated-files"><span class="toc-section-number">5.3.1</span> Storing all associated files</a></li>
+<li><a href="5-3-knit-a-notebook.html#setting-the-working-directory"><span class="toc-section-number">5.3.2</span> Setting the working directory</a></li>
+<li><a href="5-3-knit-a-notebook.html#press-knit"><span class="toc-section-number">5.3.3</span> Press Knit</a></li>
+</ul></li>
+</ul></li>
+<li class="has-sub"><a href="6-updating.html#updating"><span class="toc-section-number">6</span> Updating</a><ul>
+<li><a href="6-1-the-r-programing-language-1.html#the-r-programing-language-1"><span class="toc-section-number">6.1</span> The R Programing Language</a></li>
+<li><a href="6-2-the-r-studio-ide-1.html#the-r-studio-ide-1"><span class="toc-section-number">6.2</span> The R Studio IDE</a></li>
+<li><a href="6-3-your-r-packages.html#your-r-packages"><span class="toc-section-number">6.3</span> Your R Packages</a></li>
+</ul></li>
+<li><a href="references.html#references">References</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="tex-optional" class="section level2">
+<h2><span class="header-section-number">2.3</span> TeX (optional)</h2>
+<div class="figure">
+<img src="images/latex.png" />
+
+</div>
+<p>TeX is a typesetting or formatting system that is commonly used in printing and publishing, especially anything with formulas (see <a href="https://texfaq.org/FAQ-whatTeX" class="uri">https://texfaq.org/FAQ-whatTeX</a>). It is NOT NEEDED to run <span class="math inline">\(R\)</span>, but <span class="math inline">\(R Stuido\)</span> must have access to it in order to <code>knit</code> a <span class="math inline">\(R Notebook\)</span> into a <code>.pdf</code> file.</p>
+<div id="mac---use-mactex" class="section level3">
+<h3><span class="header-section-number">2.3.1</span> Mac - use <code>MacTeX</code></h3>
+<div class="rmdlink">
+<p>
+Go to: <a href="http://tug.org/mactex/" class="uri">http://tug.org/mactex/</a>
+</p>
+</div>
+<ul>
+<li>Download (5+ min) to a folder and them double click on the <strong>PKG file</strong></li>
+<li>Follow the installation instructions.</li>
+<li>You don’t need to open anything after MacTeX is finished installing.</li>
+</ul>
+</div>
+<div id="windows---use-miktex" class="section level3">
+<h3><span class="header-section-number">2.3.2</span> Windows - use <code>MikTeX</code></h3>
+<div class="rmdlink">
+<p>
+Go to: <a href="http://miktex.org/download" class="uri">http://miktex.org/download</a>
+</p>
+</div>
+<ul>
+<li>Pick the latest version of the <strong>Net Installer</strong>, not the Basic!</li>
+<li>You need the full version 64-bit is better, if you have a 64-bit machine</li>
+<li>When your download is complete, run the downloaded installer.</li>
+<li>Windows may ask you if you want to <em>“allow this app from an unknown publisher to make changes to your PC”</em>. If it does, make sure to click <strong>Yes!</strong></li>
+<li>This is the slowest part…</li>
+</ul>
+</div>
+<div id="use-tinytex-package" class="section level3">
+<h3><span class="header-section-number">2.3.3</span> Use <code>tinytex</code> package</h3>
+<div class="rmdconstruct">
+<p>
+<strong>ADD SECTION:</strong> new package alternative to using full TeX
+</p>
+</div>
+
+</div>
+</div>
+<!-- </div> -->
+<p style="text-align: center;">
+<a href="2-2-the-r-studio-ide.html"><button class="btn btn-default">Previous</button></a>
+<a href="3-packages.html"><button class="btn btn-default">Next</button></a>
+</p>
+</div>
+</div>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+</body>
+</html>

@@ -9,15 +9,19 @@ You will need to install both $R$ and $R Studio$, but $\LaTeX$ is optional.
 ![](images/Rlogo_200.png)
 
 
- <div class="rmdlink">
- <p>Go to: <a href="http://www.r-project.org">www.r-project.org</a></p>
- </div>
+<div class="rmdimportant">
+<p><strong>Go to:</strong> <a href="http://www.r-project.org">www.r-project.org</a></p>
+</div>
 
 Get the latest released version of FREE **Base** $R$ from $CRAN$ 
 
 * Choose a mirror close to your geographical location
 * Select **base** $R$ for your computer *(Windows, Mac, ect.)*
 * The defaults are good...don't change them...just keep clicking *'Next'*
+
+<div class="rmdlightbulb">
+<p>Each new release of <span class="math inline">\(R\)</span> is given a name that references a Peanuts strip or film. Read some of the past names and find out where they came from: <a href="https://livefreeordichotomize.com/2017/09/28/r-release-names/">blog post</a></p>
+</div>
 
 
 ---------------------------------
@@ -27,9 +31,9 @@ Get the latest released version of FREE **Base** $R$ from $CRAN$
 
 ![](images/rstudiosticker.png)
  
- <div class="rmdlink">
- <p>Go to: <a href="http://www.rstudio.com">www.rstudio.com</a></p>
- </div>
+<div class="rmdimportant">
+<p><strong>Go to:</strong> <a href="http://www.rstudio.com">www.rstudio.com</a></p>
+</div>
 
 
 Get the latest version of the FREE Open Source **Desktop** Edition of $R Studio$
@@ -49,9 +53,9 @@ TeX is a typesetting or formatting system that is commonly used in printing and 
 ### Mac - use `MacTeX`
 
 
- <div class="rmdlink">
- <p>Go to: <a href="http://tug.org/mactex/" class="uri">http://tug.org/mactex/</a></p>
- </div>
+<div class="rmdimportant">
+<p><strong>Go to:</strong> <a href="http://tug.org/mactex/" class="uri">http://tug.org/mactex/</a></p>
+</div>
 
 
 * Download (5+ min) to a folder and them double click on the **PKG file**
@@ -62,9 +66,9 @@ TeX is a typesetting or formatting system that is commonly used in printing and 
 
 ### Windows - use `MikTeX`
 
- <div class="rmdlink">
- <p>Go to: <a href="http://miktex.org/download" class="uri">http://miktex.org/download</a></p>
- </div>
+<div class="rmdimportant">
+<p><strong>Go to:</strong> <a href="http://miktex.org/download" class="uri">http://miktex.org/download</a></p>
+</div>
 
 
 * Pick the latest version of the **Net Installer**, not the Basic! 

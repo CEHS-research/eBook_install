@@ -7,9 +7,11 @@ Learn what packages are and how to get them.
 
 -----------
 
-## What are packages ?
+## Package FAQ
 
-**R packages** are collections of functions and data sets developed by the community. They increase the power of **R** by improving existing base **R** functionalities, or by adding new ones.
+### What are packages ?
+
+$R$ packages are collections of functions and data sets developed by the community. They increase the power of $R$ by improving existing base $R$ functionalities, or by adding new ones.
 
 When you download $R$ you are only getting the bare-bones, most basic files.  
 
@@ -17,42 +19,53 @@ When you download $R$ you are only getting the bare-bones, most basic files.
 <p>More information may be found here: <a href="https://www.datacamp.com/community/tutorials/r-packages-guide" class="uri">https://www.datacamp.com/community/tutorials/r-packages-guide</a></p>
 </div>
 
------------
 
-## Where can you get packages ?
+
+### Where can you get packages ?
 
 
 <div class="rmdconstruct">
 <p><strong>ADD SECTION:</strong> CRAN, GitHub, ect.</p>
 </div>
 
------------
-
-## Installing packages (via the user interface)
-
-> You only need to INSTALL packages ONCE per computer.
 
 
-In **R Stuido**:
+## Installing packages
+
+Installing is the act of getting the package files onto your computer and store in a location on your hard drive where $R$ can find them.  Usually the files are zipped or compress and must be extracted or unpacked. The directions below will walk you through the automated process of using the user interface (rather than actual syntax).
+
+
+
+In **R Studio**:
 
 1. Click on the **Packages** tab the panel with the most tabs
 2. Click on the word **Instsall** just under and to the left of the tab
-2. In the **Packages** box, type in the name of the packages you would like to download.  You can do several at once, just seperate them with multiple spaces or a comma.
+3. In the **Packages** box, type in the name of the packages you would like to download.  You can do several at once, just seperate them with multiple spaces or a comma.
 
-*Note: Leave the installation library path as the default.  Also, make sure the box for 'Installing dependencies' is checked.*
+<div class="rmdlightbulb">
+<p><strong>You only need to INSTALL packages ONCE per computer.</strong><br />
+Leave the installation &quot;library path&quot;&quot; as the default. Also, make sure the box for &quot;Installing dependencies&quot; box is checked.</p>
+</div>
+
+
 
 ![](images/Install_Package_Screenshot.png)
 
 
 You can *copy-and-paste* the following list into the box (labeled 3) to load the packages that we use most commonly all at once. 
 
-> tidyverse, furniture, pander, stargazer, texreg, xtable, kableExtra, RColorBrewer, gghighlight, ggthemes, ggfortify, ggalt, ggExtra, GGally, ggeffects, corrplot, gpairs, gridextra, likert, vcd, scales, cowplot, yarrr, psych, polycor, corpcor, sjlabelled, sjPlot, sjmisc, sjstats, Hmisc, labelled, afex, emmeans, corpcor, multicomp, multcompView, car, effects, predictmean, nlme, lme4, lmerTest, HLMdiag, geepack, gee, gee4, optimx, MuMIn, lavaan, OpenMx, sem, semPlot, randomForest, randomForestSRC, ggRandomForests, party, partykit, mgcv, glmnet, survival, caret, bookdown, blogdown, tidytex, xaringan, REDCapR, redcapAPI, devtools, testthat, roxygen2
+
+<div class="rmdimportant">
+<p><strong>Useful Package List</strong></p>
+<p>tidyverse, furniture, pander, stargazer, texreg, xtable, kableExtra, RColorBrewer, gghighlight, ggthemes, ggfortify, ggalt, ggExtra, GGally, ggeffects, corrplot, gpairs, gridextra, likert, vcd, scales, cowplot, yarrr, psych, polycor, corpcor, sjlabelled, sjPlot, sjmisc, sjstats, Hmisc, labelled, afex, emmeans, corpcor, multicomp, multcompView, car, effects, predictmean, nlme, lme4, lmerTest, HLMdiag, geepack, gee, gee4, optimx, MuMIn, lavaan, OpenMx, sem, semPlot, randomForest, randomForestSRC, ggRandomForests, party, partykit, mgcv, glmnet, survival, caret, bookdown, blogdown, tidytex, xaringan, REDCapR, redcapAPI, devtools, testthat, roxygen2</p>
+</div>
+
+
 
 When you click the **Install** buttom, a smaller window may asks if you would like to re-start $R$ prior to installing, choose "no" and manually close and open the $R Studio$ program once all packages have been downloaded, unpacked, and checked.  This may take a few minutes, especially if you have selected multiple packages.  
 
 
-## A List of Useful Packages
-
+## Useful Packages on CRAN
 
 
 <div class="rmdlink">
@@ -63,10 +76,6 @@ When you click the **Install** buttom, a smaller window may asks if you would li
 ### The Tidy-Universe, from $R Studio$
 
 
-```r
-install.packages("tidyverse")
-```
-
 
 > The `tidyverse` [(www.tidyverse.org)](https://www.tidyverse.org/) is an opinionated **collection of $R$ packages** designed for data science. All packages share an underlying design philosophy, grammar, and data structures. 
 
@@ -75,27 +84,6 @@ install.packages("tidyverse")
 The core tidyverse includes the packages that you are likely to use in everyday data analyses. As of `tidyverse 1.2.0`, the following packages are included in the core tidyverse:
 
 
-
-```r
-library(tidyverse)
-```
-
-```
-## -- Attaching packages -------------------------------------------- tidyverse 1.2.1 --
-```
-
-```
-## v ggplot2 3.0.0     v purrr   0.2.5
-## v tibble  1.4.2     v dplyr   0.7.6
-## v tidyr   0.8.1     v stringr 1.3.1
-## v readr   1.1.1     v forcats 0.3.0
-```
-
-```
-## -- Conflicts ----------------------------------------------- tidyverse_conflicts() --
-## x dplyr::filter() masks stats::filter()
-## x dplyr::lag()    masks stats::lag()
-```
 
 | website   | description |   
 |----------:|:------------|   
@@ -113,11 +101,6 @@ library(tidyverse)
 The tidyverse also includes many other packages with more specialised usage. They are not loaded automatically with `library(tidyverse)`, so you'll need to load each one with its own call to `library()`.
 
 
-
-```r
-library(haven) # example...may replace with any individual package name
-```
-
 | website     | description |   
 |------------:|:------------|   
 | [`broom`](https://github.com/tidymodels/broom) | Convert Statistical Analysis Objects into Tidy Tibbles
@@ -133,7 +116,7 @@ library(haven) # example...may replace with any individual package name
 
 -------------------------------------
 
-### Groups of Individual Packages on $CRAN$
+### Groups of Individual Packages on $CRAN$ {.tabset}
 
 
 
@@ -337,142 +320,11 @@ library(haven) # example...may replace with any individual package name
 
 
 
-
-### Installing packages (via syntax code)
-
-Review the list of all the $CRAN packages above:
-
-
-```r
-package_list_tables
-```
-
-```
-## [1] "furniture"  "pander"     "stargazer"  "texreg"     "xtable"    
-## [6] "kableExtra"
-```
-
-```r
-package_list_visual
-```
-
-```
-##  [1] "RColorBrewer" "gghighlight"  "ggthemes"     "ggfortify"   
-##  [5] "ggalt"        "ggExtra"      "GGally"       "ggeffects"   
-##  [9] "corrplot"     "gpairs"       "gridextra"    "likert"      
-## [13] "vcd"          "scales"       "cowplot"      "yarrr"
-```
-
-```r
-package_list_general
-```
-
-```
-## [1] "psych"      "polycor"    "corpcor"    "sjlabelled" "sjPlot"    
-## [6] "sjmisc"     "sjstats"    "Hmisc"      "labelled"
-```
-
-```r
-package_list_anova
-```
-
-```
-## [1] "afex"         "emmeans"      "corpcor"      "multicomp"   
-## [5] "multcompView"
-```
-
-```r
-package_list_regression
-```
-
-```
-## [1] "car"          "effects"      "predictmeans"
-```
-
-```r
-package_list_multilevel
-```
-
-```
-## [1] "nlme"     "lme4"     "lmerTest" "HLMdiag"  "geepack"  "gee"     
-## [7] "gee4"     "optimx"   "MuMIn"
-```
-
-```r
-package_list_sem
-```
-
-```
-## [1] "lavaan"  "OpenMx"  "sem"     "semPlot"
-```
-
-```r
-package_list_forest
-```
-
-```
-## [1] "randomForest"    "randomForestSRC" "ggRandomForests" "party"          
-## [5] "partykit"
-```
-
-```r
-package_list_models
-```
-
-```
-## [1] "mgcv"     "glmnet"   "survival" "caret"
-```
-
-```r
-package_list_report
-```
-
-```
-## [1] "bookdown" "blogdown" "tidytex"  "xaringan"
-```
-
-```r
-package_list_redcap
-```
-
-```
-## [1] "REDCapR"   "redcapAPI"
-```
-
-```r
-package_list_package
-```
-
-```
-## [1] "devtools" "testthat" "roxygen2"
-```
-
-
-
-Get all the packages from $CRAN$ *(updates if new version available)*:
-
-
-```r
-install.packages(c("tidyverse",
-                   package_list_tables,
-                   package_list_visual,
-                   package_list_general,
-                   package_list_anova,
-                   package_list_regression,
-                   package_list_multilevel,
-                   package_list_sem,
-                   package_list_forest,
-                   package_list_models,
-                   package_list_report,
-                   package_list_redcap,
-                   package_list_package))
-```
-
 -------------------------------------
 
-## Other Developmental non-$CRAN$ Packages on $GitHub$
+## Userful Packages on $GitHub$
 
-First, make sure you have the `devtools` package installed on your computer *(hint: its in the `package_list_package` list above)*.
+First, make sure you have the `devtools` package installed on your computer *(hint: it is included in the list above)*.
 
 
 ```r
@@ -506,7 +358,8 @@ In addition, you will be able to:
 * Create a new $R Markdown$ file with solution chunks replaced by empty ones.
 
 <div class="rmdlink">
-<p>Website: <a href="https://github.com/koncina/unilur">GitHub - <code>unilur</code></a> Tutorial: <a href="http://eric.koncina.eu/posts/introducing-the-unilur-rmarkdown-template/">blog post - <code>unilur</code></a></p>
+<p>Website: <a href="https://github.com/koncina/unilur">GitHub - <code>unilur</code></a><br />
+Tutorial: <a href="http://eric.koncina.eu/posts/introducing-the-unilur-rmarkdown-template/">blog post - <code>unilur</code></a></p>
 </div>
 
 
@@ -529,7 +382,8 @@ devtools::install_github("koncina/unilur")
 
 
 <div class="rmdlink">
-<p>Website: <a href="https://github.com/crsh/papaja">GitHub - <code>papaja</code></a> Tutorial: <a href="https://crsh.github.io/papaja_man/">eBook - <code>papaja</code></a></p>
+<p>Website: <a href="https://github.com/crsh/papaja">GitHub - <code>papaja</code></a><br />
+Tutorial: <a href="https://crsh.github.io/papaja_man/">eBook - <code>papaja</code></a></p>
 </div>
 
 

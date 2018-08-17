@@ -1,5 +1,11 @@
 # Overview
 
+```{r, include=FALSE, comment=FALSE}
+library(tidyverse, quietly = TRUE)
+library(kableExtra)
+```
+
+
 ![](images/headers/manyRs.png)
 
 
@@ -11,11 +17,15 @@ Before we get busy downloading and installing the actual software, here is the b
 
 First time users often confuse by all the different uses of the letter "R". 
 
-| $R$ | $R Studio$ |
-|:---:|:-----------:|
-| Engine | Dashboard |
-| Install and Ignore | Interact with Constantly | 
-| ![](images/car_engine.jpg){width=500px} | ![](images/car_dashboard.jpg){width=500px} |
+```{r, echo=FALSE}
+data.frame("R"        = c("Engine", 
+                          "Install and Ignore",
+                          "![](images/car_engine.jpg){width=500px}"),
+           "R Studio" = c("Dashboard",
+                          "Interact with Constantly",
+                          "![](images/car_dashboard.jpg){width=500px}")) %>% 
+  kableExtra::kable(align = "c")
+```
 
 
 More precisely, $R$ is a *programming language* that runs computations while $R Studio$ is an *integrated development environment (IDE)* that provides an interface by adding many convenient features and tools. So the way of having access to a speedometer, rearview mirrors, and a navigation system makes driving much easier, using $RStudio’s$ interface makes using $R$ much easier as well.  - [Chester Ismay and Albert Y. Kim](https://ismayc.github.io/moderndive/index.html)
@@ -80,11 +90,7 @@ $R Markdown$ documents are fully reproducible. Use a productive **notebook** int
 
 
 ```{block type='rmdlink', echo=TRUE}
-Helpful Websites: 
-
-[Quick R: Basic Statistics](https://www.statmethods.net/stats/index.html)
-
-[Introduction to R](https://libguides.library.kent.edu/statconsulting/r)
+**Helpful Websites:** [Quick R: Basic Statistics](https://www.statmethods.net/stats/index.html) and [Introduction to R](https://libguides.library.kent.edu/statconsulting/r)
 ```
 
 

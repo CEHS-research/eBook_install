@@ -1,4 +1,4 @@
-# Orientation
+# Workspace Orientation
 
 ![](images/headers/orient.png)
 Get a feel for the lay of the land.

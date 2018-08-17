@@ -1,4 +1,4 @@
-# Workflow
+# Notebook Workflow
 
 
 ![](images/headers/workflow.png)
@@ -10,6 +10,8 @@ Dive in feet first and create your first R Notebook.
 
 
 ## Create a New Notebook 
+
+![](images/headers/knit_notebook.png)
 
 ### YAML header
 

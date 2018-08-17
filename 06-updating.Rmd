@@ -34,7 +34,7 @@ Go to: [www.rstudio.com](http://www.rstudio.com)
 
 ---------------------------------
 
-## Your R Packages
+## All Your R Packages
 
 
 
