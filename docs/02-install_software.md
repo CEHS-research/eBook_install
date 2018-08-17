@@ -9,7 +9,7 @@ You will need to install both $R$ and $R Studio$, but $\LaTeX$ is optional.
 ![](images/Rlogo_200.png)
 
 
-<div class="rmdimportant">
+<div class="rmddownload">
 <p><strong>Go to:</strong> <a href="http://www.r-project.org">www.r-project.org</a></p>
 </div>
 
@@ -31,7 +31,7 @@ Get the latest released version of FREE **Base** $R$ from $CRAN$
 
 ![](images/rstudiosticker.png)
  
-<div class="rmdimportant">
+<div class="rmddownload">
 <p><strong>Go to:</strong> <a href="http://www.rstudio.com">www.rstudio.com</a></p>
 </div>
 
@@ -53,7 +53,7 @@ TeX is a typesetting or formatting system that is commonly used in printing and 
 ### Mac - use `MacTeX`
 
 
-<div class="rmdimportant">
+<div class="rmddownload">
 <p><strong>Go to:</strong> <a href="http://tug.org/mactex/" class="uri">http://tug.org/mactex/</a></p>
 </div>
 
@@ -66,7 +66,7 @@ TeX is a typesetting or formatting system that is commonly used in printing and 
 
 ### Windows - use `MikTeX`
 
-<div class="rmdimportant">
+<div class="rmddownload">
 <p><strong>Go to:</strong> <a href="http://miktex.org/download" class="uri">http://miktex.org/download</a></p>
 </div>
 

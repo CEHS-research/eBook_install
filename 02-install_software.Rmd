@@ -9,7 +9,7 @@ You will need to install both $R$ and $R Studio$, but $\LaTeX$ is optional.
 ![](images/Rlogo_200.png)
 
 
-```{block type='rmdimportant', echo=TRUE}
+```{block type='rmddownload', echo=TRUE}
 **Go to:** [www.r-project.org](http://www.r-project.org) 
 ```
 
@@ -31,7 +31,7 @@ Each new release of $R$ is given a name that references a Peanuts strip or film.
 
 ![](images/rstudiosticker.png)
  
-```{block type='rmdimportant', echo=TRUE}
+```{block type='rmddownload', echo=TRUE}
 **Go to:** [www.rstudio.com](http://www.rstudio.com) 
 ```
 
@@ -53,7 +53,7 @@ TeX is a typesetting or formatting system that is commonly used in printing and 
 ### Mac - use `MacTeX`
 
 
-```{block type='rmdimportant', echo=TRUE}
+```{block type='rmddownload', echo=TRUE}
 **Go to:** [http://tug.org/mactex/](http://tug.org/mactex/) 
 ```
 
@@ -66,7 +66,7 @@ TeX is a typesetting or formatting system that is commonly used in printing and 
 
 ### Windows - use `MikTeX`
 
-```{block type='rmdimportant', echo=TRUE}
+```{block type='rmddownload', echo=TRUE}
 **Go to:** [http://miktex.org/download](http://miktex.org/download)
 ```
 
