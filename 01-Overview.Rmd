@@ -11,24 +11,32 @@ library(kableExtra)
 
 Before we get busy downloading and installing the actual software, here is the big picture.
 
-
+----------------------
 
 ## R vs. R Studio
 
-First time users often confuse by all the different uses of the letter "R". 
-
 ```{r, echo=FALSE}
-data.frame("R"        = c("Engine", 
+data.frame("R"        = c("![](images/Rlogo_200.png){width=100px}",
+                          "Programing Language",
                           "Install and Ignore",
+                          "Engine", 
                           "![](images/car_engine.jpg){width=500px}"),
-           "R Studio" = c("Dashboard",
+           "R Studio" = c("![](images/rstudiosticker.png){width=200px}",
+                          "Interface Program",
                           "Interact with Constantly",
+                          "Dashboard",
                           "![](images/car_dashboard.jpg){width=500px}")) %>% 
-  kableExtra::kable(align = "c")
+  kableExtra::kable(col.names = c("R", "R Studio"),
+                    align = "c")
 ```
 
 
-More precisely, $R$ is a *programming language* that runs computations while $R Studio$ is an *integrated development environment (IDE)* that provides an interface by adding many convenient features and tools. So the way of having access to a speedometer, rearview mirrors, and a navigation system makes driving much easier, using $RStudio’s$ interface makes using $R$ much easier as well.  - [Chester Ismay and Albert Y. Kim](https://ismayc.github.io/moderndive/index.html)
+> Many users think of $R$ as a statistics system. We prefer to think of it of an environment within which statistical techniques are implemented. $R$ can be extended (easily) via packages. There are about eight packages supplied with the $R$ distribution and many more (over 10,000) are available through the $CRAN$ family of Internet sites covering a very wide range of modern statistics.
+>
+> [www.r-project.org](https://www.r-project.org/about.html)
+
+
+Where as $R$ is a *programming language* that runs computations, $R Studio$ is an *integrated development environment (IDE)* that provides an interface by adding many convenient features and tools. So the way of having access to a speedometer, rearview mirrors, and a navigation system makes driving much easier, using **$RStudio’s$ interface makes using $R$ much easier** as well.  - [Chester Ismay and Albert Y. Kim](https://ismayc.github.io/moderndive/index.html)
 
 
 
@@ -37,32 +45,48 @@ More precisely, $R$ is a *programming language* that runs computations while $R 
 For a more in-depth discussion on the difference between $R$ and $R Studio$ IDE, watch this [DataCamp video (2m52s)](https://campus.datacamp.com/courses/working-with-the-rstudio-ide-part-1/orientation?ex=1).
 ```
 
-
+----------------------
 
 ## R Markdown vs. R Notebook
 
+```{r, echo=FALSE}
+data.frame(Rmd = c("![](images/hex/rmarkdown-200x232.png)",
+                   "Plain text that includes shorthand notation to denote formatting, instead of relying on a text editor program display (MS Word).  Files are saved with the `.Rmd` extension."),
+           nb = c("![](images/Rnotebook.png){width=225px}",
+                  "A specific kind of `.Rmd` file in which the code chunks may be interactively executed/run onscreen and the results/output are shown directly below each code chunk.")) %>% 
+  kableExtra::kable(col.names = c("R Markdown", "R Notebook"),
+                    align = "c")
+```
+
+ 
+$R Markdown$ documents are fully reproducible. Use a productive **notebook** interface to **weave together narrative text and code** to produce elegantly formatted output. Use multiple languages including $R$, $Python$, and $SQL$ [@R-rmarkdown].
 
 
-```{block type='rmdconstruct', echo=TRUE}
-**ADD SECTION:** need a diagram built
+
+```{block type='rmdlink', echo=TRUE}
+**More details at the R Studio website:** [R Markdown, lesson 1 ](https://rmarkdown.rstudio.com/lesson-1.html) and [R Notebooks](https://rmarkdown.rstudio.com/r_notebooks)
 ```
 
 
+----------------------
+
+## knit-R
+
+![](images/cartoon_knit.PNG)
+
+With the click of a button, the `knitr` package will convert a $R notebook$ (`.Rmd`) to an intermediary *Markdown* file with the extension `.md`, which $R Studio$ will further transform to various final file types, including [@xie2015]: 
+
+* `.pdf` using $LaTeX$ *(beautiful)*
+
+* `.html` using another package called $markdown$ *(highly viewable)*   
+
+* `Word` document using Pandoc *(probably be ugly)*
 
 
+![](images/knitr_formats.PNG){width=500px}
 
-## The Magic of Knit'ing
 
-$R Markdown$ is a file with the file extension `.Rmd`, the `knitr` package will then transform the file into a *Markdown* file with the extension `.md.` Then $R Studio$ can [@xie2015]:
-
-  * Use $LaTeX$ to transform the file into a `.pdf` 
-    
-  * Load another package called $markdown$ to transform the file into `.html`   
-    
-  * Use Pandoc to even convert to file to a `Word` document (ugly)
-
-![](images/processRStudio.png)
-
+`knitr` is an engine for dynamic report generation with $R$. It is a package in the statistical programming language $R$ that enables integration of **R code** into $LaTeX$, $LyX$, $HTML$, $Markdown$, $AsciiDoc$, and $text$s documents [@R-knitr].
 
 
 ```{block type='rmdlink', echo=TRUE}
@@ -70,23 +94,9 @@ The professionals ar $R Studio$ show it better at their [website](https://rmarkd
 ```
 
 
-
-![](images/hex/rmarkdown-200x232.png){width=100px}
-
- 
-$R Markdown$ documents are fully reproducible. Use a productive **notebook** interface to weave together narrative text and code to produce elegantly formatted output. Use multiple languages including $R$, $Python$, and $SQL$ [@R-rmarkdown].
-
-
-![](images/hex/knitr-200x232.png){width=100px}
-
-
-`knitr` is an engine for dynamic report generation with $R$. It is a package in the statistical programming language $R$ that enables integration of **R code** into $LaTeX$, $LyX$, $HTML$, $Markdown$, $AsciiDoc$, and $text$s documents [@R-knitr].
-
-
-
 -------------
 
-## Additional FAQs 
+## More Indepth FAQs 
 
 
 ```{block type='rmdlink', echo=TRUE}

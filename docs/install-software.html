@@ -112,8 +112,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="1" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i><b>1</b> Overview</a><ul>
 <li class="chapter" data-level="1.1" data-path="overview.html"><a href="overview.html#r-vs.r-studio"><i class="fa fa-check"></i><b>1.1</b> R vs. R Studio</a></li>
 <li class="chapter" data-level="1.2" data-path="overview.html"><a href="overview.html#r-markdown-vs.r-notebook"><i class="fa fa-check"></i><b>1.2</b> R Markdown vs. R Notebook</a></li>
-<li class="chapter" data-level="1.3" data-path="overview.html"><a href="overview.html#the-magic-of-kniting"><i class="fa fa-check"></i><b>1.3</b> The Magic of Knit’ing</a></li>
-<li class="chapter" data-level="1.4" data-path="overview.html"><a href="overview.html#additional-faqs"><i class="fa fa-check"></i><b>1.4</b> Additional FAQs</a><ul>
+<li class="chapter" data-level="1.3" data-path="overview.html"><a href="overview.html#knit-r"><i class="fa fa-check"></i><b>1.3</b> knit-R</a></li>
+<li class="chapter" data-level="1.4" data-path="overview.html"><a href="overview.html#more-indepth-faqs"><i class="fa fa-check"></i><b>1.4</b> More Indepth FAQs</a><ul>
 <li class="chapter" data-level="" data-path="overview.html"><a href="overview.html#what-is-r"><i class="fa fa-check"></i>What is R ?</a></li>
 <li class="chapter" data-level="" data-path="overview.html"><a href="overview.html#what-is-r-markdown"><i class="fa fa-check"></i>What is R Markdown ?</a></li>
 <li class="chapter" data-level="" data-path="overview.html"><a href="overview.html#what-is-dynamic-reporting"><i class="fa fa-check"></i>What is Dynamic Reporting?</a></li>
@@ -204,21 +204,49 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p><img src="images/headers/R_studio_LaTeX_header.png" /> You will need to install both <span class="math inline">\(R\)</span> and <span class="math inline">\(R Studio\)</span>, but <span class="math inline">\(\LaTeX\)</span> is optional.</p>
 <div id="the-r-programing-language" class="section level2">
 <h2><span class="header-section-number">2.1</span> The R Programing Language</h2>
-<div class="figure">
-<img src="images/Rlogo_200.png" />
-
-</div>
+<blockquote>
+<p>The <strong>“Comprehensive R Archive Network” (CRAN)</strong> is a collection of sites which carry identical material, consisting of the <span class="math inline">\(R\)</span> distribution(s), the contributed extensions, and documentation for <span class="math inline">\(R\)</span>. From <span class="math inline">\(CRAN\)</span>, you can obtain the latest official FREE release of BASE <span class="math inline">\(R\)</span>.</p>
+</blockquote>
 <div class="rmddownload">
 <p>
-<strong>Go to:</strong> <a href="http://www.r-project.org">www.r-project.org</a>
+Go to: <a href="http://www.r-project.org">www.r-project.org</a>
+</p>
+<ul>
+<li>
+Choose a CRAN mirror close to your geographical location<br />
+</li>
+<li>
+Select <strong>base</strong> <span class="math inline"><span class="math inline">\(R\)</span></span> for your computer <em>(Windows, Mac, ect.)</em><br />
+</li>
+<li>
+Once it is downloaded, run the instalation.<br />
+</li>
+<li>
+The defaults are good…don’t change them…just keep clicking <em>‘Next’</em>
+</li>
+</ul>
+</div>
+<div class="figure">
+<img src="images/CRAN_download.PNG" />
+
+</div>
+<div class="figure">
+<img src="images/CRAN_mirror.PNG" />
+
+</div>
+<div class="figure">
+<img src="images/CRAN_version.PNG" />
+
+</div>
+<div class="figure">
+<img src="images/CRAN_select.PNG" />
+
+</div>
+<div class="rmdlink">
+<p>
+The <span class="math inline"><span class="math inline">\(R\)</span></span> Project website has an extensive <a href="https://cran.r-project.org/doc/FAQ/R-FAQ.html">FAQ</a>
 </p>
 </div>
-<p>Get the latest released version of FREE <strong>Base</strong> <span class="math inline">\(R\)</span> from <span class="math inline">\(CRAN\)</span></p>
-<ul>
-<li>Choose a mirror close to your geographical location</li>
-<li>Select <strong>base</strong> <span class="math inline">\(R\)</span> for your computer <em>(Windows, Mac, ect.)</em></li>
-<li>The defaults are good…don’t change them…just keep clicking <em>‘Next’</em></li>
-</ul>
 <div class="rmdlightbulb">
 <p>
 Each new release of <span class="math inline"><span class="math inline">\(R\)</span></span> is given a name that references a Peanuts strip or film. Read some of the past names and find out where they came from: <a href="https://livefreeordichotomize.com/2017/09/28/r-release-names/">blog post</a>
@@ -228,55 +256,96 @@ Each new release of <span class="math inline"><span class="math inline">\(R\)</s
 </div>
 <div id="the-r-studio-ide" class="section level2">
 <h2><span class="header-section-number">2.2</span> The R Studio IDE</h2>
-<div class="figure">
-<img src="images/rstudiosticker.png" />
-
-</div>
 <div class="rmddownload">
 <p>
-<strong>Go to:</strong> <a href="http://www.rstudio.com">www.rstudio.com</a>
+Go to: <a href="http://www.rstudio.com">www.rstudio.com</a>
+</p>
+<ul>
+<li>
+Select the FREE Open Source <strong>Desktop</strong> Edition of <span class="math inline"><span class="math inline">\(R Studio\)</span></span>
+</li>
+<li>
+The defaults are good…don’t change them…just keep clicking <em>‘Next’</em>
+</li>
+</ul>
+</div>
+<div class="figure">
+<img src="images/RStudio_download.PNG" />
+
+</div>
+<div class="figure">
+<img src="images/RStudio_version.PNG" />
+
+</div>
+<div class="figure">
+<img src="images/RStudio_platform.PNG" />
+
+</div>
+<div class="rmdlink">
+<p>
+<span class="math inline"><span class="math inline">\(R Studio\)</span></span> has an entire <a href="https://www.rstudio.com/online-learning/">online learning library</a>. It is full of helpful links and resources for R programing, R markdown, and statistics.
 </p>
 </div>
-<p>Get the latest version of the FREE Open Source <strong>Desktop</strong> Edition of <span class="math inline">\(R Studio\)</span></p>
-<ul>
-<li>The defaults are good…don’t change them…just keep clicking <em>‘Next’</em></li>
-</ul>
 <hr />
 </div>
 <div id="tex-optional" class="section level2">
 <h2><span class="header-section-number">2.3</span> TeX (optional)</h2>
-<div class="figure">
-<img src="images/latex.png" />
-
+<div class="rmdlightbulb">
+<p>
+<span class="math inline"><span class="math inline">\(\TeX\)</span></span> or <span class="math inline"><span class="math inline">\(LaTeX\)</span></span> is a typesetting or formatting system that is commonly used in printing and publishing, especially anything with formulas (see <a href="https://texfaq.org/FAQ-whatTeX" class="uri">https://texfaq.org/FAQ-whatTeX</a>). It is NOT NEEDED to run <span class="math inline"><span class="math inline">\(R\)</span></span>, but <span class="math inline"><span class="math inline">\(R Studio\)</span></span> must have access to it in order to <code>knit</code> a <span class="math inline"><span class="math inline">\(R Notebook\)</span></span> into a <code>.pdf</code> file.
+</p>
 </div>
-<p>TeX is a typesetting or formatting system that is commonly used in printing and publishing, especially anything with formulas (see <a href="https://texfaq.org/FAQ-whatTeX" class="uri">https://texfaq.org/FAQ-whatTeX</a>). It is NOT NEEDED to run <span class="math inline">\(R\)</span>, but <span class="math inline">\(R Stuido\)</span> must have access to it in order to <code>knit</code> a <span class="math inline">\(R Notebook\)</span> into a <code>.pdf</code> file.</p>
 <div id="mac---use-mactex" class="section level3">
 <h3><span class="header-section-number">2.3.1</span> Mac - use <code>MacTeX</code></h3>
 <div class="rmddownload">
 <p>
-<strong>Go to:</strong> <a href="http://tug.org/mactex/" class="uri">http://tug.org/mactex/</a>
+Go to: <a href="http://tug.org/mactex/" class="uri">http://tug.org/mactex/</a>
 </p>
-</div>
 <ul>
-<li>Download (5+ min) to a folder and them double click on the <strong>PKG file</strong></li>
-<li>Follow the installation instructions.</li>
-<li>You don’t need to open anything after MacTeX is finished installing.</li>
+<li>
+Download (5+ min) to a folder and them double click on the <strong>PKG file</strong>
+</li>
+<li>
+Follow the installation instructions.
+</li>
+<li>
+You don’t need to open anything after MacTeX is finished installing.
+</li>
 </ul>
+</div>
+<div class="figure">
+<img src="images/MacTeX_download.PNG" />
+
+</div>
 </div>
 <div id="windows---use-miktex" class="section level3">
 <h3><span class="header-section-number">2.3.2</span> Windows - use <code>MikTeX</code></h3>
 <div class="rmddownload">
 <p>
-<strong>Go to:</strong> <a href="http://miktex.org/download" class="uri">http://miktex.org/download</a>
+Go to: <a href="http://miktex.org/download" class="uri">http://miktex.org/download</a>
 </p>
-</div>
 <ul>
-<li>Pick the latest version of the <strong>Net Installer</strong>, not the Basic!</li>
-<li>You need the full version 64-bit is better, if you have a 64-bit machine</li>
-<li>When your download is complete, run the downloaded installer.</li>
-<li>Windows may ask you if you want to <em>“allow this app from an unknown publisher to make changes to your PC”</em>. If it does, make sure to click <strong>Yes!</strong></li>
-<li>This is the slowest part…</li>
+<li>
+Pick the latest version of the <strong>Net Installer</strong>, not the Basic!<br />
+</li>
+<li>
+You need the full version 64-bit is better, if you have a 64-bit machine<br />
+</li>
+<li>
+When your download is complete, run the downloaded installer.<br />
+</li>
+<li>
+Windows may ask you if you want to <em>“allow this app from an unknown publisher to make changes to your PC”</em>. If it does, make sure to click <strong>Yes!</strong><br />
+</li>
+<li>
+This is the slowest part…
+</li>
 </ul>
+</div>
+<div class="figure">
+<img src="images/MikTeX_download.PNG" />
+
+</div>
 </div>
 <div id="use-tinytex-package" class="section level3">
 <h3><span class="header-section-number">2.3.3</span> Use <code>tinytex</code> package</h3>

@@ -112,8 +112,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="1" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i><b>1</b> Overview</a><ul>
 <li class="chapter" data-level="1.1" data-path="overview.html"><a href="overview.html#r-vs.r-studio"><i class="fa fa-check"></i><b>1.1</b> R vs. R Studio</a></li>
 <li class="chapter" data-level="1.2" data-path="overview.html"><a href="overview.html#r-markdown-vs.r-notebook"><i class="fa fa-check"></i><b>1.2</b> R Markdown vs. R Notebook</a></li>
-<li class="chapter" data-level="1.3" data-path="overview.html"><a href="overview.html#the-magic-of-kniting"><i class="fa fa-check"></i><b>1.3</b> The Magic of Knit’ing</a></li>
-<li class="chapter" data-level="1.4" data-path="overview.html"><a href="overview.html#additional-faqs"><i class="fa fa-check"></i><b>1.4</b> Additional FAQs</a><ul>
+<li class="chapter" data-level="1.3" data-path="overview.html"><a href="overview.html#knit-r"><i class="fa fa-check"></i><b>1.3</b> knit-R</a></li>
+<li class="chapter" data-level="1.4" data-path="overview.html"><a href="overview.html#more-indepth-faqs"><i class="fa fa-check"></i><b>1.4</b> More Indepth FAQs</a><ul>
 <li class="chapter" data-level="" data-path="overview.html"><a href="overview.html#what-is-r"><i class="fa fa-check"></i>What is R ?</a></li>
 <li class="chapter" data-level="" data-path="overview.html"><a href="overview.html#what-is-r-markdown"><i class="fa fa-check"></i>What is R Markdown ?</a></li>
 <li class="chapter" data-level="" data-path="overview.html"><a href="overview.html#what-is-dynamic-reporting"><i class="fa fa-check"></i>What is Dynamic Reporting?</a></li>
@@ -206,9 +206,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 </div>
 <p>Before we get busy downloading and installing the actual software, here is the big picture.</p>
+<hr />
 <div id="r-vs.r-studio" class="section level2">
 <h2><span class="header-section-number">1.1</span> R vs. R Studio</h2>
-<p>First time users often confuse by all the different uses of the letter “R”.</p>
 <table>
 <thead>
 <tr>
@@ -216,17 +216,25 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 R
 </th>
 <th style="text-align:center;">
-R.Studio
+R Studio
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:center;">
-Engine
+<img src="images/Rlogo_200.png" width="100" />
 </td>
 <td style="text-align:center;">
-Dashboard
+<img src="images/rstudiosticker.png" width="200" />
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+Programing Language
+</td>
+<td style="text-align:center;">
+Interface Program
 </td>
 </tr>
 <tr>
@@ -239,6 +247,14 @@ Interact with Constantly
 </tr>
 <tr>
 <td style="text-align:center;">
+Engine
+</td>
+<td style="text-align:center;">
+Dashboard
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
 <img src="images/car_engine.jpg" width="500" />
 </td>
 <td style="text-align:center;">
@@ -247,52 +263,84 @@ Interact with Constantly
 </tr>
 </tbody>
 </table>
-<p>More precisely, <span class="math inline">\(R\)</span> is a <em>programming language</em> that runs computations while <span class="math inline">\(R Studio\)</span> is an <em>integrated development environment (IDE)</em> that provides an interface by adding many convenient features and tools. So the way of having access to a speedometer, rearview mirrors, and a navigation system makes driving much easier, using <span class="math inline">\(RStudio’s\)</span> interface makes using <span class="math inline">\(R\)</span> much easier as well. - <a href="https://ismayc.github.io/moderndive/index.html">Chester Ismay and Albert Y. Kim</a></p>
+<blockquote>
+<p>Many users think of <span class="math inline">\(R\)</span> as a statistics system. We prefer to think of it of an environment within which statistical techniques are implemented. <span class="math inline">\(R\)</span> can be extended (easily) via packages. There are about eight packages supplied with the <span class="math inline">\(R\)</span> distribution and many more (over 10,000) are available through the <span class="math inline">\(CRAN\)</span> family of Internet sites covering a very wide range of modern statistics.</p>
+<p><a href="https://www.r-project.org/about.html">www.r-project.org</a></p>
+</blockquote>
+<p>Where as <span class="math inline">\(R\)</span> is a <em>programming language</em> that runs computations, <span class="math inline">\(R Studio\)</span> is an <em>integrated development environment (IDE)</em> that provides an interface by adding many convenient features and tools. So the way of having access to a speedometer, rearview mirrors, and a navigation system makes driving much easier, using <strong><span class="math inline">\(RStudio’s\)</span> interface makes using <span class="math inline">\(R\)</span> much easier</strong> as well. - <a href="https://ismayc.github.io/moderndive/index.html">Chester Ismay and Albert Y. Kim</a></p>
 <div class="rmdlink">
 <p>
 For a more in-depth discussion on the difference between <span class="math inline"><span class="math inline">\(R\)</span></span> and <span class="math inline"><span class="math inline">\(R Studio\)</span></span> IDE, watch this <a href="https://campus.datacamp.com/courses/working-with-the-rstudio-ide-part-1/orientation?ex=1">DataCamp video (2m52s)</a>.
 </p>
 </div>
+<hr />
 </div>
 <div id="r-markdown-vs.r-notebook" class="section level2">
 <h2><span class="header-section-number">1.2</span> R Markdown vs. R Notebook</h2>
-<div class="rmdconstruct">
+<table>
+<thead>
+<tr>
+<th style="text-align:center;">
+R Markdown
+</th>
+<th style="text-align:center;">
+R Notebook
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+<img src="images/hex/rmarkdown-200x232.png" />
+</td>
+<td style="text-align:center;">
+<img src="images/Rnotebook.png" width="225" />
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+Plain text that includes shorthand notation to denote formatting, instead of relying on a text editor program display (MS Word). Files are saved with the <code>.Rmd</code> extension.
+</td>
+<td style="text-align:center;">
+A specific kind of <code>.Rmd</code> file in which the code chunks may be interactively executed/run onscreen and the results/output are shown directly below each code chunk.
+</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math inline">\(R Markdown\)</span> documents are fully reproducible. Use a productive <strong>notebook</strong> interface to <strong>weave together narrative text and code</strong> to produce elegantly formatted output. Use multiple languages including <span class="math inline">\(R\)</span>, <span class="math inline">\(Python\)</span>, and <span class="math inline">\(SQL\)</span> <span class="citation">(Allaire et al. <a href="references.html#ref-R-rmarkdown">2018</a>)</span>.</p>
+<div class="rmdlink">
 <p>
-<strong>ADD SECTION:</strong> need a diagram built
+<strong>More details at the R Studio website:</strong> <a href="https://rmarkdown.rstudio.com/lesson-1.html">R Markdown, lesson 1</a> and <a href="https://rmarkdown.rstudio.com/r_notebooks">R Notebooks</a>
 </p>
 </div>
+<hr />
 </div>
-<div id="the-magic-of-kniting" class="section level2">
-<h2><span class="header-section-number">1.3</span> The Magic of Knit’ing</h2>
-<p><span class="math inline">\(R Markdown\)</span> is a file with the file extension <code>.Rmd</code>, the <code>knitr</code> package will then transform the file into a <em>Markdown</em> file with the extension <code>.md.</code> Then <span class="math inline">\(R Studio\)</span> can <span class="citation">(Xie <a href="references.html#ref-xie2015">2015</a>)</span>:</p>
-<ul>
-<li><p>Use <span class="math inline">\(LaTeX\)</span> to transform the file into a <code>.pdf</code></p></li>
-<li><p>Load another package called <span class="math inline">\(markdown\)</span> to transform the file into <code>.html</code></p></li>
-<li><p>Use Pandoc to even convert to file to a <code>Word</code> document (ugly)</p></li>
-</ul>
+<div id="knit-r" class="section level2">
+<h2><span class="header-section-number">1.3</span> knit-R</h2>
 <div class="figure">
-<img src="images/processRStudio.png" />
+<img src="images/cartoon_knit.PNG" />
 
 </div>
+<p>With the click of a button, the <code>knitr</code> package will convert a <span class="math inline">\(R notebook\)</span> (<code>.Rmd</code>) to an intermediary <em>Markdown</em> file with the extension <code>.md</code>, which <span class="math inline">\(R Studio\)</span> will further transform to various final file types, including <span class="citation">(Xie <a href="references.html#ref-xie2015">2015</a>)</span>:</p>
+<ul>
+<li><p><code>.pdf</code> using <span class="math inline">\(LaTeX\)</span> <em>(beautiful)</em></p></li>
+<li><p><code>.html</code> using another package called <span class="math inline">\(markdown\)</span> <em>(highly viewable)</em></p></li>
+<li><p><code>Word</code> document using Pandoc <em>(probably be ugly)</em></p></li>
+</ul>
+<div class="figure">
+<img src="images/knitr_formats.PNG" width="500" />
+
+</div>
+<p><code>knitr</code> is an engine for dynamic report generation with <span class="math inline">\(R\)</span>. It is a package in the statistical programming language <span class="math inline">\(R\)</span> that enables integration of <strong>R code</strong> into <span class="math inline">\(LaTeX\)</span>, <span class="math inline">\(LyX\)</span>, <span class="math inline">\(HTML\)</span>, <span class="math inline">\(Markdown\)</span>, <span class="math inline">\(AsciiDoc\)</span>, and <span class="math inline">\(text\)</span>s documents <span class="citation">(Xie <a href="references.html#ref-R-knitr">2018</a>)</span>.</p>
 <div class="rmdlink">
 <p>
 The professionals ar <span class="math inline"><span class="math inline">\(R Studio\)</span></span> show it better at their <a href="https://rmarkdown.rstudio.com/index.html">website</a>.
 </p>
 </div>
-<div class="figure">
-<img src="images/hex/rmarkdown-200x232.png" width="100" />
-
-</div>
-<p><span class="math inline">\(R Markdown\)</span> documents are fully reproducible. Use a productive <strong>notebook</strong> interface to weave together narrative text and code to produce elegantly formatted output. Use multiple languages including <span class="math inline">\(R\)</span>, <span class="math inline">\(Python\)</span>, and <span class="math inline">\(SQL\)</span> <span class="citation">(Allaire et al. <a href="references.html#ref-R-rmarkdown">2018</a>)</span>.</p>
-<div class="figure">
-<img src="images/hex/knitr-200x232.png" width="100" />
-
-</div>
-<p><code>knitr</code> is an engine for dynamic report generation with <span class="math inline">\(R\)</span>. It is a package in the statistical programming language <span class="math inline">\(R\)</span> that enables integration of <strong>R code</strong> into <span class="math inline">\(LaTeX\)</span>, <span class="math inline">\(LyX\)</span>, <span class="math inline">\(HTML\)</span>, <span class="math inline">\(Markdown\)</span>, <span class="math inline">\(AsciiDoc\)</span>, and <span class="math inline">\(text\)</span>s documents <span class="citation">(Xie <a href="references.html#ref-R-knitr">2018</a>)</span>.</p>
 <hr />
 </div>
-<div id="additional-faqs" class="section level2">
-<h2><span class="header-section-number">1.4</span> Additional FAQs</h2>
+<div id="more-indepth-faqs" class="section level2">
+<h2><span class="header-section-number">1.4</span> More Indepth FAQs</h2>
 <div class="rmdlink">
 <p>
 <strong>Helpful Websites:</strong> <a href="https://www.statmethods.net/stats/index.html">Quick R: Basic Statistics</a> and <a href="https://libguides.library.kent.edu/statconsulting/r">Introduction to R</a>
