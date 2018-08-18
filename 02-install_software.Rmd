@@ -1,12 +1,12 @@
 # Install Software
 
-![](images/headers/R_studio_LaTeX_header.png)
+![](images/R_studio_LaTeX_header.png)
 You will need to install both $R$ and $R Studio$, but $\LaTeX$ is optional.
 
 
 ## The R Programing Language
 
-> The **“Comprehensive R Archive Network” (CRAN)** is a collection of sites which carry identical material, consisting of the $R$ distribution(s), the contributed extensions, and documentation for $R$.  From $CRAN$, you can obtain the latest official FREE release of BASE $R$.
+> The **“Comprehensive R Archive Network” (CRAN)** is a collection of sites which carry identical material, consisting of the $R$  distribution(s), the contributed extensions (packages), and documentation for $R$.  From $CRAN$, you can obtain the latest official FREE release of BASE $R$.
 
 ```{block type='rmddownload', echo=TRUE} 
 Go to: [www.r-project.org](http://www.r-project.org)   
@@ -17,13 +17,13 @@ Go to: [www.r-project.org](http://www.r-project.org)
 * The defaults are good...don't change them...just keep clicking *'Next'*    
 ```
 
-![](images/CRAN_download.PNG)
+![](images/CRAN_download.PNG){width=600px}
 
-![](images/CRAN_mirror.PNG)
+![](images/CRAN_mirror.PNG){width=600px}
 
-![](images/CRAN_version.PNG)
+![](images/CRAN_version.PNG){width=600px}
 
-![](images/CRAN_select.PNG)
+![](images/CRAN_select.PNG){width=600px}
 
 
 ```{block type='rmdlink', echo=TRUE}
@@ -39,6 +39,7 @@ Each new release of $R$ is given a name that references a Peanuts strip or film.
 
 ## The R Studio IDE
 
+> **RStudio** is a company that is also an active member of the $R$ community. They believe free and open source data analysis software is a foundation for innovative and important work in science, education, and industry. Their namesake software, $RStudio$, is an integrated development environment (IDE) for $R$. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management. 
 
 ```{block type='rmddownload', echo=TRUE}
 Go to: [www.rstudio.com](http://www.rstudio.com) 
@@ -47,25 +48,31 @@ Go to: [www.rstudio.com](http://www.rstudio.com)
 * The defaults are good...don't change them...just keep clicking *'Next'* 
 ```
 
-![](images/RStudio_download.PNG)
+![](images/RStudio_download.PNG){width=600px}
 
-![](images/RStudio_version.PNG)
+![](images/RStudio_version.PNG){width=600px}
 
-![](images/RStudio_platform.PNG)
+![](images/RStudio_platform.PNG){width=600px}
 
 
 ```{block type='rmdlink', echo=TRUE}
 $R Studio$ has an entire [online learning library](https://www.rstudio.com/online-learning/).  It is full of helpful links and resources for R programing, R markdown, and statistics.
 ```
 
+```{block type='rmdlightbulb', echo=TRUE}
+**Note:** The [$R Consortium$](https://www.r-consortium.org/) is a collaboration between the $R$ Foundation, $RStudio$, $Microsoft$, $TIBCO$, $Google$, $Oracle$, $HP$ and others. It’s chartered to fund and inspire ideas that will enable $R$ to become an even better platform for science, research, and industry.
+```
+
+
+
 ---------------------------------
 
 ## TeX (optional)
 
 
-```{block type='rmdlightbulb', echo=TRUE}
-$\TeX$ or $LaTeX$ is a typesetting or formatting system that is commonly used in printing and publishing, especially anything with formulas (see https://texfaq.org/FAQ-whatTeX).  It is NOT NEEDED to run $R$, but $R Studio$ must have access to it in order to `knit` a $R Notebook$ into a `.pdf` file.
-```
+
+> $\TeX$ or $LaTeX$ is a typesetting or formatting system that is commonly used in printing and publishing, especially anything with formulas (see https://texfaq.org/FAQ-whatTeX).  It is NOT NEEDED to run $R$, but $R Studio$ must have access to it in order to `knit` a $R Notebook$ into a `.pdf` file.  There are many versions, but the following are the ones that work best with $R$, depending on your computer's platform.
+
 
 ### Mac - use `MacTeX`
 
@@ -79,7 +86,7 @@ Go to:  [http://tug.org/mactex/](http://tug.org/mactex/)
 ```
 
 
-![](images/MacTeX_download.PNG)
+![](images/MacTeX_download.PNG){width=600px}
 
 
 
@@ -95,12 +102,14 @@ Go to: [http://miktex.org/download](http://miktex.org/download)
 * This is the slowest part...
 ```
 
-![](images/MikTeX_download.PNG)
+![](images/MikTeX_download.PNG){width=600px}
 
 
-### Use `tinytex` package
+### New Option: the `tinytex` package???
  
+ 
+`tinyteX` is still a relatively new project which strives to offer all the functionality of $\LaTeX$, but remain lightweight and easier to maintain.  As it is so new, we are not adopting it currently, but keeping an eye on what is to come.
 
-```{block type='rmdconstruct', echo=TRUE}
-**ADD SECTION:** new package alternative to using full TeX
+```{block type='rmdlink', echo=TRUE}
+Keep an eye on the developing `tinytex` package by checking back to it's [home page](https://yihui.name/tinytex/).
 ```

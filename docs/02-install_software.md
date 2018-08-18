@@ -1,12 +1,12 @@
 # Install Software
 
-![](images/headers/R_studio_LaTeX_header.png)
+![](images/R_studio_LaTeX_header.png)
 You will need to install both $R$ and $R Studio$, but $\LaTeX$ is optional.
 
 
 ## The R Programing Language
 
-> The **“Comprehensive R Archive Network” (CRAN)** is a collection of sites which carry identical material, consisting of the $R$ distribution(s), the contributed extensions, and documentation for $R$.  From $CRAN$, you can obtain the latest official FREE release of BASE $R$.
+> The **“Comprehensive R Archive Network” (CRAN)** is a collection of sites which carry identical material, consisting of the $R$  distribution(s), the contributed extensions (packages), and documentation for $R$.  From $CRAN$, you can obtain the latest official FREE release of BASE $R$.
 
 <div class="rmddownload">
 <p>Go to: <a href="http://www.r-project.org">www.r-project.org</a></p>
@@ -21,13 +21,13 @@ You will need to install both $R$ and $R Studio$, but $\LaTeX$ is optional.
 </ul>
 </div>
 
-![](images/CRAN_download.PNG)
+![](images/CRAN_download.PNG){width=600px}
 
-![](images/CRAN_mirror.PNG)
+![](images/CRAN_mirror.PNG){width=600px}
 
-![](images/CRAN_version.PNG)
+![](images/CRAN_version.PNG){width=600px}
 
-![](images/CRAN_select.PNG)
+![](images/CRAN_select.PNG){width=600px}
 
 
 <div class="rmdlink">
@@ -43,6 +43,7 @@ You will need to install both $R$ and $R Studio$, but $\LaTeX$ is optional.
 
 ## The R Studio IDE
 
+> **RStudio** is a company that is also an active member of the $R$ community. They believe free and open source data analysis software is a foundation for innovative and important work in science, education, and industry. Their namesake software, $RStudio$, is an integrated development environment (IDE) for $R$. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management. 
 
 <div class="rmddownload">
 <p>Go to: <a href="http://www.rstudio.com">www.rstudio.com</a></p>
@@ -52,25 +53,31 @@ You will need to install both $R$ and $R Studio$, but $\LaTeX$ is optional.
 </ul>
 </div>
 
-![](images/RStudio_download.PNG)
+![](images/RStudio_download.PNG){width=600px}
 
-![](images/RStudio_version.PNG)
+![](images/RStudio_version.PNG){width=600px}
 
-![](images/RStudio_platform.PNG)
+![](images/RStudio_platform.PNG){width=600px}
 
 
 <div class="rmdlink">
 <p><span class="math inline">\(R Studio\)</span> has an entire <a href="https://www.rstudio.com/online-learning/">online learning library</a>. It is full of helpful links and resources for R programing, R markdown, and statistics.</p>
 </div>
 
+<div class="rmdlightbulb">
+<p><strong>Note:</strong> The <a href="https://www.r-consortium.org/"><span class="math inline">\(R Consortium\)</span></a> is a collaboration between the <span class="math inline">\(R\)</span> Foundation, <span class="math inline">\(RStudio\)</span>, <span class="math inline">\(Microsoft\)</span>, <span class="math inline">\(TIBCO\)</span>, <span class="math inline">\(Google\)</span>, <span class="math inline">\(Oracle\)</span>, <span class="math inline">\(HP\)</span> and others. It’s chartered to fund and inspire ideas that will enable <span class="math inline">\(R\)</span> to become an even better platform for science, research, and industry.</p>
+</div>
+
+
+
 ---------------------------------
 
 ## TeX (optional)
 
 
-<div class="rmdlightbulb">
-<p><span class="math inline">\(\TeX\)</span> or <span class="math inline">\(LaTeX\)</span> is a typesetting or formatting system that is commonly used in printing and publishing, especially anything with formulas (see <a href="https://texfaq.org/FAQ-whatTeX" class="uri">https://texfaq.org/FAQ-whatTeX</a>). It is NOT NEEDED to run <span class="math inline">\(R\)</span>, but <span class="math inline">\(R Studio\)</span> must have access to it in order to <code>knit</code> a <span class="math inline">\(R Notebook\)</span> into a <code>.pdf</code> file.</p>
-</div>
+
+> $\TeX$ or $LaTeX$ is a typesetting or formatting system that is commonly used in printing and publishing, especially anything with formulas (see https://texfaq.org/FAQ-whatTeX).  It is NOT NEEDED to run $R$, but $R Studio$ must have access to it in order to `knit` a $R Notebook$ into a `.pdf` file.  There are many versions, but the following are the ones that work best with $R$, depending on your computer's platform.
+
 
 ### Mac - use `MacTeX`
 
@@ -85,7 +92,7 @@ You will need to install both $R$ and $R Studio$, but $\LaTeX$ is optional.
 </div>
 
 
-![](images/MacTeX_download.PNG)
+![](images/MacTeX_download.PNG){width=600px}
 
 
 
@@ -106,12 +113,14 @@ You will need to install both $R$ and $R Studio$, but $\LaTeX$ is optional.
 </ul>
 </div>
 
-![](images/MikTeX_download.PNG)
+![](images/MikTeX_download.PNG){width=600px}
 
 
-### Use `tinytex` package
+### New Option: the `tinytex` package???
  
+ 
+`tinyteX` is still a relatively new project which strives to offer all the functionality of $\LaTeX$, but remain lightweight and easier to maintain.  As it is so new, we are not adopting it currently, but keeping an eye on what is to come.
 
-<div class="rmdconstruct">
-<p><strong>ADD SECTION:</strong> new package alternative to using full TeX</p>
+<div class="rmdlink">
+<p>Keep an eye on the developing <code>tinytex</code> package by checking back to it's <a href="https://yihui.name/tinytex/">home page</a>.</p>
 </div>

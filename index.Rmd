@@ -20,7 +20,7 @@ link-citations: yes
 
 # Welcome {-}
 
-![](images/EQM_img/EQM_v0_header.png)
+![](images/common/EQM_v0_header.png)
 
 
 
@@ -79,16 +79,16 @@ tribble( ~Volume, ~Title, ~Content,
 
 ```{r, echo=FALSE}
 tribble( ~Sarah, ~Tyson,
-      "![](images/Sarah_headshot.jpg){width=300px}",
-      "![](images/Tyson_headshot.jpg){width=300px}",
+      "![](images/common/Sarah_headshot.jpg){width=300px}",
+      "![](images/common/Tyson_headshot.jpg){width=300px}",
       "[www.SarahSchwartzStats.com](http://www.sarahschwartzstats.com/) ",
       "[www.TysonBarrett.com](http://tysonbarrett.com/)",
       "Sarah.Schwartz@usu.edu",
       "Tyson.Battett@usu.edu",
       "[Statistical Consulting Studio](https://cehs.usu.edu/research/statstudio/index)",
       "[Data Science and Discover Unit](https://cehs.usu.edu/research/dsdu/index)",
-      "![](images/StatStudioLogo_dark_small.png){width=300px}",
-      "![](images/dsdu_logo.PNG){width=300px}") %>% 
+      "![](images/common/StatStudioLogo_dark_small.png){width=300px}",
+      "![](images/common/dsdu_logo.PNG){width=300px}") %>% 
   data.frame() %>%
   kableExtra::kable(col.names = c("Dr. Sarah Schwartz", 
                                   "Dr. Tyson Barrett"),
@@ -100,7 +100,7 @@ tribble( ~Sarah, ~Tyson,
 
 ## Blocked Notes {-}
 
-Thoughout all the eBooks in this encyclopedia, several small secitons will be blocked out in the following way:
+Thoughout all the eBooks in this encyclopedia, several small secitons will be blocked out in the following ways:
 
 ```{block type='rmdconstruct', echo=TRUE}
 These blocks denote an area **UNDER CONSTRUCTION**, so check back often.  This massive undertaking started during the summer of 2018 and is far from complete.  The outline of seven volumes is given above despite any one being complete.  Feedback is welcome via either author's email.
@@ -152,10 +152,10 @@ reproducibity
 
 ## FYI  {-}
 
-The entire encyclopedia is written in $R Markdown$, using $R Studio$ as the text editor and the `bookdown` package to turn a collection of markdown documents into a coherent whole. The book's source code is hosted on GitHub, at https://github.com/cehs-research/eBook_install. If you notice typos or other issues, feel free to open an issue on GitHub or send me a pull request. If you do the latter, in your commit message, please add the sentence "I assign the copyright of this contribution to Dr.s Schwartz and Barrett," so that I can maintain the option of publishing this book in other forms.
+This entire encyclopedia is written in $R Markdown$, using $R Studio$ as the text editor and the `bookdown` package to turn a collection of markdown documents into a coherent whole. The book's source code is hosted on GitHub, at https://github.com/cehs-research/eBook_install. If you notice typos or other issues, feel free to open an issue on GitHub or send a pull request. If you do the latter, in your commit message, please add the sentence "I assign the copyright of this contribution to Dr.s Schwartz and Barrett," so that I can maintain the option of publishing this book in other forms. Direct emails to the authors are also welcome.
 
 This work is licensed under the [Attribution-NonCommercial-NoDerivatives 4.0 International](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode) License. 
 
 
 
-![](images/Education_Logo_WHITE-02.png){width=250px}
+![](images/common/Education_Logo_WHITE-02.png){width=250px}

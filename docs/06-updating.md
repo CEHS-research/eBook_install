@@ -1,7 +1,7 @@
 # Periodic Updates
 
 
-![](images/headers/update.png)
+![](images/update.png)
 Periodically you will need to update: R, R Studio, and your packages.
 
 
@@ -13,7 +13,7 @@ Periodically you will need to update: R, R Studio, and your packages.
 
 ## The R Programing Language
 
-![](images/Rlogo_200.png)
+![](images/common/Rlogo_200.png)
 
 
  <div class="rmdlink">
@@ -25,7 +25,7 @@ Periodically you will need to update: R, R Studio, and your packages.
 ## The R Studio IDE
 
 
-![](images/rstudiosticker.png)
+![](images/common/rstudiosticker.png)
  
  <div class="rmdlink">
  <p>Go to: <a href="http://www.rstudio.com">www.rstudio.com</a></p>

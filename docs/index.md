@@ -20,7 +20,7 @@ link-citations: yes
 
 # Welcome {-}
 
-![](images/EQM_img/EQM_v0_header.png)
+![](images/common/EQM_v0_header.png)
 
 
 
@@ -106,8 +106,8 @@ The three main purposes are to:
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:center;"> ![](images/Sarah_headshot.jpg){width=300px} </td>
-   <td style="text-align:center;"> ![](images/Tyson_headshot.jpg){width=300px} </td>
+   <td style="text-align:center;"> ![](images/common/Sarah_headshot.jpg){width=300px} </td>
+   <td style="text-align:center;"> ![](images/common/Tyson_headshot.jpg){width=300px} </td>
   </tr>
   <tr>
    <td style="text-align:center;"> [www.SarahSchwartzStats.com](http://www.sarahschwartzstats.com/) </td>
@@ -122,8 +122,8 @@ The three main purposes are to:
    <td style="text-align:center;"> [Data Science and Discover Unit](https://cehs.usu.edu/research/dsdu/index) </td>
   </tr>
   <tr>
-   <td style="text-align:center;"> ![](images/StatStudioLogo_dark_small.png){width=300px} </td>
-   <td style="text-align:center;"> ![](images/dsdu_logo.PNG){width=300px} </td>
+   <td style="text-align:center;"> ![](images/common/StatStudioLogo_dark_small.png){width=300px} </td>
+   <td style="text-align:center;"> ![](images/common/dsdu_logo.PNG){width=300px} </td>
   </tr>
 </tbody>
 </table>
@@ -131,7 +131,7 @@ The three main purposes are to:
 
 ## Blocked Notes {-}
 
-Thoughout all the eBooks in this encyclopedia, several small secitons will be blocked out in the following way:
+Thoughout all the eBooks in this encyclopedia, several small secitons will be blocked out in the following ways:
 
 <div class="rmdconstruct">
 <p>These blocks denote an area <strong>UNDER CONSTRUCTION</strong>, so check back often. This massive undertaking started during the summer of 2018 and is far from complete. The outline of seven volumes is given above despite any one being complete. Feedback is welcome via either author's email.</p>
@@ -180,10 +180,10 @@ Thoughout all the eBooks in this encyclopedia, several small secitons will be bl
 
 ## FYI  {-}
 
-The entire encyclopedia is written in $R Markdown$, using $R Studio$ as the text editor and the `bookdown` package to turn a collection of markdown documents into a coherent whole. The book's source code is hosted on GitHub, at https://github.com/cehs-research/eBook_install. If you notice typos or other issues, feel free to open an issue on GitHub or send me a pull request. If you do the latter, in your commit message, please add the sentence "I assign the copyright of this contribution to Dr.s Schwartz and Barrett," so that I can maintain the option of publishing this book in other forms.
+This entire encyclopedia is written in $R Markdown$, using $R Studio$ as the text editor and the `bookdown` package to turn a collection of markdown documents into a coherent whole. The book's source code is hosted on GitHub, at https://github.com/cehs-research/eBook_install. If you notice typos or other issues, feel free to open an issue on GitHub or send a pull request. If you do the latter, in your commit message, please add the sentence "I assign the copyright of this contribution to Dr.s Schwartz and Barrett," so that I can maintain the option of publishing this book in other forms. Direct emails to the authors are also welcome.
 
 This work is licensed under the [Attribution-NonCommercial-NoDerivatives 4.0 International](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode) License. 
 
 
 
-![](images/Education_Logo_WHITE-02.png){width=250px}
+![](images/common/Education_Logo_WHITE-02.png){width=250px}

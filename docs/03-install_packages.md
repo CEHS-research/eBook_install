@@ -1,7 +1,7 @@
 # Install Packages
 
 
-![](images/headers/packages.png)
+![](images/packages.png)
 
 Learn what packages are and how to get them.
 
@@ -11,9 +11,9 @@ Learn what packages are and how to get them.
 
 ### What are packages ?
 
-$R$ packages are collections of functions and data sets developed by the community. They increase the power of $R$ by improving existing base $R$ functionalities, or by adding new ones.
+> $R$ packages are collections of functions and data sets (just files) developed by the community (or you). They increase the power of $R$ by improving existing base $R$ functionalities, or by adding new ones.
 
-When you download $R$ you are only getting the bare-bones, most basic files.  
+When you download $R$ you are only getting the bare-bones, most basic files.  This is nice, as it keeps the program from hogging your entire hard drive, but doesn't offer much in terms of data anaysis. Today there are over 10,000 packages available on $CRAN$ alone, so downloading all of them would be silly and probably fill your computer several times over.  Individual users are left with the freedom to choose which packages they need.  
 
 <div class="rmdlink">
 <p>More information may be found here: <a href="https://www.datacamp.com/community/tutorials/r-packages-guide" class="uri">https://www.datacamp.com/community/tutorials/r-packages-guide</a></p>
@@ -23,36 +23,41 @@ When you download $R$ you are only getting the bare-bones, most basic files.
 
 ### Where can you get packages ?
 
+A repository is a place where packages are located so you can install them from it. Typically they are online and accesible to everyone. Three of the most popular repositories for R packages are:
 
-<div class="rmdconstruct">
-<p><strong>ADD SECTION:</strong> CRAN, GitHub, ect.</p>
-</div>
+* **[$CRAN$:](https://cran.r-project.org/)** the official repository, it is a network of $ftp$ and web servers mantained by the $R$ community around the world. It is coordinated by the $R$ foundation, and for a package to be published here it needs to pass several tests that ensure the package is following $CRAN$ policies. You can find more details [here](https://cran.r-project.org/web/packages/policies.html).
+
+* **[Github:](https://github.com/)** although this is not $R$ specific, $github$ is probably the most popular repository for open source projects. Its popularity comes from the unlimited space for open source, the integration with $git$, a version control software, and its ease to share and collaborate with others. But be aware that there is no review process associated to it.  (All the files for this eBook are stored on $github$.)
+
+* **[Bioconductor:](https://www.bioconductor.org/)** this is a topic specific repository, intended for open source software for bioinformatics. As $CRAN$, it has its own [s]ubmission and review processes](https://www.bioconductor.org/developers/package-submission/), and its community is very active having several conferences and meetings per year.
+
+
 
 
 
 ## Installing packages
 
-Installing is the act of getting the package files onto your computer and store in a location on your hard drive where $R$ can find them.  Usually the files are zipped or compress and must be extracted or unpacked. The directions below will walk you through the automated process of using the user interface (rather than actual syntax).
+Installing is the act of getting the package files onto your computer and stored in a location on your hard drive where $R$ can find them.  Usually the files are zipped/compress and must be extracted/unpacked. The directions below will walk you through the automated process of using the user interface in $R Studio$ *(rather than actual syntax)*.
 
 
 
 In **R Studio**:
 
-1. Click on the **Packages** tab the panel with the most tabs
-2. Click on the word **Instsall** just under and to the left of the tab
-3. In the **Packages** box, type in the name of the packages you would like to download.  You can do several at once, just seperate them with multiple spaces or a comma.
+1. Click on the **Packages** tab in the panel with the most tabs
+2. Click on the word **Install** just under and to the left of the tab
+3. In the box labelled **"Packages"**, type the name of the package you would like to download.  You can do several at once, just seperate them with at least one space or a comma.
 
 <div class="rmdlightbulb">
 <p><strong>You only need to INSTALL packages ONCE per computer.</strong><br />
-Leave the installation &quot;library path&quot;&quot; as the default. Also, make sure the box for &quot;Installing dependencies&quot; box is checked.</p>
+Leave the installation <em>&quot;library path&quot;</em> as the default. Also, make sure the box for <em>&quot;Installing dependencies&quot;</em> box is checked.</p>
 </div>
 
 
 
-![](images/Install_Package_Screenshot.png)
+![](images/Install_Package_Screenshot.png){width=600px}
 
 
-You can *copy-and-paste* the following list into the box (labeled 3) to load the packages that we use most commonly all at once. 
+? You can *copy-and-paste* the following list into the box (labeled 3 above) to load the packages that we find most commonly used. You can install more packages at any time.
 
 
 <div class="rmdimportant">
@@ -62,26 +67,27 @@ You can *copy-and-paste* the following list into the box (labeled 3) to load the
 
 
 
-When you click the **Install** buttom, a smaller window may asks if you would like to re-start $R$ prior to installing, choose "no" and manually close and open the $R Studio$ program once all packages have been downloaded, unpacked, and checked.  This may take a few minutes, especially if you have selected multiple packages.  
+When you click the **Install** buttom, a smaller window *may* asks if you would like to "re-start $R$ prior to installing", choose "no" and manually close and open the $R Studio$ program once all packages have been downloaded, unpacked, and checked *(saves time)*.  This may take a few minutes, especially if you have selected multiple packages.  
 
 
 ## Useful Packages on CRAN
 
 
 <div class="rmdlink">
-<p>A curated list of awesome <span class="math inline">\(R\)</span> packages and tools: <a href="https://awesome-r.com/" class="uri">https://awesome-r.com/</a></p>
+<p>A curated list of handy <span class="math inline">\(R\)</span> packages and tools can be found at <a href="https://awesome-r.com/">awesome-r.com</a></p>
 </div>
 
 
-### The Tidy-Universe, from $R Studio$
+### The Tidy-Universe, a MEGA package from $R Studio$
 
 
 
-> The `tidyverse` [(www.tidyverse.org)](https://www.tidyverse.org/) is an opinionated **collection of $R$ packages** designed for data science. All packages share an underlying design philosophy, grammar, and data structures. 
+> The [`tidyverse`](https://www.tidyverse.org/) is an opinionated **collection of $R$ packages** designed for data science. All packages share an underlying design philosophy, grammar, and data structures. 
 
-#### Core
 
-The core tidyverse includes the packages that you are likely to use in everyday data analyses. As of `tidyverse 1.2.0`, the following packages are included in the core tidyverse:
+The **core tidyverse** includes the packages that you are likely to use in everyday data analyses. As of `tidyverse 1.2.0`, the top 8 packages in the following table are included in the core tidyverse.  
+
+The tidyverse also includes many other packages with more specialised usage. They are not loaded automatically with `library(tidyverse)`, so you'll need to load each one with its own call to `library()`.
 
 
 
@@ -94,15 +100,7 @@ The core tidyverse includes the packages that you are likely to use in everyday 
 | [`readr`](https://readr.tidyverse.org/)     | Read Rectangular Text Data |
 | [`stringr`](https://stringr.tidyverse.org/) | Simple, Consistent Wrappers for Common String Operations *(Text)* |
 | [`tibble`](https://tibble.tidyverse.org/)   | Simple Data Frames |
-| [`tidyr`](https://tidyr.tidyverse.org/)     | Easily Tidy Data with `spread()` and `gather()` Functions |
-   
-#### Supplemental 
-
-The tidyverse also includes many other packages with more specialised usage. They are not loaded automatically with `library(tidyverse)`, so you'll need to load each one with its own call to `library()`.
-
-
-| website     | description |   
-|------------:|:------------|   
+| [`tidyr`](https://tidyr.tidyverse.org/)     | Easily Tidy Data with 
 | [`broom`](https://github.com/tidymodels/broom) | Convert Statistical Analysis Objects into Tidy Tibbles
 | [`haven`](https://haven.tidyverse.org/) | Import and Export **SPSS**, **Stata** and **SAS** Files
 | [`hms`](https://github.com/tidyverse/hms) | Pretty Time of Day 

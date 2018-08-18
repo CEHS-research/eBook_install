@@ -3,7 +3,7 @@
   border-radius: 15px;
   margin-bottom: 10px;
   background: #ffb366 5px center/3em no-repeat;
-  background-image: url("images/download.png");
+  background-image: url("images/common/download.png");
 }
 
 .rmdimportant {
@@ -14,7 +14,7 @@
   margin-bottom: 10px;
   color: white;
   background: #ff0000 5px center/3em no-repeat;
-  background-image: url("images/important.png");
+  background-image: url("images/common/important.png");
 }
 
 .rmdlink {
@@ -22,7 +22,7 @@
   border-radius: 15px;
   margin-bottom: 10px;
   background: #AED6F1 5px center/3em no-repeat;
-  background-image: url("images/circle_link.png");
+  background-image: url("images/common/circle_link.png");
 }
 
 .rmdlightbulb {
@@ -30,7 +30,7 @@
   border-radius: 15px;
   margin-bottom: 10px;
   background: #a3d69f 5px center/3em no-repeat;
-  background-image: url("images/lightbulb.png");
+  background-image: url("images/common/lightbulb.png");
 }
 
 .rmdconstruct {
@@ -38,7 +38,7 @@
   border-radius: 15px;
   margin-bottom: 10px;
   background: #ffff80 5px center/3em no-repeat;
-  background-image: url("images/consturction_cone.png");
+  background-image: url("images/common/consturction_cone.png");
 }
 
 image{

@@ -2,8 +2,10 @@
 
 
 
+![](images/manyRs.PNG)
 
-![](images/headers/manyRs.png)
+
+
 
 
 Before we get busy downloading and installing the actual software, here is the big picture.
@@ -21,8 +23,8 @@ Before we get busy downloading and installing the actual software, here is the b
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:center;"> ![](images/Rlogo_200.png){width=100px} </td>
-   <td style="text-align:center;"> ![](images/rstudiosticker.png){width=200px} </td>
+   <td style="text-align:center;"> ![](images/common/Rlogo_200.png){width=100px} </td>
+   <td style="text-align:center;"> ![](images/common/rstudiosticker.png){width=200px} </td>
   </tr>
   <tr>
    <td style="text-align:center;"> Programing Language </td>
@@ -44,12 +46,11 @@ Before we get busy downloading and installing the actual software, here is the b
 </table>
 
 
-> Many users think of $R$ as a statistics system. We prefer to think of it of an environment within which statistical techniques are implemented. $R$ can be extended (easily) via packages. There are about eight packages supplied with the $R$ distribution and many more (over 10,000) are available through the $CRAN$ family of Internet sites covering a very wide range of modern statistics.
->
-> [www.r-project.org](https://www.r-project.org/about.html)
+"Many users think of $R$ as a statistics system. We prefer to think of it of an environment within which statistical techniques are implemented. $R$ can be extended (easily) via packages. There are about eight packages supplied with the $R$ distribution and many more (over 10,000) are available through the $CRAN$ family of Internet sites covering a very wide range of modern statistics."
+- [www.r-project.org](https://www.r-project.org/about.html)
 
 
-Where as $R$ is a *programming language* that runs computations, $R Studio$ is an *integrated development environment (IDE)* that provides an interface by adding many convenient features and tools. So the way of having access to a speedometer, rearview mirrors, and a navigation system makes driving much easier, using **$RStudio’s$ interface makes using $R$ much easier** as well.  - [Chester Ismay and Albert Y. Kim](https://ismayc.github.io/moderndive/index.html)
+"Where as $R$ is a *programming language* that runs computations, $R Studio$ is an *integrated development environment (IDE)* that provides an interface by adding many convenient features and tools. So the way of having access to a speedometer, rearview mirrors, and a navigation system makes driving much easier, using **$RStudio’s$ interface makes using $R$ much easier** as well."  - [Chester Ismay and Albert Y. Kim](https://ismayc.github.io/moderndive/index.html)
 
 
 
@@ -71,8 +72,8 @@ Where as $R$ is a *programming language* that runs computations, $R Studio$ is a
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:center;"> ![](images/hex/rmarkdown-200x232.png) </td>
-   <td style="text-align:center;"> ![](images/Rnotebook.png){width=225px} </td>
+   <td style="text-align:center;"> ![](images/common/rmarkdown-200x232.png) </td>
+   <td style="text-align:center;"> ![](images/common/Rnotebook.png){width=225px} </td>
   </tr>
   <tr>
    <td style="text-align:center;"> Plain text that includes shorthand notation to denote formatting, instead of relying on a text editor program display (MS Word).  Files are saved with the `.Rmd` extension. </td>
@@ -82,7 +83,9 @@ Where as $R$ is a *programming language* that runs computations, $R Studio$ is a
 </table>
 
  
-$R Markdown$ documents are fully reproducible. Use a productive **notebook** interface to **weave together narrative text and code** to produce elegantly formatted output. Use multiple languages including $R$, $Python$, and $SQL$ [@R-rmarkdown].
+>$R Markdown$ documents are fully reproducible.  You may use the productive **notebook** interface to **weave together narrative text and code** to produce elegantly formatted output. 
+>
+>-[@R-rmarkdown].
 
 
 
@@ -97,7 +100,7 @@ $R Markdown$ documents are fully reproducible. Use a productive **notebook** int
 
 ![](images/cartoon_knit.PNG)
 
-With the click of a button, the `knitr` package will convert a $R notebook$ (`.Rmd`) to an intermediary *Markdown* file with the extension `.md`, which $R Studio$ will further transform to various final file types, including [@xie2015]: 
+With the click of a button, the `knitr` package converts a $R notebook$ (`.Rmd`) to an intermediary *Markdown* file (`.md`), which $R Studio$ will further transform to various final file types, including [@xie2015]: 
 
 * `.pdf` using $LaTeX$ *(beautiful)*
 
@@ -106,7 +109,7 @@ With the click of a button, the `knitr` package will convert a $R notebook$ (`.R
 * `Word` document using Pandoc *(probably be ugly)*
 
 
-![](images/knitr_formats.PNG){width=500px}
+![](images/common/knitr_formats.PNG){width=500px}
 
 
 `knitr` is an engine for dynamic report generation with $R$. It is a package in the statistical programming language $R$ that enables integration of **R code** into $LaTeX$, $LyX$, $HTML$, $Markdown$, $AsciiDoc$, and $text$s documents [@R-knitr].
@@ -142,7 +145,7 @@ One of $R$’s strengths is the ease with which well-designed publication-qualit
 
 According to [R Studio](www.rstudio.com):
 
-> "R Markdown is a format that enables easy authoring of reproducible web reports from R. It combines the core syntax of Markdown (an easy-to-write *plain text* format for web content) with embedded *$R$ code chunks* that are run so their output can be included in the final document".
+> "$R Markdown$ is a format that enables easy authoring of reproducible web reports from $R$. It combines the core syntax of Markdown (an easy-to-write *plain text* format for web content) with embedded *$R$ code chunks* that are run so their output can be included in the final document".
 
 
 
@@ -154,17 +157,21 @@ From [Penn State Statistics](https://onlinecourses.science.psu.edu/statprogram/m
 
 The traditional way to write a report:
 
-1. Run your analysis in software, like SPSS or R and manually save our output
-    * *i.e. saving the ANOVA table or using `pdf()` to save the graphs*  
+1. Run your analysis in software, like SPSS, and manually save our output
+    * *i.e. saving huge output files with hundreds of pages*  
 
 
-2. Type your your description and interpretation in a text editor like *Word*
-    * *either drag/drop tables and figures, or worse copy-paste and retype all the numbers*
+2. Type your your description and interpretation in a text editor, like *Word*,
+    * *either drag/drop tables or worse retyping all the numbers*
 
 
-A report written in this way can be problematic.  For instance, imagine your *Mentor/collaborator/journal reviewer*  telling you that they want to use a sub-sample instead of the entire sample. Or to include a nother variable.  You would have to redo all of your work!! 
+A report written in this way can be problematic.  For instance, imagine your *Mentor/collaborator/journal reviewer*  telling you that they want to use a sub-sample instead of the entire sample, or exclude three subjects for a specifica reason. Or more likely to include another variable.  You would have to redo all of your work!! 
 
-Therefore, in this way **dynamic also means reproducible**, in the sense that people who get the file from you can reproduce the entire work in the report.
+If you are using a $R Notebook$, you just change/add a few lines of code and re-run the entire file.  Everything gets updated internally.  **Hours saved!**
+
+
+
+Another bonus is that the single $R Notebook$ file includes exact details of every step: which data file you used, how your cleaned/wrangled your data, and exactly how models were specified.  Therefore, in this way **dynamic also means reproducible**, in the sense that people who get the file from you can reproduce the entire work in the report.  No guessing which version of your file you used and hunting through stacks of output.
 
 
 
