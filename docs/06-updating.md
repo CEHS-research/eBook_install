@@ -1,4 +1,4 @@
-# Update Regularly
+# Periodic Updates
 
 
 ![](images/headers/update.png)

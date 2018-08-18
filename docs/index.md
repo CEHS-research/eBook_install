@@ -1,7 +1,7 @@
 --- 
 title: "Encyclopedia of Quantitative Methods in R, vol. 0: Setting up Your Computer"
 author: "Sarah Schwartz & Tyson Barrett"
-date: "Last updated: 2018-08-17"
+date: "Last updated: 2018-08-18"
 documentclass: book
 description: "Getting started with R and R Studio: installing software and package management."
 knit: "bookdown::render_book"
@@ -36,9 +36,9 @@ This encyclopedia of eBooks is being developed by the [Office of Research Servic
 
 The three main purposes are to: 
 
-* Provide reference material for graduate quantitative methods courses *(EDUC/PSY 6600, EDUC/PSY 7610, PSY 7650, ect.)*  
-* Support college wide workshops given by the [Statistical Consulting Studio](https://cehs.usu.edu/research/statstudio/index) and [Data Science and Discover Unit](https://cehs.usu.edu/research/dsdu/index)
-* Facilitate individual consultations with the authors pertaining to research.
+* Provide reference material for **graduate quantitative methods courses** *(EDUC/PSY 6600, EDUC/PSY 7610, PSY 7650, ect.)*  
+* Support **college wide workshops** given by the [Statistical Consulting Studio](https://cehs.usu.edu/research/statstudio/index) and [Data Science and Discover Unit](https://cehs.usu.edu/research/dsdu/index)
+* Facilitate **individual consultations** with the authors pertaining to research.
 
 
 <table>
@@ -52,38 +52,38 @@ The three main purposes are to:
 <tbody>
   <tr>
    <td style="text-align:center;"> 0. Software </td>
-   <td style="text-align:left;"> [Setting up Your Computer](https://cehs-research.github.io/eBook_install/) </td>
-   <td style="text-align:left;"> Installing R, R Studio, and Packages </td>
+   <td style="text-align:left;"> [Computer Setup](https://cehs-research.github.io/eBook_install/) </td>
+   <td style="text-align:left;"> Installing software (R, R Studio, and Packages), workspace oridentation, notebook workflow, and periodic updating </td>
   </tr>
   <tr>
    <td style="text-align:center;"> 1. Wrangling </td>
    <td style="text-align:left;"> Data Management </td>
-   <td style="text-align:left;"> Importing, Sub-Setting, Creating Variables, and Saving </td>
+   <td style="text-align:left;"> Importing data files (SPSS, excel, csv, ect.), sub-setting (observations and variables), creating new variables, and saving revised data </td>
   </tr>
   <tr>
    <td style="text-align:center;"> 2. Exploratory </td>
    <td style="text-align:left;"> Exploratory Data Analysis </td>
-   <td style="text-align:left;"> Summary Statistics and Descriptive Visualizations </td>
+   <td style="text-align:left;"> Computing and tabulating summary statistics (M/SD, count/%) and creating descriptive visualizations of distributions (boxplots, histograms) and relationships (scatter plots) </td>
   </tr>
   <tr>
    <td style="text-align:center;"> 3. ANOVA </td>
    <td style="text-align:left;"> Testing Mean Differences </td>
-   <td style="text-align:left;"> t-tests, ANOVA, RM ANOVA, and post hoc tests </td>
+   <td style="text-align:left;"> t-tests (independent groups, paired observations), ANOVA (independent or between subjects, 1-way, 2-way), RM ANOVA (repeated meausres, between subjects), mixed ANOVA (both independent and between subjects), visualizations (marginal means to prob interactions) and post hoc tests (multiple corrections, contrast statements) </td>
   </tr>
   <tr>
    <td style="text-align:center;"> 4. Regression </td>
    <td style="text-align:left;"> Regression </td>
-   <td style="text-align:left;"> Correlation, Model Fit, Generalize, and Plot </td>
+   <td style="text-align:left;"> Calculating and visualizating correlation, multiple regression models (fitting, tabulating results, graphicaly probing interactions), and generalizing the distribution (GLM: logistic regression, poisson regression, ect.) </td>
   </tr>
   <tr>
    <td style="text-align:center;"> 5. Multilevel </td>
-   <td style="text-align:left;"> Multilevel Models </td>
-   <td style="text-align:left;"> Clustered and Longitudinal - ICCs, MLM/HLM, and GEEs </td>
+   <td style="text-align:left;"> Mixed Effects Regression </td>
+   <td style="text-align:left;"> Modeling clustered/hierarchical or longitudinal/repeated observations with multilevel models (MLM, LMM, GLMM, HLM), including computing ICCs, model fitting, tabulating results, and visualizings (marginal means to prob interactions); generalized estimating equations (GEE) </td>
   </tr>
   <tr>
    <td style="text-align:center;"> 6. SEM </td>
    <td style="text-align:left;"> Structural Equation Modeling </td>
-   <td style="text-align:left;"> EFA, CFA, Path Analysis, and SEM </td>
+   <td style="text-align:left;"> Factor Analysis (EFA, CFA), latent variables and path analysis </td>
   </tr>
   <tr>
    <td style="text-align:center;"> 7. Other </td>
@@ -94,12 +94,7 @@ The three main purposes are to:
 </table>
 
 
-<div class="rmdconstruct">
-<p><strong>This eBook is under construction: check back often.</strong> This massive undertaking started during the summer of 2018 and is far from complete. The outline of seven volumes is given above despite any one being complete. Feedback is welcome via either author's email.</p>
-</div>
-
-
-## Authors {-}
+## The Authors {-}
 
 
 <table>
@@ -134,11 +129,39 @@ The three main purposes are to:
 </table>
 
 
+## Blocked Notes {-}
+
+Thoughout all the eBooks in this encyclopedia, several small secitons will be blocked out in the following way:
+
+<div class="rmdconstruct">
+<p>These blocks denote an area <strong>UNDER CONSTRUCTION</strong>, so check back often. This massive undertaking started during the summer of 2018 and is far from complete. The outline of seven volumes is given above despite any one being complete. Feedback is welcome via either author's email.</p>
+</div>
+
+
+<div class="rmdimportant">
+<p>These blocks denote something <strong>EXTREMELY IMPORTANT</strong>. Do NOT skip these notes as they will be used very sparingly.</p>
+</div>
+
+
+<div class="rmddownload">
+<p>These blocks denote something to <strong>DOWNLOAD</strong>. This may include software installations, example datasets, or notebook code files.</p>
+</div>
+
+
+<div class="rmdlightbulb">
+<p>These blocks denote something <strong>INTERESTING</strong>. These point out information we found of interest or added value.</p>
+</div>
+
+
+
+<div class="rmdlink">
+<p>These blocks denote <strong>LINKS</strong> to other websites. This may include instructional video clips, articles, or blog posts. We are all about NOT re-creating the wheel. If somebody else has described or illustrated a topic well, we celebrate it!</p>
+</div>
 
 
 
 
-## Why R ?  {-}
+## Why choose R ?  {-}
 
 
 
