@@ -78,7 +78,7 @@ When you click the **Install** buttom, a smaller window *may* asks if you would 
 </div>
 
 
-### The Tidy-Universe, a MEGA package from $R Studio$
+### The Tidy-Universe, a META package from $R Studio$
 
 
 

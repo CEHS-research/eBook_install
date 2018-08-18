@@ -79,7 +79,7 @@ A curated list of handy $R$ packages and tools can be found at  [awesome-r.com](
 ```
 
 
-### The Tidy-Universe, a MEGA package from $R Studio$
+### The Tidy-Universe, a META package from $R Studio$
 
 
 
