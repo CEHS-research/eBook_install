@@ -1,5 +1,9 @@
 # Install Packages
 
+```{r, include=FALSE, comment=FALSE}
+library(tidyverse, quietly = TRUE)
+library(kableExtra)
+```
 
 ![](images/packages.png)
 
@@ -23,15 +27,20 @@ More information may be found here:  https://www.datacamp.com/community/tutorial
 
 ### Where can you get packages ?
 
-A repository is a place where packages are located so you can install them from it. Typically they are online and accesible to everyone. Three of the most popular repositories for R packages are:
-
-* **[$CRAN$:](https://cran.r-project.org/)** the official repository, it is a network of $ftp$ and web servers mantained by the $R$ community around the world. It is coordinated by the $R$ foundation, and for a package to be published here it needs to pass several tests that ensure the package is following $CRAN$ policies. You can find more details [here](https://cran.r-project.org/web/packages/policies.html).
-
-* **[Github:](https://github.com/)** although this is not $R$ specific, $github$ is probably the most popular repository for open source projects. Its popularity comes from the unlimited space for open source, the integration with $git$, a version control software, and its ease to share and collaborate with others. But be aware that there is no review process associated to it.  (All the files for this eBook are stored on $github$.)
-
-* **[Bioconductor:](https://www.bioconductor.org/)** this is a topic specific repository, intended for open source software for bioinformatics. As $CRAN$, it has its own [s]ubmission and review processes](https://www.bioconductor.org/developers/package-submission/), and its community is very active having several conferences and meetings per year.
+A repository is a place where packages are located so you can install them from it. Typically they are online and accesible to everyone. Three of the most popular repositories for $R$ packages are:
 
 
+```{r, echo=FALSE}
+tribble( ~image_logo, ~description,
+         "![](images/cran_logo.png)",
+         "**[$CRAN$:](https://cran.r-project.org/)** the official repository, it is a network of $ftp$ and web servers mantained by the $R$ community around the world. It is coordinated by the $R$ foundation, and for a package to be published here it needs to pass several tests  [here](https://cran.r-project.org/web/packages/policies.html).",
+         "![](images/GitHub_logo.png)",
+         "**[$GitHub$:](https://github.com/)** although this is not $R$ specific, $GitHub$ is probably the most popular repository for open source projects. Its popularity comes from the unlimited space for open source, the integration with $git$, a version control software, and its ease to share and collaborate with others. But be aware that there is no review process associated to it.  (All the files for this eBook are stored on $GitHub$.)",
+         "![](images/bioconductor_logo.png)",
+         "**[Bioconductor:](https://www.bioconductor.org/)** this is a topic specific repository, intended for open source software for bioinformatics. As $CRAN$, it has its own [submission and review processes](https://www.bioconductor.org/developers/package-submission/), and its community is very active having several conferences and meetings per year.") %>% 
+  kableExtra::kable(col.names = c("", "Repository"),
+                    align = "l")
+```
 
 
 

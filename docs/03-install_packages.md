@@ -1,6 +1,7 @@
 # Install Packages
 
 
+
 ![](images/packages.png)
 
 Learn what packages are and how to get them.
@@ -23,15 +24,31 @@ When you download $R$ you are only getting the bare-bones, most basic files.  Th
 
 ### Where can you get packages ?
 
-A repository is a place where packages are located so you can install them from it. Typically they are online and accesible to everyone. Three of the most popular repositories for R packages are:
-
-* **[$CRAN$:](https://cran.r-project.org/)** the official repository, it is a network of $ftp$ and web servers mantained by the $R$ community around the world. It is coordinated by the $R$ foundation, and for a package to be published here it needs to pass several tests that ensure the package is following $CRAN$ policies. You can find more details [here](https://cran.r-project.org/web/packages/policies.html).
-
-* **[Github:](https://github.com/)** although this is not $R$ specific, $github$ is probably the most popular repository for open source projects. Its popularity comes from the unlimited space for open source, the integration with $git$, a version control software, and its ease to share and collaborate with others. But be aware that there is no review process associated to it.  (All the files for this eBook are stored on $github$.)
-
-* **[Bioconductor:](https://www.bioconductor.org/)** this is a topic specific repository, intended for open source software for bioinformatics. As $CRAN$, it has its own [s]ubmission and review processes](https://www.bioconductor.org/developers/package-submission/), and its community is very active having several conferences and meetings per year.
+A repository is a place where packages are located so you can install them from it. Typically they are online and accesible to everyone. Three of the most popular repositories for $R$ packages are:
 
 
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;">  </th>
+   <th style="text-align:left;"> Repository </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> ![](images/cran_logo.png) </td>
+   <td style="text-align:left;"> **[$CRAN$:](https://cran.r-project.org/)** the official repository, it is a network of $ftp$ and web servers mantained by the $R$ community around the world. It is coordinated by the $R$ foundation, and for a package to be published here it needs to pass several tests  [here](https://cran.r-project.org/web/packages/policies.html). </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> ![](images/GitHub_logo.png) </td>
+   <td style="text-align:left;"> **[$GitHub$:](https://github.com/)** although this is not $R$ specific, $GitHub$ is probably the most popular repository for open source projects. Its popularity comes from the unlimited space for open source, the integration with $git$, a version control software, and its ease to share and collaborate with others. But be aware that there is no review process associated to it.  (All the files for this eBook are stored on $GitHub$.) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> ![](images/bioconductor_logo.png) </td>
+   <td style="text-align:left;"> **[Bioconductor:](https://www.bioconductor.org/)** this is a topic specific repository, intended for open source software for bioinformatics. As $CRAN$, it has its own [submission and review processes](https://www.bioconductor.org/developers/package-submission/), and its community is very active having several conferences and meetings per year. </td>
+  </tr>
+</tbody>
+</table>
 
 
 

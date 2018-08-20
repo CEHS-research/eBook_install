@@ -1,7 +1,7 @@
 --- 
 title: "Encyclopedia of Quantitative Methods in R, vol. 0: Setting up Your Computer"
 author: "Sarah Schwartz & Tyson Barrett"
-date: "Last updated: 2018-08-18"
+date: "Last updated: 2018-08-20"
 documentclass: book
 description: "Getting started with R and R Studio: installing software and package management."
 knit: "bookdown::render_book"
@@ -159,6 +159,21 @@ Thoughout all the eBooks in this encyclopedia, several small secitons will be bl
 </div>
 
 
+## Code and Output
+
+This is how $R$ code is shown:
+
+
+```r
+1 + 1
+```
+
+THis is what the output of the $R$ code above will look:
+
+
+```
+## [1] 2
+```
 
 
 ## Why choose R ?  {-}
@@ -174,7 +189,6 @@ Thoughout all the eBooks in this encyclopedia, several small secitons will be bl
 <div class="rmdlink">
 <p><strong>Check it out:</strong> an article from Fall 2016... <a href="https://datahowler.wordpress.com/2016/09/10/no-more-excuses-r-is-better-than-spss-for-psychology-undergrads-and-students-agree/">No more excuses: R is better than SPSS for psychology undergrads, and students agree</a></p>
 </div>
-
 
 
 

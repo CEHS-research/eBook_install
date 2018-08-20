@@ -128,6 +128,20 @@ These blocks denote **LINKS** to other websites.  This may include instructional
 ```
 
 
+## Code and Output
+
+This is how $R$ code is shown:
+
+```{r, eval=FALSE}
+1 + 1
+```
+
+THis is what the output of the $R$ code above will look:
+
+```{r, echo=FALSE}
+# This is a Code Chunk
+1 + 1
+```
 
 
 ## Why choose R ?  {-}
@@ -146,7 +160,6 @@ reproducibity
 ```{block type='rmdlink', echo=TRUE}
 **Check it out:** an article from Fall 2016... [No more excuses: R is better than SPSS for psychology undergrads, and students agree](https://datahowler.wordpress.com/2016/09/10/no-more-excuses-r-is-better-than-spss-for-psychology-undergrads-and-students-agree/)
 ```
-
 
 
 

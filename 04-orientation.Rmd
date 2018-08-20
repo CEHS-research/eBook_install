@@ -24,7 +24,7 @@ Get a feel for the lay of the land.
 ![](images/menu_cheatsheets.PNG){width=600px}
 
 
-![](images/cheatsheet_rstudio.PNG){width=600px}
+![](images/cheatsheet_rstudio_zoom.PNG){width=600px}
 
 
 -----------------------
