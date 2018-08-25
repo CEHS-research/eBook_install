@@ -57,7 +57,7 @@ The three main purposes are to:
   </tr>
   <tr>
    <td style="text-align:center;"> 1. Wrangling </td>
-   <td style="text-align:left;"> [Data Management](https://cehs-research.github.io/eBook_wrangle/) </td>
+   <td style="text-align:left;"> test </td>
    <td style="text-align:left;"> Importing data files (SPSS, excel, csv, ect.), sub-setting (observations and variables), creating new variables, and saving revised data </td>
   </tr>
   <tr>
