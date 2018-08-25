@@ -56,7 +56,7 @@ The three main purposes are to:
    <td style="text-align:left;"> Installing software (R, R Studio, and Packages), workspace oridentation, notebook workflow, and periodic updating </td>
   </tr>
   <tr>
-   <td style="text-align:center;"> 1. [Wrangling]((https://cehs-research.github.io/eBook_wrangle/) </td>
+   <td style="text-align:center;"> 1. [Wrangling](https://cehs-research.github.io/eBook_wrangle/) </td>
    <td style="text-align:left;"> Data Management </td>
    <td style="text-align:left;"> Importing data files (SPSS, excel, csv, ect.), sub-setting (observations and variables), creating new variables, and saving revised data </td>
   </tr>
