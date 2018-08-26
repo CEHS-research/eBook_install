@@ -20,6 +20,10 @@ link-citations: yes
 
 # Welcome {-}
 
+Backgroup and links to other volumes of this encyclopedia may be found at the [Encyclopedia's Home Website](https://cehs-research.github.io/eBooks/).
+
+
+
 ![](images/common/EQM_v0_header.png)
 
 
@@ -30,72 +34,6 @@ library(tidyverse, quietly = TRUE)
 library(kableExtra)
 ```
 
-
-## Preface {-}
-
-This encyclopedia of eBooks is being developed by the [Office of Research Services](https://cehs.usu.edu/research/index) to serves the faculty and graduate students in the [College of Education and Human Services](https://cehs.usu.edu/) at [Utah State University](http://www.usu.edu/).  
-
-
-
-The three main purposes are to: 
-
-* Provide reference material for **graduate quantitative methods courses** *(EDUC/PSY 6600, EDUC/PSY 7610, PSY 7650, ect.)*  
-* Support **college wide workshops** given by the [Statistical Consulting Studio](https://cehs.usu.edu/research/statstudio/index) and [Data Science and Discover Unit](https://cehs.usu.edu/research/dsdu/index)
-* Facilitate **individual consultations** with the authors pertaining to research.
-
-
-```{r, echo=FALSE}
-tribble( ~Volume, ~Title, ~Content,
-      "0. Software", 
-         "[Computer Setup](https://cehs-research.github.io/eBook_install/)", 
-         "Installing software (R, R Studio, and Packages), workspace oridentation, notebook workflow, and periodic updating",
-      "1. Wrangling", 
-         "[Data Management](https://cehs-research.github.io/eBook_wrangle/)", 
-         "Importing data files (SPSS, excel, csv, ect.), sub-setting (observations and variables), creating new variables, and saving revised data",
-      "2. Exploratory", 
-         "Exploratory Data Analysis", 
-         "Computing and tabulating summary statistics (M/SD, count/%) and creating descriptive visualizations of distributions (boxplots, histograms) and relationships (scatter plots)",
-      "3. ANOVA", 
-         "Testing Mean Differences",
-         "t-tests (independent groups, paired observations), ANOVA (independent or between subjects, 1-way, 2-way), RM ANOVA (repeated meausres, between subjects), mixed ANOVA (both independent and between subjects), visualizations (marginal means to prob interactions) and post hoc tests (multiple corrections, contrast statements)",
-      "4. Regression", 
-         "Regression",
-         "Calculating and visualizating correlation, multiple regression models (fitting, tabulating results, graphicaly probing interactions), and generalizing the distribution (GLM: logistic regression, poisson regression, ect.)",
-      "5. Multilevel", 
-         "Mixed Effects Regression",
-         "Modeling clustered/hierarchical or longitudinal/repeated observations with multilevel models (MLM, LMM, GLMM, HLM), including computing ICCs, model fitting, tabulating results, and visualizings (marginal means to prob interactions); generalized estimating equations (GEE)",
-      "6. SEM", 
-         "Structural Equation Modeling", 
-         " Factor Analysis (EFA, CFA), latent variables and path analysis",
-      "7. Other", 
-         "Additional Topics",
-         "Room for Future Expansion") %>% 
-  kableExtra::kable(align = c("c", "l", "l"))
-```
-
-
-## The Authors {-}
-
-
-```{r, echo=FALSE}
-tribble( ~Sarah, ~Tyson,
-      "![](images/common/Sarah_headshot.jpg){width=300px}",
-      "![](images/common/Tyson_headshot.jpg){width=300px}",
-      "[www.SarahSchwartzStats.com](http://www.sarahschwartzstats.com/) ",
-      "[www.TysonBarrett.com](http://tysonbarrett.com/)",
-      "Sarah.Schwartz@usu.edu",
-      "Tyson.Battett@usu.edu",
-      "[Statistical Consulting Studio](https://cehs.usu.edu/research/statstudio/index)",
-      "[Data Science and Discover Unit](https://cehs.usu.edu/research/dsdu/index)",
-      "![](images/common/StatStudioLogo_dark_small.png){width=300px}",
-      "![](images/common/dsdu_logo.PNG){width=300px}") %>% 
-  data.frame() %>%
-  kableExtra::kable(col.names = c("Dr. Sarah Schwartz", 
-                                  "Dr. Tyson Barrett"),
-                    align = "c") %>% 
-  kableExtra::row_spec(row = 0,
-                       font_size = 20)
-```
 
 
 ## Blocked Notes {-}
@@ -147,28 +85,43 @@ THis is what the output of the $R$ code above will look:
 ## Why choose R ?  {-}
 
 
-
-```{block type='rmdconstruct', echo=TRUE}
-**ADD SECTION:** R vs. SPSS, SAS, Stata, ect...
-
-FREE, accessable, 
-not any harder than others to learn
-reproducibity
-```
-
-
 ```{block type='rmdlink', echo=TRUE}
 **Check it out:** an article from Fall 2016... [No more excuses: R is better than SPSS for psychology undergrads, and students agree](https://datahowler.wordpress.com/2016/09/10/no-more-excuses-r-is-better-than-spss-for-psychology-undergrads-and-students-agree/)
 ```
 
 
 
+
+
+## The Authors {-}
+
+
+```{r, echo=FALSE}
+tribble( ~Sarah, ~Tyson,
+      "![](images/common/Sarah_headshot.jpg){width=300px}",
+      "![](images/common/Tyson_headshot.jpg){width=300px}",
+      "[www.SarahSchwartzStats.com](http://www.sarahschwartzstats.com/) ",
+      "[www.TysonBarrett.com](http://tysonbarrett.com/)",
+      "Sarah.Schwartz@usu.edu",
+      "Tyson.Battett@usu.edu",
+      "[Statistical Consulting Studio](https://cehs.usu.edu/research/statstudio/index)",
+      "[Data Science and Discover Unit](https://cehs.usu.edu/research/dsdu/index)",
+      "![](images/common/StatStudioLogo_dark_small.png){width=300px}",
+      "![](images/common/dsdu_logo.PNG){width=300px}") %>% 
+  data.frame() %>%
+  kableExtra::kable(col.names = c("Dr. Sarah Schwartz", 
+                                  "Dr. Tyson Barrett"),
+                    align = "c") %>% 
+  kableExtra::row_spec(row = 0,
+                       font_size = 20)
+```
+
 ## FYI  {-}
 
-This entire encyclopedia is written in $R Markdown$, using $R Studio$ as the text editor and the `bookdown` package to turn a collection of markdown documents into a coherent whole. The book's source code is hosted on GitHub, at https://github.com/cehs-research/eBook_install. If you notice typos or other issues, feel free to open an issue on GitHub or send a pull request. If you do the latter, in your commit message, please add the sentence "I assign the copyright of this contribution to Dr.s Schwartz and Barrett," so that I can maintain the option of publishing this book in other forms. Direct emails to the authors are also welcome.
+This entire encyclopedia is written in $R Markdown$, using $R Studio$ as the text editor and the `bookdown` package to turn a collection of markdown documents into a coherent whole. The book's source code is hosted on GitHub. If you notice typos or other issues, feel free to email either of the authors.
 
 This work is licensed under the [Attribution-NonCommercial-NoDerivatives 4.0 International](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode) License. 
 
 
 
-![](images/common/Education_Logo_WHITE-02.png){width=250px}
+![](images/common/Education_Logo_WHITE-02.png){width=300px}
