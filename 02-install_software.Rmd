@@ -1,4 +1,4 @@
-# Install Software
+# Install Software {.tabset }
 
 ![](images/R_studio_LaTeX_header.png)
 You will need to install both $R$ and $R Studio$, but $\LaTeX$ is optional.
