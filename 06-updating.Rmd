@@ -5,7 +5,6 @@
 Periodically you will need to update: R, R Studio, and your packages.
 
 
-
 ```{block type='rmdconstruct', echo=TRUE}
 **ADD SECTION:** This chapter has not been started yet. 
 ```
