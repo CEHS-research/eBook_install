@@ -5,14 +5,10 @@
 Periodically you will need to update: R, R Studio, and your packages (but NOT $\LaTeX$).
 
 
-```{block type='rmdconstruct', echo=TRUE}
-**ADD SECTION:** This chapter has not been started yet. 
-```
 
 
 ## The R Programing Language
 
-![](images/common/Rlogo_200.png)
 
 
 
@@ -30,8 +26,6 @@ Follow the directions in the previous chapter, [here](#installR).
 
 ## The R Studio IDE
 
-
-![](images/common/rstudiosticker.png)
  
  ```{block type='rmdlightbulb', echo=TRUE}
  
