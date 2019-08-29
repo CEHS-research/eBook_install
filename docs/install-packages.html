@@ -4,24 +4,23 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>3 Install Packages | Encyclopedia of Quantitative Methods in R, vol. 0: Setting up Your Computer</title>
-  <meta name="description" content="Getting started with R and R Studio: installing software and package management." />
+  <title>3 Install Packages | eBook_install.utf8.md</title>
+  <meta name="description" content="" />
   <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="3 Install Packages | Encyclopedia of Quantitative Methods in R, vol. 0: Setting up Your Computer" />
+  <meta property="og:title" content="3 Install Packages | eBook_install.utf8.md" />
   <meta property="og:type" content="book" />
   
-  <meta property="og:image" content="EQM_v0_cover.png" />
-  <meta property="og:description" content="Getting started with R and R Studio: installing software and package management." />
-  <meta name="github-repo" content="cehs-research/eBook_install" />
+  
+  
+  
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="3 Install Packages | Encyclopedia of Quantitative Methods in R, vol. 0: Setting up Your Computer" />
+  <meta name="twitter:title" content="3 Install Packages | eBook_install.utf8.md" />
   
-  <meta name="twitter:description" content="Getting started with R and R Studio: installing software and package management." />
-  <meta name="twitter:image" content="EQM_v0_cover.png" />
+  
+  
 
-<meta name="author" content="Sarah Schwartz &amp; Tyson Barrett" />
 
 
 
@@ -219,7 +218,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Encyclopedia of Quantitative Methods in R, vol. 0: Setting up Your Computer</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
           </h1>
         </div>
 
@@ -310,7 +309,7 @@ Leave the installation <em>“library path”</em> as the default. Also, make su
 <strong>Useful Package List</strong>
 </p>
 <p>
-tidyverse, furniture, pander, stargazer, texreg, xtable, kableExtra, RColorBrewer, gghighlight, ggthemes, ggfortify, ggalt, ggExtra, GGally, ggeffects, corrplot, gpairs, gridextra, likert, vcd, scales, cowplot, yarrr, psych, polycor, corpcor, sjlabelled, sjPlot, sjmisc, sjstats, Hmisc, labelled, afex, emmeans, corpcor, multicomp, multcompView, car, effects, predictmean, nlme, lme4, lmerTest, HLMdiag, geepack, gee, gee4, optimx, MuMIn, lavaan, OpenMx, sem, semPlot, randomForest, randomForestSRC, ggRandomForests, party, partykit, mgcv, glmnet, survival, caret, bookdown, blogdown, tidytex, xaringan, REDCapR, redcapAPI, devtools, testthat, roxygen2, eRm, ltm, lsr, heplots, magrittr, hexbin, leaps, mlmRev, MuMIn, ISwR
+tidyverse, furniture, pander, stargazer, texreg, xtable, kableExtra, RColorBrewer, gghighlight, ggthemes, ggfortify, ggalt, ggExtra, GGally, ggeffects, corrplot, gpairs, gridextra, likert, vcd, scales, cowplot, yarrr, psych, polycor, corpcor, sjlabelled, sjPlot, sjmisc, sjstats, Hmisc, labelled, afex, emmeans, corpcor, multicomp, multcompView, car, effects, predictmean, nlme, lme4, lmerTest, HLMdiag, geepack, gee, gee4, optimx, MuMIn, lavaan, OpenMx, sem, semPlot, randomForest, randomForestSRC, ggRandomForests, party, partykit, mgcv, glmnet, survival, caret, bookdown, blogdown, tidytex, xaringan, REDCapR, redcapAPI, devtools, testthat, roxygen2, eRm, ltm, lsr, heplots, magrittr, hexbin, leaps, mlmRev, MuMIn, ISwR, VIM, effects
 </p>
 </div>
 <p>When you click the <strong>Install</strong> buttom, a smaller window <em>may</em> asks if you would like to “re-start <span class="math inline">\(R\)</span> prior to installing”, choose “no” and manually close and open the <span class="math inline">\(R Studio\)</span> program once all packages have been downloaded, unpacked, and checked <em>(saves time)</em>. This may take a few minutes, especially if you have selected multiple packages.</p>
@@ -592,6 +591,10 @@ A curated list of handy <span class="math inline"><span class="math inline">\(R\
 <td align="right"><code>multcompView</code></td>
 <td align="left">Visualizations of Paired Comparisons</td>
 </tr>
+<tr class="odd">
+<td align="right"><a href="https://www.datacamp.com/community/tutorials/visualize-data-vim-package"><code>VIM</code></a></td>
+<td align="left">Visualization and Imputation of Missing Values</td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -616,6 +619,10 @@ A curated list of handy <span class="math inline"><span class="math inline">\(R\
 <tr class="odd">
 <td align="right"><code>predictmeans</code></td>
 <td align="left">Calculate Predicted Means for Linear Models</td>
+</tr>
+<tr class="even">
+<td align="right"><code>effects</code></td>
+<td align="left">Effect Displays for Linear, Generalized Linear, and Other Models</td>
 </tr>
 </tbody>
 </table>
@@ -842,7 +849,7 @@ A curated list of handy <span class="math inline"><span class="math inline">\(R\
 <div id="userful-packages-on-github" class="section level2">
 <h2><span class="header-section-number">3.4</span> Userful Packages on <span class="math inline">\(GitHub\)</span></h2>
 <p>First, make sure you have the <code>devtools</code> package installed on your computer <em>(hint: it is included in the list above)</em>.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">install.packages</span>(<span class="st">&quot;devtools&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">install.packages</span>(<span class="st">&quot;devtools&quot;</span>)</a></code></pre></div>
 <div id="templates-for-writing-tutorials-practicals-or-examination-papers-with-r-markdown" class="section level3">
 <h3><span class="header-section-number">3.4.1</span> Templates for writing tutorials, practicals or examination papers with <span class="math inline">\(R Markdown\)</span></h3>
 <p><code>unilur</code> is a <span class="math inline">\(R\)</span> package to help writing tutorials, practicals or examination papers with <span class="math inline">\(R Markdown\)</span>.</p>
@@ -868,7 +875,7 @@ Website: <a href="https://github.com/koncina/unilur">GitHub - <code>unilur</code
 Tutorial: <a href="http://eric.koncina.eu/posts/introducing-the-unilur-rmarkdown-template/">blog post - <code>unilur</code></a>
 </p>
 </div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1">devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;koncina/unilur&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1">devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;koncina/unilur&quot;</span>)</a></code></pre></div>
 </div>
 <div id="prepare-apa-journal-articles-with-r-markdown" class="section level3">
 <h3><span class="header-section-number">3.4.2</span> Prepare APA journal articles with <span class="math inline">\(R Markdown\)</span></h3>
@@ -880,11 +887,11 @@ Website: <a href="https://github.com/crsh/papaja">GitHub - <code>papaja</code></
 Tutorial: <a href="https://crsh.github.io/papaja_man/">eBook - <code>papaja</code></a>
 </p>
 </div>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" title="1"><span class="co"># Install the stable development verions from GitHub</span></a>
-<a class="sourceLine" id="cb5-2" title="2">devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;crsh/papaja&quot;</span>)</a>
-<a class="sourceLine" id="cb5-3" title="3"></a>
-<a class="sourceLine" id="cb5-4" title="4"><span class="co"># Install the latest development snapshot from GitHub</span></a>
-<a class="sourceLine" id="cb5-5" title="5">devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;crsh/papaja@devel&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="co"># Install the stable development verions from GitHub</span></a>
+<a class="sourceLine" id="cb3-2" title="2">devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;crsh/papaja&quot;</span>)</a>
+<a class="sourceLine" id="cb3-3" title="3"></a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="co"># Install the latest development snapshot from GitHub</span></a>
+<a class="sourceLine" id="cb3-5" title="5">devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;crsh/papaja@devel&quot;</span>)</a></code></pre></div>
 
 </div>
 </div>

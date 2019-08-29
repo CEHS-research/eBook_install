@@ -79,7 +79,7 @@ Leave the installation <em>“library path”</em> as the default. Also, make su
 
 <div class="rmdimportant">
 <p><strong>Useful Package List</strong></p>
-<p>tidyverse, furniture, pander, stargazer, texreg, xtable, kableExtra, RColorBrewer, gghighlight, ggthemes, ggfortify, ggalt, ggExtra, GGally, ggeffects, corrplot, gpairs, gridextra, likert, vcd, scales, cowplot, yarrr, psych, polycor, corpcor, sjlabelled, sjPlot, sjmisc, sjstats, Hmisc, labelled, afex, emmeans, corpcor, multicomp, multcompView, car, effects, predictmean, nlme, lme4, lmerTest, HLMdiag, geepack, gee, gee4, optimx, MuMIn, lavaan, OpenMx, sem, semPlot, randomForest, randomForestSRC, ggRandomForests, party, partykit, mgcv, glmnet, survival, caret, bookdown, blogdown, tidytex, xaringan, REDCapR, redcapAPI, devtools, testthat, roxygen2, eRm, ltm, lsr, heplots, magrittr, hexbin, leaps, mlmRev, MuMIn, ISwR</p>
+<p>tidyverse, furniture, pander, stargazer, texreg, xtable, kableExtra, RColorBrewer, gghighlight, ggthemes, ggfortify, ggalt, ggExtra, GGally, ggeffects, corrplot, gpairs, gridextra, likert, vcd, scales, cowplot, yarrr, psych, polycor, corpcor, sjlabelled, sjPlot, sjmisc, sjstats, Hmisc, labelled, afex, emmeans, corpcor, multicomp, multcompView, car, effects, predictmean, nlme, lme4, lmerTest, HLMdiag, geepack, gee, gee4, optimx, MuMIn, lavaan, OpenMx, sem, semPlot, randomForest, randomForestSRC, ggRandomForests, party, partykit, mgcv, glmnet, survival, caret, bookdown, blogdown, tidytex, xaringan, REDCapR, redcapAPI, devtools, testthat, roxygen2, eRm, ltm, lsr, heplots, magrittr, hexbin, leaps, mlmRev, MuMIn, ISwR, VIM, effects</p>
 </div>
 
 
@@ -208,6 +208,7 @@ The tidyverse also includes many other packages with more specialised usage. The
 | [`emmeans`](https://github.com/rvlenth/emmeans) | Estimated Marginal Means, aka Least-Squares Means |    
 | [`multicomp`](http://multcomp.r-forge.r-project.org/) | Simultaneous Inference in General Parametric Models  | 
 | `multcompView` | Visualizations of Paired Comparisons  |
+| [`VIM`](https://www.datacamp.com/community/tutorials/visualize-data-vim-package) | Visualization and Imputation of Missing Values |
 
 
 
@@ -222,6 +223,7 @@ The tidyverse also includes many other packages with more specialised usage. The
 | [`car`](https://www.statmethods.net/stats/rdiagnostics.html) | Companion to Applied Regression |       
 | [`effects`](https://www.jstatsoft.org/article/view/v008i15/effect-displays-revised.pdf) | Effect Displays for Linear, Generalized Linear, and Other Models |
 | `predictmeans` | Calculate Predicted Means for Linear Models  |
+|`effects` | Effect Displays for Linear, Generalized Linear, and Other Models |
 
 
 

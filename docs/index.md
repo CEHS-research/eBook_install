@@ -1,7 +1,11 @@
 --- 
 title: "Encyclopedia of Quantitative Methods in R, vol. 0: Setting up Your Computer"
 author: "Sarah Schwartz & Tyson Barrett"
+<<<<<<< HEAD
 date: "Last updated: 2019-08-29"
+=======
+date: "Last updated: 2018-10-08"
+>>>>>>> master
 documentclass: book
 description: "Getting started with R and R Studio: installing software and package management."
 knit: "bookdown::render_book"
