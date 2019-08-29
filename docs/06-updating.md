@@ -2,7 +2,7 @@
 
 
 ![](images/update.png)
-Periodically you will need to update: R, R Studio, and your packages.
+Periodically you will need to update: R, R Studio, and your packages (but NOT $\LaTeX$).
 
 
 <div class="rmdconstruct">
@@ -15,8 +15,11 @@ Periodically you will need to update: R, R Studio, and your packages.
 ![](images/common/Rlogo_200.png)
 
 
+
  <div class="rmdlink">
  <p>Go to: <a href="http://www.r-project.org">www.r-project.org</a></p>
+ <p>The best way to update is to go to the webpage and download/install as if you did not have R on your computer. You do NOT need to uninstall old versions of R on your computer.</p>
+ <p>Follow the directions in the previous chapter, <a href="#installR">here</a></p>
  </div>
 
 ---------------------------------

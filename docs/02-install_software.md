@@ -4,7 +4,7 @@
 You will need to install both $R$ and $R Studio$, but $\LaTeX$ is optional.
 
 
-## The R Programing Language
+## The R Programing Language {#installR}
 
 > The **“Comprehensive R Archive Network” (CRAN)** is a collection of sites which carry identical material, consisting of the $R$  distribution(s), the contributed extensions (packages), and documentation for $R$.  From $CRAN$, you can obtain the latest official FREE release of BASE $R$.
 
@@ -76,7 +76,7 @@ You will need to install both $R$ and $R Studio$, but $\LaTeX$ is optional.
 
 
 
-> $\TeX$ or $LaTeX$ is a typesetting or formatting system that is commonly used in printing and publishing, especially anything with formulas (see https://texfaq.org/FAQ-whatTeX).  It is NOT NEEDED to run $R$, but $R Studio$ must have access to it in order to `knit` a $R Notebook$ into a `.pdf` file.  There are many versions, but the following are the ones that work best with $R$, depending on your computer's platform.
+> $\TeX$ or $\LaTeX$ is a typesetting or formatting system that is commonly used in printing and publishing, especially anything with formulas (see https://texfaq.org/FAQ-whatTeX).  It is NOT NEEDED to run $R$, but $R Studio$ must have access to it in order to `knit` a $R Notebook$ into a `.pdf` file.  There are many versions, but the following are the ones that work best with $R$, depending on your computer's platform.
 
 
 ### Mac - use `MacTeX`
