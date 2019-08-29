@@ -1,7 +1,7 @@
 --- 
 title: "Encyclopedia of Quantitative Methods in R, vol. 0: Setting up Your Computer"
 author: "Sarah Schwartz & Tyson Barrett"
-date: "Last updated: 2018-09-17"
+date: "Last updated: 2019-08-29"
 documentclass: book
 description: "Getting started with R and R Studio: installing software and package management."
 knit: "bookdown::render_book"
@@ -38,7 +38,7 @@ Backgroup and links to other volumes of this encyclopedia may be found at the [E
 Thoughout all the eBooks in this encyclopedia, several small secitons will be blocked out in the following ways:
 
 <div class="rmdconstruct">
-<p>These blocks denote an area <strong>UNDER CONSTRUCTION</strong>, so check back often. This massive undertaking started during the summer of 2018 and is far from complete. The outline of seven volumes is given above despite any one being complete. Feedback is welcome via either author's email.</p>
+<p>These blocks denote an area <strong>UNDER CONSTRUCTION</strong>, so check back often. This massive undertaking started during the summer of 2018 and is far from complete. The outline of seven volumes is given above despite any one being complete. Feedback is welcome via either author’s email.</p>
 </div>
 
 
@@ -84,7 +84,7 @@ THis is what the output of the $R$ code above will look:
 
 
 <div class="rmdlink">
-<p><strong>Check it out:</strong> an article from Fall 2016... <a href="https://datahowler.wordpress.com/2016/09/10/no-more-excuses-r-is-better-than-spss-for-psychology-undergrads-and-students-agree/">No more excuses: R is better than SPSS for psychology undergrads, and students agree</a></p>
+<p><strong>Check it out:</strong> an article from Fall 2016… <a href="https://datahowler.wordpress.com/2016/09/10/no-more-excuses-r-is-better-than-spss-for-psychology-undergrads-and-students-agree/">No more excuses: R is better than SPSS for psychology undergrads, and students agree</a></p>
 </div>
 
 

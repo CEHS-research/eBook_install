@@ -66,7 +66,7 @@ In **R Studio**:
 
 <div class="rmdlightbulb">
 <p><strong>You only need to INSTALL packages ONCE per computer.</strong><br />
-Leave the installation <em>&quot;library path&quot;</em> as the default. Also, make sure the box for <em>&quot;Installing dependencies&quot;</em> box is checked.</p>
+Leave the installation <em>“library path”</em> as the default. Also, make sure the box for <em>“Installing dependencies”</em> box is checked.</p>
 </div>
 
 
