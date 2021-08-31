@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>1 Overview | Encyclopedia of Quantitative Methods in R, vol. 0: Setting up Your Computer</title>
   <meta name="description" content="Getting started with R and R Studio: installing software and package management." />
-  <meta name="generator" content="bookdown 0.12 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
 
   <meta property="og:title" content="1 Overview | Encyclopedia of Quantitative Methods in R, vol. 0: Setting up Your Computer" />
   <meta property="og:type" content="book" />
   
-  <meta property="og:image" content="EQM_v0_cover.png" />
+  <meta property="og:image" content="/EQM_v0_cover.png" />
   <meta property="og:description" content="Getting started with R and R Studio: installing software and package management." />
   <meta name="github-repo" content="cehs-research/eBook_install" />
 
@@ -19,7 +19,7 @@
   <meta name="twitter:title" content="1 Overview | Encyclopedia of Quantitative Methods in R, vol. 0: Setting up Your Computer" />
   
   <meta name="twitter:description" content="Getting started with R and R Studio: installing software and package management." />
-  <meta name="twitter:image" content="EQM_v0_cover.png" />
+  <meta name="twitter:image" content="/EQM_v0_cover.png" />
 
 <meta name="author" content="Sarah Schwartz &amp; Tyson Barrett" />
 
@@ -30,15 +30,17 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html">
-<link rel="next" href="install-software.html">
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link rel="prev" href="index.html"/>
+<link rel="next" href="install-software.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
 
 
 
@@ -46,29 +48,36 @@
 
 
 
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -77,9 +86,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  }
+  {   }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -112,6 +121,29 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 <link rel="stylesheet" href="heading.css" type="text/css" />
 </head>
@@ -129,79 +161,96 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">Vol. 0: Setting up Your Computer</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a>
+<ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#blocked-notes"><i class="fa fa-check"></i>Blocked Notes</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#code-and-output"><i class="fa fa-check"></i>Code and Output</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#why-choose-r"><i class="fa fa-check"></i>Why choose R ?</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#the-authors"><i class="fa fa-check"></i>The Authors</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#fyi"><i class="fa fa-check"></i>FYI</a></li>
 </ul></li>
-<li class="chapter" data-level="1" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i><b>1</b> Overview</a><ul>
+<li class="chapter" data-level="1" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i><b>1</b> Overview</a>
+<ul>
 <li class="chapter" data-level="1.1" data-path="overview.html"><a href="overview.html#r-vs.-r-studio"><i class="fa fa-check"></i><b>1.1</b> R vs. R Studio</a></li>
 <li class="chapter" data-level="1.2" data-path="overview.html"><a href="overview.html#r-markdown-vs.-r-notebook"><i class="fa fa-check"></i><b>1.2</b> R Markdown vs. R Notebook</a></li>
 <li class="chapter" data-level="1.3" data-path="overview.html"><a href="overview.html#knit-r"><i class="fa fa-check"></i><b>1.3</b> knit-R</a></li>
-<li class="chapter" data-level="1.4" data-path="overview.html"><a href="overview.html#more-indepth-faqs"><i class="fa fa-check"></i><b>1.4</b> More Indepth FAQs</a><ul>
+<li class="chapter" data-level="1.4" data-path="overview.html"><a href="overview.html#more-indepth-faqs"><i class="fa fa-check"></i><b>1.4</b> More Indepth FAQs</a>
+<ul>
 <li class="chapter" data-level="" data-path="overview.html"><a href="overview.html#what-is-r"><i class="fa fa-check"></i>What is R ?</a></li>
 <li class="chapter" data-level="" data-path="overview.html"><a href="overview.html#what-is-r-markdown"><i class="fa fa-check"></i>What is R Markdown ?</a></li>
 <li class="chapter" data-level="" data-path="overview.html"><a href="overview.html#what-is-dynamic-reporting"><i class="fa fa-check"></i>What is Dynamic Reporting?</a></li>
 <li class="chapter" data-level="" data-path="overview.html"><a href="overview.html#is-this-a-popular-method-for-creating-reports"><i class="fa fa-check"></i>Is this a popular method for creating reports?</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="install-software.html"><a href="install-software.html"><i class="fa fa-check"></i><b>2</b> Install Software</a><ul>
+<li class="chapter" data-level="2" data-path="install-software.html"><a href="install-software.html"><i class="fa fa-check"></i><b>2</b> Install Software</a>
+<ul>
 <li class="chapter" data-level="2.1" data-path="install-software.html"><a href="install-software.html#installR"><i class="fa fa-check"></i><b>2.1</b> The R Programing Language</a></li>
 <li class="chapter" data-level="2.2" data-path="install-software.html"><a href="install-software.html#the-r-studio-ide"><i class="fa fa-check"></i><b>2.2</b> The R Studio IDE</a></li>
-<li class="chapter" data-level="2.3" data-path="install-software.html"><a href="install-software.html#tex-optional"><i class="fa fa-check"></i><b>2.3</b> TeX (optional)</a><ul>
+<li class="chapter" data-level="2.3" data-path="install-software.html"><a href="install-software.html#tex-optional"><i class="fa fa-check"></i><b>2.3</b> TeX (optional)</a>
+<ul>
 <li class="chapter" data-level="2.3.1" data-path="install-software.html"><a href="install-software.html#mac---use-mactex"><i class="fa fa-check"></i><b>2.3.1</b> Mac - use <code>MacTeX</code></a></li>
 <li class="chapter" data-level="2.3.2" data-path="install-software.html"><a href="install-software.html#windows---use-miktex"><i class="fa fa-check"></i><b>2.3.2</b> Windows - use <code>MikTeX</code></a></li>
 <li class="chapter" data-level="2.3.3" data-path="install-software.html"><a href="install-software.html#new-option-the-tinytex-package"><i class="fa fa-check"></i><b>2.3.3</b> New Option: the <code>tinytex</code> package???</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="install-packages.html"><a href="install-packages.html"><i class="fa fa-check"></i><b>3</b> Install Packages</a><ul>
-<li class="chapter" data-level="3.1" data-path="install-packages.html"><a href="install-packages.html#package-faq"><i class="fa fa-check"></i><b>3.1</b> Package FAQ</a><ul>
+<li class="chapter" data-level="3" data-path="install-packages.html"><a href="install-packages.html"><i class="fa fa-check"></i><b>3</b> Install Packages</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="install-packages.html"><a href="install-packages.html#package-faq"><i class="fa fa-check"></i><b>3.1</b> Package FAQ</a>
+<ul>
 <li class="chapter" data-level="3.1.1" data-path="install-packages.html"><a href="install-packages.html#what-are-packages"><i class="fa fa-check"></i><b>3.1.1</b> What are packages ?</a></li>
 <li class="chapter" data-level="3.1.2" data-path="install-packages.html"><a href="install-packages.html#where-can-you-get-packages"><i class="fa fa-check"></i><b>3.1.2</b> Where can you get packages ?</a></li>
 </ul></li>
 <li class="chapter" data-level="3.2" data-path="install-packages.html"><a href="install-packages.html#installing-packages"><i class="fa fa-check"></i><b>3.2</b> Installing packages</a></li>
-<li class="chapter" data-level="3.3" data-path="install-packages.html"><a href="install-packages.html#useful-packages-on-cran"><i class="fa fa-check"></i><b>3.3</b> Useful Packages on CRAN</a><ul>
+<li class="chapter" data-level="3.3" data-path="install-packages.html"><a href="install-packages.html#useful-packages-on-cran"><i class="fa fa-check"></i><b>3.3</b> Useful Packages on CRAN</a>
+<ul>
 <li class="chapter" data-level="3.3.1" data-path="install-packages.html"><a href="install-packages.html#the-tidy-universe-a-meta-package-from-r-studio"><i class="fa fa-check"></i><b>3.3.1</b> The Tidy-Universe, a META package from <span class="math inline">\(R Studio\)</span></a></li>
 <li class="chapter" data-level="3.3.2" data-path="install-packages.html"><a href="install-packages.html#groups-of-individual-packages-on-cran"><i class="fa fa-check"></i><b>3.3.2</b> Groups of Individual Packages on <span class="math inline">\(CRAN\)</span></a></li>
 </ul></li>
-<li class="chapter" data-level="3.4" data-path="install-packages.html"><a href="install-packages.html#userful-packages-on-github"><i class="fa fa-check"></i><b>3.4</b> Userful Packages on <span class="math inline">\(GitHub\)</span></a><ul>
+<li class="chapter" data-level="3.4" data-path="install-packages.html"><a href="install-packages.html#userful-packages-on-github"><i class="fa fa-check"></i><b>3.4</b> Userful Packages on <span class="math inline">\(GitHub\)</span></a>
+<ul>
 <li class="chapter" data-level="3.4.1" data-path="install-packages.html"><a href="install-packages.html#templates-for-writing-tutorials-practicals-or-examination-papers-with-r-markdown"><i class="fa fa-check"></i><b>3.4.1</b> Templates for writing tutorials, practicals or examination papers with <span class="math inline">\(R Markdown\)</span></a></li>
 <li class="chapter" data-level="3.4.2" data-path="install-packages.html"><a href="install-packages.html#prepare-apa-journal-articles-with-r-markdown"><i class="fa fa-check"></i><b>3.4.2</b> Prepare APA journal articles with <span class="math inline">\(R Markdown\)</span></a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="workspace-orientation.html"><a href="workspace-orientation.html"><i class="fa fa-check"></i><b>4</b> Workspace Orientation</a><ul>
+<li class="chapter" data-level="4" data-path="workspace-orientation.html"><a href="workspace-orientation.html"><i class="fa fa-check"></i><b>4</b> Workspace Orientation</a>
+<ul>
 <li class="chapter" data-level="4.1" data-path="workspace-orientation.html"><a href="workspace-orientation.html#default-window-arrangement"><i class="fa fa-check"></i><b>4.1</b> Default Window Arrangement</a></li>
 <li class="chapter" data-level="4.2" data-path="workspace-orientation.html"><a href="workspace-orientation.html#cheatsheets"><i class="fa fa-check"></i><b>4.2</b> Cheatsheets</a></li>
-<li class="chapter" data-level="4.3" data-path="workspace-orientation.html"><a href="workspace-orientation.html#global-options-menu"><i class="fa fa-check"></i><b>4.3</b> Global Options Menu</a><ul>
+<li class="chapter" data-level="4.3" data-path="workspace-orientation.html"><a href="workspace-orientation.html#global-options-menu"><i class="fa fa-check"></i><b>4.3</b> Global Options Menu</a>
+<ul>
 <li class="chapter" data-level="4.3.1" data-path="workspace-orientation.html"><a href="workspace-orientation.html#pane-layout"><i class="fa fa-check"></i><b>4.3.1</b> Pane Layout</a></li>
 <li class="chapter" data-level="4.3.2" data-path="workspace-orientation.html"><a href="workspace-orientation.html#appearance"><i class="fa fa-check"></i><b>4.3.2</b> Appearance</a></li>
 </ul></li>
-<li class="chapter" data-level="4.4" data-path="workspace-orientation.html"><a href="workspace-orientation.html#various-tabs"><i class="fa fa-check"></i><b>4.4</b> Various Tabs</a><ul>
+<li class="chapter" data-level="4.4" data-path="workspace-orientation.html"><a href="workspace-orientation.html#various-tabs"><i class="fa fa-check"></i><b>4.4</b> Various Tabs</a>
+<ul>
 <li class="chapter" data-level="4.4.1" data-path="workspace-orientation.html"><a href="workspace-orientation.html#files"><i class="fa fa-check"></i><b>4.4.1</b> Files</a></li>
 <li class="chapter" data-level="4.4.2" data-path="workspace-orientation.html"><a href="workspace-orientation.html#packages"><i class="fa fa-check"></i><b>4.4.2</b> Packages</a></li>
 <li class="chapter" data-level="4.4.3" data-path="workspace-orientation.html"><a href="workspace-orientation.html#help"><i class="fa fa-check"></i><b>4.4.3</b> Help</a></li>
 <li class="chapter" data-level="4.4.4" data-path="workspace-orientation.html"><a href="workspace-orientation.html#environment"><i class="fa fa-check"></i><b>4.4.4</b> Environment</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="notebook-workflow.html"><a href="notebook-workflow.html"><i class="fa fa-check"></i><b>5</b> Notebook Workflow</a><ul>
-<li class="chapter" data-level="5.1" data-path="notebook-workflow.html"><a href="notebook-workflow.html#create-a-new-notebook"><i class="fa fa-check"></i><b>5.1</b> Create a New Notebook</a><ul>
+<li class="chapter" data-level="5" data-path="notebook-workflow.html"><a href="notebook-workflow.html"><i class="fa fa-check"></i><b>5</b> Notebook Workflow</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="notebook-workflow.html"><a href="notebook-workflow.html#create-a-new-notebook"><i class="fa fa-check"></i><b>5.1</b> Create a New Notebook</a>
+<ul>
 <li class="chapter" data-level="5.1.1" data-path="notebook-workflow.html"><a href="notebook-workflow.html#yaml-header"><i class="fa fa-check"></i><b>5.1.1</b> YAML header</a></li>
 <li class="chapter" data-level="5.1.2" data-path="notebook-workflow.html"><a href="notebook-workflow.html#plain-text"><i class="fa fa-check"></i><b>5.1.2</b> Plain Text</a></li>
 <li class="chapter" data-level="5.1.3" data-path="notebook-workflow.html"><a href="notebook-workflow.html#code-chunks"><i class="fa fa-check"></i><b>5.1.3</b> Code Chunks</a></li>
 </ul></li>
-<li class="chapter" data-level="5.2" data-path="notebook-workflow.html"><a href="notebook-workflow.html#interact-within-a-notebook"><i class="fa fa-check"></i><b>5.2</b> Interact within a Notebook</a><ul>
+<li class="chapter" data-level="5.2" data-path="notebook-workflow.html"><a href="notebook-workflow.html#interact-within-a-notebook"><i class="fa fa-check"></i><b>5.2</b> Interact within a Notebook</a>
+<ul>
 <li class="chapter" data-level="5.2.1" data-path="notebook-workflow.html"><a href="notebook-workflow.html#run-code-chunks"><i class="fa fa-check"></i><b>5.2.1</b> Run Code Chunks</a></li>
 <li class="chapter" data-level="5.2.2" data-path="notebook-workflow.html"><a href="notebook-workflow.html#chunk-options"><i class="fa fa-check"></i><b>5.2.2</b> Chunk Options</a></li>
 </ul></li>
-<li class="chapter" data-level="5.3" data-path="notebook-workflow.html"><a href="notebook-workflow.html#knit-a-notebook"><i class="fa fa-check"></i><b>5.3</b> Knit a Notebook</a><ul>
+<li class="chapter" data-level="5.3" data-path="notebook-workflow.html"><a href="notebook-workflow.html#knit-a-notebook"><i class="fa fa-check"></i><b>5.3</b> Knit a Notebook</a>
+<ul>
 <li class="chapter" data-level="5.3.1" data-path="notebook-workflow.html"><a href="notebook-workflow.html#storing-all-associated-files"><i class="fa fa-check"></i><b>5.3.1</b> Storing all associated files</a></li>
 <li class="chapter" data-level="5.3.2" data-path="notebook-workflow.html"><a href="notebook-workflow.html#setting-the-working-directory"><i class="fa fa-check"></i><b>5.3.2</b> Setting the working directory</a></li>
 <li class="chapter" data-level="5.3.3" data-path="notebook-workflow.html"><a href="notebook-workflow.html#press-knit"><i class="fa fa-check"></i><b>5.3.3</b> Press Knit</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="periodic-updates.html"><a href="periodic-updates.html"><i class="fa fa-check"></i><b>6</b> Periodic Updates</a><ul>
+<li class="chapter" data-level="6" data-path="periodic-updates.html"><a href="periodic-updates.html"><i class="fa fa-check"></i><b>6</b> Periodic Updates</a>
+<ul>
 <li class="chapter" data-level="6.1" data-path="periodic-updates.html"><a href="periodic-updates.html#the-r-programing-language"><i class="fa fa-check"></i><b>6.1</b> The R Programing Language</a></li>
 <li class="chapter" data-level="6.2" data-path="periodic-updates.html"><a href="periodic-updates.html#the-r-studio-ide-1"><i class="fa fa-check"></i><b>6.2</b> The R Studio IDE</a></li>
 <li class="chapter" data-level="6.3" data-path="periodic-updates.html"><a href="periodic-updates.html#all-your-r-packages"><i class="fa fa-check"></i><b>6.3</b> All Your R Packages</a></li>
@@ -227,12 +276,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="overview" class="section level1">
+<div id="overview" class="section level1" number="1">
 <h1><span class="header-section-number">1</span> Overview</h1>
 <p><img src="images/manyRs.PNG" /></p>
 <p>Before we get busy downloading and installing the actual software, here is the big picture.</p>
 <hr />
-<div id="r-vs.-r-studio" class="section level2">
+<div id="r-vs.-r-studio" class="section level2" number="1.1">
 <h2><span class="header-section-number">1.1</span> R vs. R Studio</h2>
 <table>
 <thead>
@@ -298,7 +347,7 @@ For a more in-depth discussion on the difference between <span class="math inlin
 </div>
 <hr />
 </div>
-<div id="r-markdown-vs.-r-notebook" class="section level2">
+<div id="r-markdown-vs.-r-notebook" class="section level2" number="1.2">
 <h2><span class="header-section-number">1.2</span> R Markdown vs. R Notebook</h2>
 <table>
 <thead>
@@ -332,7 +381,7 @@ A specific kind of <code>.Rmd</code> file in which the code chunks may be intera
 </table>
 <blockquote>
 <p><span class="math inline">\(R Markdown\)</span> documents are fully reproducible. You may use the productive <strong>notebook</strong> interface to <strong>weave together narrative text and code</strong> to produce elegantly formatted output.</p>
-<p>-<span class="citation">(Allaire et al. <a href="references.html#ref-R-rmarkdown" role="doc-biblioref">2019</a>)</span>.</p>
+<p>-<span class="citation">(<a href="references.html#ref-R-rmarkdown" role="doc-biblioref">Allaire et al. 2021</a>)</span>.</p>
 </blockquote>
 <div class="rmdlink">
 <p>
@@ -341,17 +390,17 @@ A specific kind of <code>.Rmd</code> file in which the code chunks may be intera
 </div>
 <hr />
 </div>
-<div id="knit-r" class="section level2">
+<div id="knit-r" class="section level2" number="1.3">
 <h2><span class="header-section-number">1.3</span> knit-R</h2>
 <p><img src="images/cartoon_knit.PNG" /></p>
-<p>With the click of a button, the <code>knitr</code> package converts a <span class="math inline">\(R notebook\)</span> (<code>.Rmd</code>) to an intermediary <em>Markdown</em> file (<code>.md</code>), which <span class="math inline">\(R Studio\)</span> will further transform to various final file types, including <span class="citation">(Xie <a href="references.html#ref-xie2015" role="doc-biblioref">2015</a>)</span>:</p>
+<p>With the click of a button, the <code>knitr</code> package converts a <span class="math inline">\(R notebook\)</span> (<code>.Rmd</code>) to an intermediary <em>Markdown</em> file (<code>.md</code>), which <span class="math inline">\(R Studio\)</span> will further transform to various final file types, including <span class="citation">(<a href="references.html#ref-xie2015" role="doc-biblioref">Xie 2015</a>)</span>:</p>
 <ul>
 <li><p><code>.pdf</code> using <span class="math inline">\(LaTeX\)</span> <em>(beautiful)</em></p></li>
 <li><p><code>.html</code> using another package called <span class="math inline">\(markdown\)</span> <em>(highly viewable)</em></p></li>
 <li><p><code>Word</code> document using Pandoc <em>(probably be ugly)</em></p></li>
 </ul>
 <p><img src="images/common/knitr_formats.PNG" width="500" /></p>
-<p><code>knitr</code> is an engine for dynamic report generation with <span class="math inline">\(R\)</span>. It is a package in the statistical programming language <span class="math inline">\(R\)</span> that enables integration of <strong>R code</strong> into <span class="math inline">\(LaTeX\)</span>, <span class="math inline">\(LyX\)</span>, <span class="math inline">\(HTML\)</span>, <span class="math inline">\(Markdown\)</span>, <span class="math inline">\(AsciiDoc\)</span>, and <span class="math inline">\(text\)</span>s documents <span class="citation">(Xie <a href="references.html#ref-R-knitr" role="doc-biblioref">2019</a>)</span>.</p>
+<p><code>knitr</code> is an engine for dynamic report generation with <span class="math inline">\(R\)</span>. It is a package in the statistical programming language <span class="math inline">\(R\)</span> that enables integration of <strong>R code</strong> into <span class="math inline">\(LaTeX\)</span>, <span class="math inline">\(LyX\)</span>, <span class="math inline">\(HTML\)</span>, <span class="math inline">\(Markdown\)</span>, <span class="math inline">\(AsciiDoc\)</span>, and <span class="math inline">\(text\)</span>s documents <span class="citation">(<a href="references.html#ref-R-knitr" role="doc-biblioref">Xie 2021</a>)</span>.</p>
 <div class="rmdlink">
 <p>
 The professionals ar <span class="math inline"><span class="math inline">\(R Studio\)</span></span> show it better at their <a href="https://rmarkdown.rstudio.com/index.html">website</a>.
@@ -359,7 +408,7 @@ The professionals ar <span class="math inline"><span class="math inline">\(R Stu
 </div>
 <hr />
 </div>
-<div id="more-indepth-faqs" class="section level2">
+<div id="more-indepth-faqs" class="section level2" number="1.4">
 <h2><span class="header-section-number">1.4</span> More Indepth FAQs</h2>
 <div class="rmdlink">
 <p>
@@ -369,7 +418,7 @@ The professionals ar <span class="math inline"><span class="math inline">\(R Stu
 <div id="what-is-r" class="section level3 unnumbered">
 <h3>What is R ?</h3>
 <blockquote>
-<p><span class="math inline">\(R\)</span> is a language and environment for statistical computing and graphics. <span class="citation">(R Core Team <a href="references.html#ref-R-base" role="doc-biblioref">2019</a>)</span></p>
+<p><span class="math inline">\(R\)</span> is a language and environment for statistical computing and graphics. <span class="citation">(<a href="references.html#ref-R-base" role="doc-biblioref">R Core Team 2021</a>)</span></p>
 </blockquote>
 <p><span class="math inline">\(R\)</span> provides a wide variety of <strong>statistical</strong> <em>(linear and nonlinear modelling, classical statistical tests, time-series analysis, classification, clustering, …)</em> and <strong>graphical</strong> techniques, and is highly extensible. The <span class="math inline">\(S\)</span> language is often the vehicle of choice for research in statistical methodology, and <span class="math inline">\(R\)</span> provides an Open Source route to participation in that activity.</p>
 <p>One of <span class="math inline">\(R\)</span>’s strengths is the ease with which well-designed publication-quality plots can be produced, including mathematical symbols and formulae where needed. Great care has been taken over the defaults for the minor design choices in graphics, but the user retains full control.</p>
@@ -378,7 +427,7 @@ The professionals ar <span class="math inline"><span class="math inline">\(R Stu
 <h3>What is R Markdown ?</h3>
 <p>According to <a href="www.rstudio.com">R Studio</a>:</p>
 <blockquote>
-<p>“<span class="math inline">\(R Markdown\)</span> is a format that enables easy authoring of reproducible web reports from <span class="math inline">\(R\)</span>. It combines the core syntax of Markdown (an easy-to-write <em>plain text</em> format for web content) with embedded <em><span class="math inline">\(R\)</span> code chunks</em> that are run so their output can be included in the final document”.</p>
+<p>“<span class="math inline">\(R Markdown\)</span> is a format that enables easy authoring of reproducible web reports from <span class="math inline">\(R\)</span>. It combines the core syntax of Markdown (an easy-to-write <em>plain text</em> format for web content) with embedded <em><span class="math inline">\(R\)</span> code chunks</em> that are run so their output can be included in the final document.”</p>
 </blockquote>
 </div>
 <div id="what-is-dynamic-reporting" class="section level3 unnumbered">
@@ -422,11 +471,13 @@ Check out <a href="http://rpubs.com/">Rpubs</a>. This website shares lots of doc
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -434,12 +485,12 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -454,7 +505,15 @@ gitbook.start({
 "link": null,
 "text": null
 },
+"view": {
+"link": null,
+"text": null
+},
 "download": null,
+"search": {
+"engine": "lunr",
+"options": null
+},
 "toc": {
 "collapse": "section"
 }
@@ -469,8 +528,9 @@ gitbook.start({
     script.type = "text/javascript";
     var src = "true";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(src))
-      src = src.replace(/^https?:/, '');
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
