@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>1 Overview | Encyclopedia of Quantitative Methods in R, vol. 0: Setting up Your Computer</title>
   <meta name="description" content="Getting started with R and R Studio: installing software and package management." />
-  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
   <meta property="og:title" content="1 Overview | Encyclopedia of Quantitative Methods in R, vol. 0: Setting up Your Computer" />
   <meta property="og:type" content="book" />
-  
   <meta property="og:image" content="/EQM_v0_cover.png" />
   <meta property="og:description" content="Getting started with R and R Studio: installing software and package management." />
   <meta name="github-repo" content="cehs-research/eBook_install" />
@@ -21,7 +20,7 @@
   <meta name="twitter:description" content="Getting started with R and R Studio: installing software and package management." />
   <meta name="twitter:image" content="/EQM_v0_cover.png" />
 
-<meta name="author" content="Sarah Schwartz &amp; Tyson Barrett" />
+<meta name="author" content="Sarah Schwartz, PhD" />
 
 
 
@@ -32,8 +31,8 @@
   
 <link rel="prev" href="index.html"/>
 <link rel="next" href="install-software.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,11 +48,9 @@
 
 
 
-
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
-<script src="libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
@@ -94,7 +91,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -107,7 +104,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -163,10 +160,7 @@ div.csl-indent {
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a>
 <ul>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#blocked-notes"><i class="fa fa-check"></i>Blocked Notes</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#code-and-output"><i class="fa fa-check"></i>Code and Output</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#why-choose-r"><i class="fa fa-check"></i>Why choose R ?</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#the-authors"><i class="fa fa-check"></i>The Authors</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#fyi"><i class="fa fa-check"></i>FYI</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i><b>1</b> Overview</a>
@@ -188,9 +182,9 @@ div.csl-indent {
 <li class="chapter" data-level="2.2" data-path="install-software.html"><a href="install-software.html#the-r-studio-ide"><i class="fa fa-check"></i><b>2.2</b> The R Studio IDE</a></li>
 <li class="chapter" data-level="2.3" data-path="install-software.html"><a href="install-software.html#tex-optional"><i class="fa fa-check"></i><b>2.3</b> TeX (optional)</a>
 <ul>
-<li class="chapter" data-level="2.3.1" data-path="install-software.html"><a href="install-software.html#mac---use-mactex"><i class="fa fa-check"></i><b>2.3.1</b> Mac - use <code>MacTeX</code></a></li>
-<li class="chapter" data-level="2.3.2" data-path="install-software.html"><a href="install-software.html#windows---use-miktex"><i class="fa fa-check"></i><b>2.3.2</b> Windows - use <code>MikTeX</code></a></li>
-<li class="chapter" data-level="2.3.3" data-path="install-software.html"><a href="install-software.html#new-option-the-tinytex-package"><i class="fa fa-check"></i><b>2.3.3</b> New Option: the <code>tinytex</code> package???</a></li>
+<li class="chapter" data-level="2.3.1" data-path="install-software.html"><a href="install-software.html#new-option-the-tinytex-package"><i class="fa fa-check"></i><b>2.3.1</b> New Option: the <code>tinytex</code> package</a></li>
+<li class="chapter" data-level="2.3.2" data-path="install-software.html"><a href="install-software.html#mac---use-mactex"><i class="fa fa-check"></i><b>2.3.2</b> Mac - use <code>MacTeX</code></a></li>
+<li class="chapter" data-level="2.3.3" data-path="install-software.html"><a href="install-software.html#windows---use-miktex"><i class="fa fa-check"></i><b>2.3.3</b> Windows - use <code>MikTeX</code></a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="install-packages.html"><a href="install-packages.html"><i class="fa fa-check"></i><b>3</b> Install Packages</a>
@@ -276,13 +270,13 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="overview" class="section level1" number="1">
-<h1><span class="header-section-number">1</span> Overview</h1>
+<div id="overview" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">1</span> Overview<a href="overview.html#overview" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p><img src="images/manyRs.PNG" /></p>
 <p>Before we get busy downloading and installing the actual software, here is the big picture.</p>
 <hr />
-<div id="r-vs.-r-studio" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> R vs. R Studio</h2>
+<div id="r-vs.-r-studio" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> R vs. R Studio<a href="overview.html#r-vs.-r-studio" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <table>
 <thead>
 <tr>
@@ -342,13 +336,15 @@ Dashboard
 <p>“Where as <span class="math inline">\(R\)</span> is a <em>programming language</em> that runs computations, <span class="math inline">\(R Studio\)</span> is an <em>integrated development environment (IDE)</em> that provides an interface by adding many convenient features and tools. So the way of having access to a speedometer, rearview mirrors, and a navigation system makes driving much easier, using <strong><span class="math inline">\(RStudio’s\)</span> interface makes using <span class="math inline">\(R\)</span> much easier</strong> as well.” - <a href="https://ismayc.github.io/moderndive/index.html">Chester Ismay and Albert Y. Kim</a></p>
 <div class="rmdlink">
 <p>
-For a more in-depth discussion on the difference between <span class="math inline"><span class="math inline">\(R\)</span></span> and <span class="math inline"><span class="math inline">\(R Studio\)</span></span> IDE, watch this <a href="https://campus.datacamp.com/courses/working-with-the-rstudio-ide-part-1/orientation?ex=1">DataCamp video (2m52s)</a>.
+For a more in-depth discussion on the difference between <span class="math inline"><span class="math inline">\(R\)</span></span> and <span class="math inline"><span class="math inline">\(R Studio\)</span></span> IDE, watch this <a
+href="https://campus.datacamp.com/courses/working-with-the-rstudio-ide-part-1/orientation?ex=1">DataCamp
+video (2m52s)</a>.
 </p>
 </div>
 <hr />
 </div>
-<div id="r-markdown-vs.-r-notebook" class="section level2" number="1.2">
-<h2><span class="header-section-number">1.2</span> R Markdown vs. R Notebook</h2>
+<div id="r-markdown-vs.-r-notebook" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> R Markdown vs. R Notebook<a href="overview.html#r-markdown-vs.-r-notebook" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <table>
 <thead>
 <tr>
@@ -381,17 +377,20 @@ A specific kind of <code>.Rmd</code> file in which the code chunks may be intera
 </table>
 <blockquote>
 <p><span class="math inline">\(R Markdown\)</span> documents are fully reproducible. You may use the productive <strong>notebook</strong> interface to <strong>weave together narrative text and code</strong> to produce elegantly formatted output.</p>
-<p>-<span class="citation">(<a href="references.html#ref-R-rmarkdown" role="doc-biblioref">Allaire et al. 2021</a>)</span>.</p>
+<p>-<span class="citation">(<a href="references.html#ref-R-rmarkdown" role="doc-biblioref">Allaire et al. 2022</a>)</span>.</p>
 </blockquote>
 <div class="rmdlink">
 <p>
-<strong>More details at the R Studio website:</strong> <a href="https://rmarkdown.rstudio.com/lesson-1.html">R Markdown, lesson 1</a> and <a href="https://rmarkdown.rstudio.com/r_notebooks">R Notebooks</a>
+<strong>More details at the R Studio website:</strong> <a
+href="https://rmarkdown.rstudio.com/lesson-1.html">R Markdown, lesson
+1</a> and <a href="https://rmarkdown.rstudio.com/r_notebooks">R
+Notebooks</a>
 </p>
 </div>
 <hr />
 </div>
-<div id="knit-r" class="section level2" number="1.3">
-<h2><span class="header-section-number">1.3</span> knit-R</h2>
+<div id="knit-r" class="section level2 hasAnchor" number="1.3">
+<h2><span class="header-section-number">1.3</span> knit-R<a href="overview.html#knit-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><img src="images/cartoon_knit.PNG" /></p>
 <p>With the click of a button, the <code>knitr</code> package converts a <span class="math inline">\(R notebook\)</span> (<code>.Rmd</code>) to an intermediary <em>Markdown</em> file (<code>.md</code>), which <span class="math inline">\(R Studio\)</span> will further transform to various final file types, including <span class="citation">(<a href="references.html#ref-xie2015" role="doc-biblioref">Xie 2015</a>)</span>:</p>
 <ul>
@@ -400,38 +399,44 @@ A specific kind of <code>.Rmd</code> file in which the code chunks may be intera
 <li><p><code>Word</code> document using Pandoc <em>(probably be ugly)</em></p></li>
 </ul>
 <p><img src="images/common/knitr_formats.PNG" width="500" /></p>
-<p><code>knitr</code> is an engine for dynamic report generation with <span class="math inline">\(R\)</span>. It is a package in the statistical programming language <span class="math inline">\(R\)</span> that enables integration of <strong>R code</strong> into <span class="math inline">\(LaTeX\)</span>, <span class="math inline">\(LyX\)</span>, <span class="math inline">\(HTML\)</span>, <span class="math inline">\(Markdown\)</span>, <span class="math inline">\(AsciiDoc\)</span>, and <span class="math inline">\(text\)</span>s documents <span class="citation">(<a href="references.html#ref-R-knitr" role="doc-biblioref">Xie 2021</a>)</span>.</p>
+<p><code>knitr</code> is an engine for dynamic report generation with <span class="math inline">\(R\)</span>. It is a package in the statistical programming language <span class="math inline">\(R\)</span> that enables integration of <strong>R code</strong> into <span class="math inline">\(LaTeX\)</span>, <span class="math inline">\(LyX\)</span>, <span class="math inline">\(HTML\)</span>, <span class="math inline">\(Markdown\)</span>, <span class="math inline">\(AsciiDoc\)</span>, and <span class="math inline">\(text\)</span>s documents <span class="citation">(<a href="references.html#ref-R-knitr" role="doc-biblioref">Xie 2022</a>)</span>.</p>
 <div class="rmdlink">
 <p>
-The professionals ar <span class="math inline"><span class="math inline">\(R Studio\)</span></span> show it better at their <a href="https://rmarkdown.rstudio.com/index.html">website</a>.
+The professionals ar <span class="math inline"><span class="math inline">\(R Studio\)</span></span>
+show it better at their <a
+href="https://rmarkdown.rstudio.com/index.html">website</a>.
 </p>
 </div>
 <hr />
 </div>
-<div id="more-indepth-faqs" class="section level2" number="1.4">
-<h2><span class="header-section-number">1.4</span> More Indepth FAQs</h2>
+<div id="more-indepth-faqs" class="section level2 hasAnchor" number="1.4">
+<h2><span class="header-section-number">1.4</span> More Indepth FAQs<a href="overview.html#more-indepth-faqs" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="rmdlink">
 <p>
-<strong>Helpful Websites:</strong> <a href="https://www.statmethods.net/stats/index.html">Quick R: Basic Statistics</a> and <a href="https://libguides.library.kent.edu/statconsulting/r">Introduction to R</a>
+<strong>Helpful Websites:</strong> <a
+href="https://www.statmethods.net/stats/index.html">Quick R: Basic
+Statistics</a> and <a
+href="https://libguides.library.kent.edu/statconsulting/r">Introduction
+to R</a>
 </p>
 </div>
-<div id="what-is-r" class="section level3 unnumbered">
-<h3>What is R ?</h3>
+<div id="what-is-r" class="section level3 unnumbered hasAnchor">
+<h3>What is R ?<a href="overview.html#what-is-r" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <blockquote>
-<p><span class="math inline">\(R\)</span> is a language and environment for statistical computing and graphics. <span class="citation">(<a href="references.html#ref-R-base" role="doc-biblioref">R Core Team 2021</a>)</span></p>
+<p><span class="math inline">\(R\)</span> is a language and environment for statistical computing and graphics. <span class="citation">(<a href="references.html#ref-R-base" role="doc-biblioref">R Core Team 2022</a>)</span></p>
 </blockquote>
 <p><span class="math inline">\(R\)</span> provides a wide variety of <strong>statistical</strong> <em>(linear and nonlinear modelling, classical statistical tests, time-series analysis, classification, clustering, …)</em> and <strong>graphical</strong> techniques, and is highly extensible. The <span class="math inline">\(S\)</span> language is often the vehicle of choice for research in statistical methodology, and <span class="math inline">\(R\)</span> provides an Open Source route to participation in that activity.</p>
 <p>One of <span class="math inline">\(R\)</span>’s strengths is the ease with which well-designed publication-quality plots can be produced, including mathematical symbols and formulae where needed. Great care has been taken over the defaults for the minor design choices in graphics, but the user retains full control.</p>
 </div>
-<div id="what-is-r-markdown" class="section level3 unnumbered">
-<h3>What is R Markdown ?</h3>
+<div id="what-is-r-markdown" class="section level3 unnumbered hasAnchor">
+<h3>What is R Markdown ?<a href="overview.html#what-is-r-markdown" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>According to <a href="www.rstudio.com">R Studio</a>:</p>
 <blockquote>
-<p>“<span class="math inline">\(R Markdown\)</span> is a format that enables easy authoring of reproducible web reports from <span class="math inline">\(R\)</span>. It combines the core syntax of Markdown (an easy-to-write <em>plain text</em> format for web content) with embedded <em><span class="math inline">\(R\)</span> code chunks</em> that are run so their output can be included in the final document.”</p>
+<p>“<span class="math inline">\(R Markdown\)</span> is a format that enables easy authoring of reproducible web reports from <span class="math inline">\(R\)</span>. It combines the core syntax of Markdown (an easy-to-write <em>plain text</em> format for web content) with embedded <em><span class="math inline">\(R\)</span> code chunks</em> that are run so their output can be included in the final document”.</p>
 </blockquote>
 </div>
-<div id="what-is-dynamic-reporting" class="section level3 unnumbered">
-<h3>What is Dynamic Reporting?</h3>
+<div id="what-is-dynamic-reporting" class="section level3 unnumbered hasAnchor">
+<h3>What is Dynamic Reporting?<a href="overview.html#what-is-dynamic-reporting" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>From <a href="https://onlinecourses.science.psu.edu/statprogram/markdown">Penn State Statistics</a>:</p>
 <p>The traditional way to write a report:</p>
 <ol style="list-style-type: decimal">
@@ -448,12 +453,13 @@ The professionals ar <span class="math inline"><span class="math inline">\(R Stu
 <p>If you are using a <span class="math inline">\(R Notebook\)</span>, you just change/add a few lines of code and re-run the entire file. Everything gets updated internally. <strong>Hours saved!</strong></p>
 <p>Another bonus is that the single <span class="math inline">\(R Notebook\)</span> file includes exact details of every step: which data file you used, how your cleaned/wrangled your data, and exactly how models were specified. Therefore, in this way <strong>dynamic also means reproducible</strong>, in the sense that people who get the file from you can reproduce the entire work in the report. No guessing which version of your file you used and hunting through stacks of output.</p>
 </div>
-<div id="is-this-a-popular-method-for-creating-reports" class="section level3 unnumbered">
-<h3>Is this a popular method for creating reports?</h3>
+<div id="is-this-a-popular-method-for-creating-reports" class="section level3 unnumbered hasAnchor">
+<h3>Is this a popular method for creating reports?<a href="overview.html#is-this-a-popular-method-for-creating-reports" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>YES!</p>
 <div class="rmdlink">
 <p>
-Check out <a href="http://rpubs.com/">Rpubs</a>. This website shares lots of documents written in the way we will introduce below.
+Check out <a href="http://rpubs.com/">Rpubs</a>. This website shares
+lots of documents written in the way we will introduce below.
 </p>
 </div>
 
@@ -470,7 +476,6 @@ Check out <a href="http://rpubs.com/">Rpubs</a>. This website shares lots of doc
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -511,7 +516,7 @@ gitbook.start({
 },
 "download": null,
 "search": {
-"engine": "lunr",
+"engine": "fuse",
 "options": null
 },
 "toc": {
@@ -527,7 +532,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');

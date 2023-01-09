@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>3 Install Packages | Encyclopedia of Quantitative Methods in R, vol. 0: Setting up Your Computer</title>
   <meta name="description" content="Getting started with R and R Studio: installing software and package management." />
-  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
   <meta property="og:title" content="3 Install Packages | Encyclopedia of Quantitative Methods in R, vol. 0: Setting up Your Computer" />
   <meta property="og:type" content="book" />
-  
   <meta property="og:image" content="/EQM_v0_cover.png" />
   <meta property="og:description" content="Getting started with R and R Studio: installing software and package management." />
   <meta name="github-repo" content="cehs-research/eBook_install" />
@@ -21,7 +20,7 @@
   <meta name="twitter:description" content="Getting started with R and R Studio: installing software and package management." />
   <meta name="twitter:image" content="/EQM_v0_cover.png" />
 
-<meta name="author" content="Sarah Schwartz &amp; Tyson Barrett" />
+<meta name="author" content="Sarah Schwartz, PhD" />
 
 
 
@@ -32,8 +31,8 @@
   
 <link rel="prev" href="install-software.html"/>
 <link rel="next" href="workspace-orientation.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,11 +48,9 @@
 
 
 
-
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
-<script src="libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
@@ -94,7 +91,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -107,7 +104,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -163,10 +160,7 @@ div.csl-indent {
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a>
 <ul>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#blocked-notes"><i class="fa fa-check"></i>Blocked Notes</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#code-and-output"><i class="fa fa-check"></i>Code and Output</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#why-choose-r"><i class="fa fa-check"></i>Why choose R ?</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#the-authors"><i class="fa fa-check"></i>The Authors</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#fyi"><i class="fa fa-check"></i>FYI</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i><b>1</b> Overview</a>
@@ -188,9 +182,9 @@ div.csl-indent {
 <li class="chapter" data-level="2.2" data-path="install-software.html"><a href="install-software.html#the-r-studio-ide"><i class="fa fa-check"></i><b>2.2</b> The R Studio IDE</a></li>
 <li class="chapter" data-level="2.3" data-path="install-software.html"><a href="install-software.html#tex-optional"><i class="fa fa-check"></i><b>2.3</b> TeX (optional)</a>
 <ul>
-<li class="chapter" data-level="2.3.1" data-path="install-software.html"><a href="install-software.html#mac---use-mactex"><i class="fa fa-check"></i><b>2.3.1</b> Mac - use <code>MacTeX</code></a></li>
-<li class="chapter" data-level="2.3.2" data-path="install-software.html"><a href="install-software.html#windows---use-miktex"><i class="fa fa-check"></i><b>2.3.2</b> Windows - use <code>MikTeX</code></a></li>
-<li class="chapter" data-level="2.3.3" data-path="install-software.html"><a href="install-software.html#new-option-the-tinytex-package"><i class="fa fa-check"></i><b>2.3.3</b> New Option: the <code>tinytex</code> package???</a></li>
+<li class="chapter" data-level="2.3.1" data-path="install-software.html"><a href="install-software.html#new-option-the-tinytex-package"><i class="fa fa-check"></i><b>2.3.1</b> New Option: the <code>tinytex</code> package</a></li>
+<li class="chapter" data-level="2.3.2" data-path="install-software.html"><a href="install-software.html#mac---use-mactex"><i class="fa fa-check"></i><b>2.3.2</b> Mac - use <code>MacTeX</code></a></li>
+<li class="chapter" data-level="2.3.3" data-path="install-software.html"><a href="install-software.html#windows---use-miktex"><i class="fa fa-check"></i><b>2.3.3</b> Windows - use <code>MikTeX</code></a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="install-packages.html"><a href="install-packages.html"><i class="fa fa-check"></i><b>3</b> Install Packages</a>
@@ -276,27 +270,29 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="install-packages" class="section level1" number="3">
-<h1><span class="header-section-number">3</span> Install Packages</h1>
+<div id="install-packages" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">3</span> Install Packages<a href="install-packages.html#install-packages" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p><img src="images/packages.PNG" /></p>
 <p>Learn what packages are and how to get them.</p>
 <hr />
-<div id="package-faq" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> Package FAQ</h2>
-<div id="what-are-packages" class="section level3" number="3.1.1">
-<h3><span class="header-section-number">3.1.1</span> What are packages ?</h3>
+<div id="package-faq" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Package FAQ<a href="install-packages.html#package-faq" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="what-are-packages" class="section level3 hasAnchor" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> What are packages ?<a href="install-packages.html#what-are-packages" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <blockquote>
 <p><span class="math inline">\(R\)</span> packages are collections of functions and data sets (just files) developed by the community (or you). They increase the power of <span class="math inline">\(R\)</span> by improving existing base <span class="math inline">\(R\)</span> functionalities, or by adding new ones.</p>
 </blockquote>
 <p>When you download <span class="math inline">\(R\)</span> you are only getting the bare-bones, most basic files. This is nice, as it keeps the program from hogging your entire hard drive, but doesn’t offer much in terms of data anaysis. Today there are over 10,000 packages available on <span class="math inline">\(CRAN\)</span> alone, so downloading all of them would be silly and probably fill your computer several times over. Individual users are left with the freedom to choose which packages they need.</p>
 <div class="rmdlink">
 <p>
-More information may be found here: <a href="https://www.datacamp.com/community/tutorials/r-packages-guide" class="uri">https://www.datacamp.com/community/tutorials/r-packages-guide</a>
+More information may be found here: <a
+href="https://www.datacamp.com/community/tutorials/r-packages-guide"
+class="uri">https://www.datacamp.com/community/tutorials/r-packages-guide</a>
 </p>
 </div>
 </div>
-<div id="where-can-you-get-packages" class="section level3" number="3.1.2">
-<h3><span class="header-section-number">3.1.2</span> Where can you get packages ?</h3>
+<div id="where-can-you-get-packages" class="section level3 hasAnchor" number="3.1.2">
+<h3><span class="header-section-number">3.1.2</span> Where can you get packages ?<a href="install-packages.html#where-can-you-get-packages" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>A repository is a place where packages are located so you can install them from it. Typically they are online and accesible to everyone. Three of the most popular repositories for <span class="math inline">\(R\)</span> packages are:</p>
 <table>
 <thead>
@@ -337,8 +333,8 @@ Repository
 </table>
 </div>
 </div>
-<div id="installing-packages" class="section level2" number="3.2">
-<h2><span class="header-section-number">3.2</span> Installing packages</h2>
+<div id="installing-packages" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Installing packages<a href="install-packages.html#installing-packages" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Installing is the act of getting the package files onto your computer and stored in a location on your hard drive where <span class="math inline">\(R\)</span> can find them. Usually the files are zipped/compress and must be extracted/unpacked. The directions below will walk you through the automated process of using the user interface in <span class="math inline">\(R Studio\)</span> <em>(rather than actual syntax)</em>.</p>
 <p>In <strong>R Studio</strong>:</p>
 <ol style="list-style-type: decimal">
@@ -348,8 +344,11 @@ Repository
 </ol>
 <div class="rmdlightbulb">
 <p>
-<strong>You only need to INSTALL packages ONCE per computer.</strong><br />
-Leave the installation <em>“library path”</em> as the default. Also, make sure the box for <em>“Installing dependencies”</em> box is checked.
+<strong>You only need to INSTALL packages ONCE per
+computer.</strong><br />
+Leave the installation <em>“library path”</em> as the default. Also,
+make sure the box for <em>“Installing dependencies”</em> box is
+checked.
 </p>
 </div>
 <p><img src="images/Install_Package_Screenshot.png" width="600" /></p>
@@ -359,26 +358,43 @@ Leave the installation <em>“library path”</em> as the default. Also, make su
 <strong>Useful Package List</strong>
 </p>
 <p>
-tidyverse, furniture, pander, stargazer, texreg, xtable, kableExtra, RColorBrewer, gghighlight, ggthemes, ggfortify, ggalt, ggExtra, GGally, ggeffects, corrplot, gpairs, gridextra, likert, vcd, scales, cowplot, yarrr, psych, polycor, corpcor, sjlabelled, sjPlot, sjmisc, sjstats, Hmisc, labelled, afex, emmeans, corpcor, multicomp, multcompView, car, effects, predictmean, nlme, lme4, lmerTest, HLMdiag, geepack, gee, gee4, optimx, MuMIn, lavaan, OpenMx, sem, semPlot, randomForest, randomForestSRC, ggRandomForests, party, partykit, mgcv, glmnet, survival, caret, bookdown, blogdown, tidytex, xaringan, REDCapR, redcapAPI, devtools, testthat, roxygen2, eRm, ltm, lsr, heplots, magrittr, hexbin, leaps, mlmRev, MuMIn, ISwR, VIM, effects, usethis
+tidyverse, furniture, pander, stargazer, texreg, xtable, kableExtra,
+RColorBrewer, gghighlight, ggthemes, ggfortify, ggalt, ggExtra, GGally,
+ggeffects, corrplot, gpairs, gridextra, likert, vcd, scales, cowplot,
+yarrr, psych, polycor, corpcor, sjlabelled, sjPlot, sjmisc, sjstats,
+Hmisc, labelled, afex, emmeans, corpcor, multicomp, multcompView, car,
+effects, predictmean, nlme, lme4, lmerTest, HLMdiag, geepack, gee, gee4,
+optimx, MuMIn, lavaan, OpenMx, sem, semPlot, randomForest,
+randomForestSRC, ggRandomForests, party, partykit, mgcv, glmnet,
+survival, caret, bookdown, blogdown, tidytex, xaringan, REDCapR,
+redcapAPI, devtools, testthat, roxygen2, eRm, ltm, lsr, heplots,
+magrittr, hexbin, leaps, mlmRev, MuMIn, ISwR, VIM, effects, usethis,
+tinytex
 </p>
 </div>
-<p>When you click the <strong>Install</strong> buttom, a smaller window <em>may</em> asks if you would like to “re-start <span class="math inline">\(R\)</span> prior to installing,” choose “no” and manually close and open the <span class="math inline">\(R Studio\)</span> program once all packages have been downloaded, unpacked, and checked <em>(saves time)</em>. This may take a few minutes, especially if you have selected multiple packages.</p>
+<p>When you click the <strong>Install</strong> buttom, a smaller window <em>may</em> asks if you would like to “re-start <span class="math inline">\(R\)</span> prior to installing”, choose “no” and manually close and open the <span class="math inline">\(R Studio\)</span> program once all packages have been downloaded, unpacked, and checked <em>(saves time)</em>. This may take a few minutes, especially if you have selected multiple packages.</p>
 </div>
-<div id="useful-packages-on-cran" class="section level2" number="3.3">
-<h2><span class="header-section-number">3.3</span> Useful Packages on CRAN</h2>
+<div id="useful-packages-on-cran" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Useful Packages on CRAN<a href="install-packages.html#useful-packages-on-cran" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="rmdlink">
 <p>
-A curated list of handy <span class="math inline"><span class="math inline">\(R\)</span></span> packages and tools can be found at <a href="https://awesome-r.com/">awesome-r.com</a>
+A curated list of handy <span class="math inline"><span class="math inline">\(R\)</span></span>
+packages and tools can be found at <a
+href="https://awesome-r.com/">awesome-r.com</a>
 </p>
 </div>
-<div id="the-tidy-universe-a-meta-package-from-r-studio" class="section level3" number="3.3.1">
-<h3><span class="header-section-number">3.3.1</span> The Tidy-Universe, a META package from <span class="math inline">\(R Studio\)</span></h3>
+<div id="the-tidy-universe-a-meta-package-from-r-studio" class="section level3 hasAnchor" number="3.3.1">
+<h3><span class="header-section-number">3.3.1</span> The Tidy-Universe, a META package from <span class="math inline">\(R Studio\)</span><a href="install-packages.html#the-tidy-universe-a-meta-package-from-r-studio" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <blockquote>
 <p>The <a href="https://www.tidyverse.org/"><code>tidyverse</code></a> is an opinionated <strong>collection of <span class="math inline">\(R\)</span> packages</strong> designed for data science. All packages share an underlying design philosophy, grammar, and data structures.</p>
 </blockquote>
 <p>The <strong>core tidyverse</strong> includes the packages that you are likely to use in everyday data analyses. As of <code>tidyverse 1.2.0</code>, the top 8 packages in the following table are included in the core tidyverse.</p>
 <p>The tidyverse also includes many other packages with more specialised usage. They are not loaded automatically with <code>library(tidyverse)</code>, so you’ll need to load each one with its own call to <code>library()</code>.</p>
 <table>
+<colgroup>
+<col width="45%" />
+<col width="54%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="right">website</th>
@@ -454,11 +470,37 @@ A curated list of handy <span class="math inline"><span class="math inline">\(R\
 </table>
 <hr />
 </div>
-<div id="groups-of-individual-packages-on-cran" class="section level3 tabset" number="3.3.2">
-<h3><span class="header-section-number">3.3.2</span> Groups of Individual Packages on <span class="math inline">\(CRAN\)</span></h3>
-<div id="creating-tables" class="section level4" number="3.3.2.1">
-<h4><span class="header-section-number">3.3.2.1</span> Creating Tables</h4>
+<div id="groups-of-individual-packages-on-cran" class="section level3 tabset hasAnchor" number="3.3.2">
+<h3><span class="header-section-number">3.3.2</span> Groups of Individual Packages on <span class="math inline">\(CRAN\)</span><a href="install-packages.html#groups-of-individual-packages-on-cran" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="tinytex" class="section level4 hasAnchor" number="3.3.2.1">
+<h4><span class="header-section-number">3.3.2.1</span> TinyTex<a href="install-packages.html#tinytex" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>TinyTeX is a custom LaTeX distribution based on TeX Live that is small in size, but functions well in most cases, especially for R users. If you run into the problem of missing LaTeX packages, it should be super clear to you what you need to do (in fact, R users won’t need to do anything). You only install LaTeX packages you actually need.</p>
 <table>
+<colgroup>
+<col width="45%" />
+<col width="54%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">website</th>
+<th align="left">description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right"><a href="https://yihui.org/tinytex/"><code>tinytex</code></a></td>
+<td align="left">custom LaTeX distribution based on TeX Live</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="creating-tables" class="section level4 hasAnchor" number="3.3.2.2">
+<h4><span class="header-section-number">3.3.2.2</span> Creating Tables<a href="install-packages.html#creating-tables" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="right">website</th>
@@ -493,9 +535,13 @@ A curated list of handy <span class="math inline"><span class="math inline">\(R\
 </tbody>
 </table>
 </div>
-<div id="visualization" class="section level4" number="3.3.2.2">
-<h4><span class="header-section-number">3.3.2.2</span> Visualization</h4>
+<div id="visualization" class="section level4 hasAnchor" number="3.3.2.3">
+<h4><span class="header-section-number">3.3.2.3</span> Visualization<a href="install-packages.html#visualization" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="right">website</th>
@@ -566,9 +612,13 @@ A curated list of handy <span class="math inline"><span class="math inline">\(R\
 </tbody>
 </table>
 </div>
-<div id="generally-handy" class="section level4" number="3.3.2.3">
-<h4><span class="header-section-number">3.3.2.3</span> Generally Handy</h4>
+<div id="generally-handy" class="section level4 hasAnchor" number="3.3.2.4">
+<h4><span class="header-section-number">3.3.2.4</span> Generally Handy<a href="install-packages.html#generally-handy" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="right">website</th>
@@ -615,9 +665,13 @@ A curated list of handy <span class="math inline"><span class="math inline">\(R\
 </tbody>
 </table>
 </div>
-<div id="t-tests-anova-and-rm-anova" class="section level4" number="3.3.2.4">
-<h4><span class="header-section-number">3.3.2.4</span> t-Tests, ANOVA, and RM ANOVA</h4>
+<div id="t-tests-anova-and-rm-anova" class="section level4 hasAnchor" number="3.3.2.5">
+<h4><span class="header-section-number">3.3.2.5</span> t-Tests, ANOVA, and RM ANOVA<a href="install-packages.html#t-tests-anova-and-rm-anova" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="right">website</th>
@@ -648,9 +702,13 @@ A curated list of handy <span class="math inline"><span class="math inline">\(R\
 </tbody>
 </table>
 </div>
-<div id="regression-ml-glm" class="section level4" number="3.3.2.5">
-<h4><span class="header-section-number">3.3.2.5</span> Regression (ML, GLM)</h4>
+<div id="regression-ml-glm" class="section level4 hasAnchor" number="3.3.2.6">
+<h4><span class="header-section-number">3.3.2.6</span> Regression (ML, GLM)<a href="install-packages.html#regression-ml-glm" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="right">website</th>
@@ -677,9 +735,13 @@ A curated list of handy <span class="math inline"><span class="math inline">\(R\
 </tbody>
 </table>
 </div>
-<div id="multilevel-models-mlm-hlm-gee" class="section level4" number="3.3.2.6">
-<h4><span class="header-section-number">3.3.2.6</span> Multilevel Models (MLM, HLM, GEE)</h4>
+<div id="multilevel-models-mlm-hlm-gee" class="section level4 hasAnchor" number="3.3.2.7">
+<h4><span class="header-section-number">3.3.2.7</span> Multilevel Models (MLM, HLM, GEE)<a href="install-packages.html#multilevel-models-mlm-hlm-gee" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="right">website</th>
@@ -726,9 +788,13 @@ A curated list of handy <span class="math inline"><span class="math inline">\(R\
 </tbody>
 </table>
 </div>
-<div id="structural-equation-modeling-sem" class="section level4" number="3.3.2.7">
-<h4><span class="header-section-number">3.3.2.7</span> Structural Equation Modeling (SEM)</h4>
+<div id="structural-equation-modeling-sem" class="section level4 hasAnchor" number="3.3.2.8">
+<h4><span class="header-section-number">3.3.2.8</span> Structural Equation Modeling (SEM)<a href="install-packages.html#structural-equation-modeling-sem" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="right">website</th>
@@ -755,9 +821,13 @@ A curated list of handy <span class="math inline"><span class="math inline">\(R\
 </tbody>
 </table>
 </div>
-<div id="random-forests" class="section level4" number="3.3.2.8">
-<h4><span class="header-section-number">3.3.2.8</span> Random Forests</h4>
+<div id="random-forests" class="section level4 hasAnchor" number="3.3.2.9">
+<h4><span class="header-section-number">3.3.2.9</span> Random Forests<a href="install-packages.html#random-forests" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="right">website</th>
@@ -788,9 +858,13 @@ A curated list of handy <span class="math inline"><span class="math inline">\(R\
 </tbody>
 </table>
 </div>
-<div id="other-models" class="section level4" number="3.3.2.9">
-<h4><span class="header-section-number">3.3.2.9</span> Other Models</h4>
+<div id="other-models" class="section level4 hasAnchor" number="3.3.2.10">
+<h4><span class="header-section-number">3.3.2.10</span> Other Models<a href="install-packages.html#other-models" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="right">website</th>
@@ -817,9 +891,13 @@ A curated list of handy <span class="math inline"><span class="math inline">\(R\
 </tbody>
 </table>
 </div>
-<div id="reproducibility-and-reporting" class="section level4" number="3.3.2.10">
-<h4><span class="header-section-number">3.3.2.10</span> Reproducibility and Reporting</h4>
+<div id="reproducibility-and-reporting" class="section level4 hasAnchor" number="3.3.2.11">
+<h4><span class="header-section-number">3.3.2.11</span> Reproducibility and Reporting<a href="install-packages.html#reproducibility-and-reporting" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="right">website</th>
@@ -836,10 +914,6 @@ A curated list of handy <span class="math inline"><span class="math inline">\(R\
 <td align="left">Create Blogs and Websites</td>
 </tr>
 <tr class="odd">
-<td align="right"><a href="https://yihui.name/tinytex/"><code>tidytex</code></a></td>
-<td align="left">Helper Functionsfor <span class="math inline">\(TeX Live\)</span>, Compile <span class="math inline">\(LaTeX\)</span> Documents</td>
-</tr>
-<tr class="even">
 <td align="right"><a href="https://github.com/yihui/xaringan"><code>xaringan</code></a></td>
 <td align="left">Presentation Ninja</td>
 </tr>
@@ -847,9 +921,13 @@ A curated list of handy <span class="math inline"><span class="math inline">\(R\
 </table>
 <p><em>Note: <code>slidify</code> &amp; <code>ReportRs</code> have been removed from <span class="math inline">\(CRAN\)</span></em></p>
 </div>
-<div id="redcap-interface" class="section level4" number="3.3.2.11">
-<h4><span class="header-section-number">3.3.2.11</span> REDCap Interface</h4>
+<div id="redcap-interface" class="section level4 hasAnchor" number="3.3.2.12">
+<h4><span class="header-section-number">3.3.2.12</span> REDCap Interface<a href="install-packages.html#redcap-interface" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="right">website</th>
@@ -868,9 +946,13 @@ A curated list of handy <span class="math inline"><span class="math inline">\(R\
 </tbody>
 </table>
 </div>
-<div id="creating-your-own-packages" class="section level4" number="3.3.2.12">
-<h4><span class="header-section-number">3.3.2.12</span> Creating Your Own Packages</h4>
+<div id="creating-your-own-packages" class="section level4 hasAnchor" number="3.3.2.13">
+<h4><span class="header-section-number">3.3.2.13</span> Creating Your Own Packages<a href="install-packages.html#creating-your-own-packages" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="right">website</th>
@@ -896,12 +978,12 @@ A curated list of handy <span class="math inline"><span class="math inline">\(R\
 </div>
 </div>
 </div>
-<div id="userful-packages-on-github" class="section level2" number="3.4">
-<h2><span class="header-section-number">3.4</span> Userful Packages on <span class="math inline">\(GitHub\)</span></h2>
+<div id="userful-packages-on-github" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Userful Packages on <span class="math inline">\(GitHub\)</span><a href="install-packages.html#userful-packages-on-github" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>First, make sure you have the <code>devtools</code> package installed on your computer <em>(hint: it is included in the list above)</em>.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="install-packages.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;devtools&quot;</span>)</span></code></pre></div>
-<div id="templates-for-writing-tutorials-practicals-or-examination-papers-with-r-markdown" class="section level3" number="3.4.1">
-<h3><span class="header-section-number">3.4.1</span> Templates for writing tutorials, practicals or examination papers with <span class="math inline">\(R Markdown\)</span></h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="install-packages.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;devtools&quot;</span>)</span></code></pre></div>
+<div id="templates-for-writing-tutorials-practicals-or-examination-papers-with-r-markdown" class="section level3 hasAnchor" number="3.4.1">
+<h3><span class="header-section-number">3.4.1</span> Templates for writing tutorials, practicals or examination papers with <span class="math inline">\(R Markdown\)</span><a href="install-packages.html#templates-for-writing-tutorials-practicals-or-examination-papers-with-r-markdown" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><code>unilur</code> is a <span class="math inline">\(R\)</span> package to help writing tutorials, practicals or examination papers with <span class="math inline">\(R Markdown\)</span>.</p>
 <p>With <code>unilur</code> you can render the following outputs from a single rmarkdown file:</p>
 <ul>
@@ -921,27 +1003,32 @@ A curated list of handy <span class="math inline"><span class="math inline">\(R\
 </ul>
 <div class="rmdlink">
 <p>
-Website: <a href="https://github.com/koncina/unilur">GitHub - <code>unilur</code></a><br />
-Tutorial: <a href="http://eric.koncina.eu/posts/introducing-the-unilur-rmarkdown-template/">blog post - <code>unilur</code></a>
+Website: <a href="https://github.com/koncina/unilur">GitHub -
+<code>unilur</code></a><br />
+Tutorial: <a
+href="http://eric.koncina.eu/posts/introducing-the-unilur-rmarkdown-template/">blog
+post - <code>unilur</code></a>
 </p>
 </div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="install-packages.html#cb4-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;koncina/unilur&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="install-packages.html#cb2-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;koncina/unilur&quot;</span>)</span></code></pre></div>
 </div>
-<div id="prepare-apa-journal-articles-with-r-markdown" class="section level3" number="3.4.2">
-<h3><span class="header-section-number">3.4.2</span> Prepare APA journal articles with <span class="math inline">\(R Markdown\)</span></h3>
+<div id="prepare-apa-journal-articles-with-r-markdown" class="section level3 hasAnchor" number="3.4.2">
+<h3><span class="header-section-number">3.4.2</span> Prepare APA journal articles with <span class="math inline">\(R Markdown\)</span><a href="install-packages.html#prepare-apa-journal-articles-with-r-markdown" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><code>papaja</code> is a <span class="math inline">\(R\)</span> package in the making including a <span class="math inline">\(R Markdown\)</span> template that can be used with (or without) <strong><span class="math inline">\(R\)</span> Studio</strong> to produce documents, which conform to the <strong>American Psychological Association (APA)</strong> manuscript guidelines (6th Edition). The package uses the <span class="math inline">\(LaTeX\)</span> document class <code>apa6</code> and a .docx-reference file, so you can create PDF documents, or Word documents if you have to. Moreover, papaja supplies <span class="math inline">\(R\)</span> functions that facilitate reporting results of your analyses in accordance with APA guidelines.</p>
 <p><code>papaja</code> has not yet been submitted to <span class="math inline">\(CRAN\)</span> because it is under active development. Currently, there are still a couple of loose ends they would like to tie up before we release the package to a larger audience. There are two versions you can install from the <span class="math inline">\(GitHub\)</span> website.</p>
 <div class="rmdlink">
 <p>
-Website: <a href="https://github.com/crsh/papaja">GitHub - <code>papaja</code></a><br />
-Tutorial: <a href="https://crsh.github.io/papaja_man/">eBook - <code>papaja</code></a>
+Website: <a href="https://github.com/crsh/papaja">GitHub -
+<code>papaja</code></a><br />
+Tutorial: <a href="https://crsh.github.io/papaja_man/">eBook -
+<code>papaja</code></a>
 </p>
 </div>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="install-packages.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install the stable development verions from GitHub</span></span>
-<span id="cb5-2"><a href="install-packages.html#cb5-2" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;crsh/papaja&quot;</span>)</span>
-<span id="cb5-3"><a href="install-packages.html#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="install-packages.html#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Install the latest development snapshot from GitHub</span></span>
-<span id="cb5-5"><a href="install-packages.html#cb5-5" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;crsh/papaja@devel&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="install-packages.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install the stable development verions from GitHub</span></span>
+<span id="cb3-2"><a href="install-packages.html#cb3-2" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;crsh/papaja&quot;</span>)</span>
+<span id="cb3-3"><a href="install-packages.html#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="install-packages.html#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Install the latest development snapshot from GitHub</span></span>
+<span id="cb3-5"><a href="install-packages.html#cb3-5" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;crsh/papaja@devel&quot;</span>)</span></code></pre></div>
 
 </div>
 </div>
@@ -956,7 +1043,6 @@ Tutorial: <a href="https://crsh.github.io/papaja_man/">eBook - <code>papaja</cod
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -997,7 +1083,7 @@ gitbook.start({
 },
 "download": null,
 "search": {
-"engine": "lunr",
+"engine": "fuse",
 "options": null
 },
 "toc": {
@@ -1013,7 +1099,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');

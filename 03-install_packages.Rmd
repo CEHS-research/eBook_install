@@ -72,7 +72,7 @@ Leave the installation *"library path"* as the default. Also, make sure the box 
 ```{block type='rmdimportant', echo=TRUE}
 **Useful Package List** 
 
-tidyverse, furniture, pander, stargazer, texreg, xtable, kableExtra, RColorBrewer, gghighlight, ggthemes, ggfortify, ggalt, ggExtra, GGally, ggeffects, corrplot, gpairs, gridextra, likert, vcd, scales, cowplot, yarrr, psych, polycor, corpcor, sjlabelled, sjPlot, sjmisc, sjstats, Hmisc, labelled, afex, emmeans, corpcor, multicomp, multcompView, car, effects, predictmean, nlme, lme4, lmerTest, HLMdiag, geepack, gee, gee4, optimx, MuMIn, lavaan, OpenMx, sem, semPlot, randomForest, randomForestSRC, ggRandomForests, party, partykit, mgcv, glmnet, survival, caret, bookdown, blogdown, tidytex, xaringan, REDCapR, redcapAPI, devtools, testthat, roxygen2, eRm, ltm, lsr, heplots, magrittr, hexbin, leaps, mlmRev, MuMIn, ISwR, VIM, effects, usethis
+tidyverse, furniture, pander, stargazer, texreg, xtable, kableExtra, RColorBrewer, gghighlight, ggthemes, ggfortify, ggalt, ggExtra, GGally, ggeffects, corrplot, gpairs, gridextra, likert, vcd, scales, cowplot, yarrr, psych, polycor, corpcor, sjlabelled, sjPlot, sjmisc, sjstats, Hmisc, labelled, afex, emmeans, corpcor, multicomp, multcompView, car, effects, predictmean, nlme, lme4, lmerTest, HLMdiag, geepack, gee, gee4, optimx, MuMIn, lavaan, OpenMx, sem, semPlot, randomForest, randomForestSRC, ggRandomForests, party, partykit, mgcv, glmnet, survival, caret, bookdown, blogdown, tidytex, xaringan, REDCapR, redcapAPI, devtools, testthat, roxygen2, eRm, ltm, lsr, heplots, magrittr, hexbin, leaps, mlmRev, MuMIn, ISwR, VIM, effects, usethis, tinytex
 ```
 
 
@@ -125,6 +125,18 @@ The tidyverse also includes many other packages with more specialised usage. The
 -------------------------------------
 
 ### Groups of Individual Packages on $CRAN$ {.tabset}
+
+
+#### TinyTex
+
+
+TinyTeX is a custom LaTeX distribution based on TeX Live that is small in size, but functions well in most cases, especially for R users. If you run into the problem of missing LaTeX packages, it should be super clear to you what you need to do (in fact, R users won’t need to do anything). You only install LaTeX packages you actually need.
+
+
+| website   | description |   
+|----------:|:------------|   
+| [`tinytex`](https://yihui.org/tinytex/)     | custom LaTeX distribution based on TeX Live |
+
 
 
 
@@ -364,7 +376,6 @@ package_list_models <- c("mgcv",
 ```{r, include=FALSE}
 package_list_report <- c("bookdown",
                          "blogdown",
-                         "tidytex",
                          "xaringan")
 ```
 
@@ -373,7 +384,6 @@ package_list_report <- c("bookdown",
 |------------:|:------------|  
 | [`bookdown`](https://bookdown.org/) | Authoring Books and Technical Documents |
 | [`blogdown`](https://bookdown.org/yihui/blogdown/) | Create Blogs and Websites|
-| [`tidytex`](https://yihui.name/tinytex/) | Helper Functionsfor $TeX Live$, Compile $LaTeX$ Documents |
 | [`xaringan`](https://github.com/yihui/xaringan) | Presentation Ninja |
 
 *Note: `slidify` & `ReportRs` have been removed from $CRAN$*

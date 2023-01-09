@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>5 Notebook Workflow | Encyclopedia of Quantitative Methods in R, vol. 0: Setting up Your Computer</title>
   <meta name="description" content="Getting started with R and R Studio: installing software and package management." />
-  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
   <meta property="og:title" content="5 Notebook Workflow | Encyclopedia of Quantitative Methods in R, vol. 0: Setting up Your Computer" />
   <meta property="og:type" content="book" />
-  
   <meta property="og:image" content="/EQM_v0_cover.png" />
   <meta property="og:description" content="Getting started with R and R Studio: installing software and package management." />
   <meta name="github-repo" content="cehs-research/eBook_install" />
@@ -21,7 +20,7 @@
   <meta name="twitter:description" content="Getting started with R and R Studio: installing software and package management." />
   <meta name="twitter:image" content="/EQM_v0_cover.png" />
 
-<meta name="author" content="Sarah Schwartz &amp; Tyson Barrett" />
+<meta name="author" content="Sarah Schwartz, PhD" />
 
 
 
@@ -32,8 +31,8 @@
   
 <link rel="prev" href="workspace-orientation.html"/>
 <link rel="next" href="periodic-updates.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,11 +48,9 @@
 
 
 
-
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
-<script src="libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
@@ -94,7 +91,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -107,7 +104,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -163,10 +160,7 @@ div.csl-indent {
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a>
 <ul>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#blocked-notes"><i class="fa fa-check"></i>Blocked Notes</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#code-and-output"><i class="fa fa-check"></i>Code and Output</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#why-choose-r"><i class="fa fa-check"></i>Why choose R ?</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#the-authors"><i class="fa fa-check"></i>The Authors</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#fyi"><i class="fa fa-check"></i>FYI</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i><b>1</b> Overview</a>
@@ -188,9 +182,9 @@ div.csl-indent {
 <li class="chapter" data-level="2.2" data-path="install-software.html"><a href="install-software.html#the-r-studio-ide"><i class="fa fa-check"></i><b>2.2</b> The R Studio IDE</a></li>
 <li class="chapter" data-level="2.3" data-path="install-software.html"><a href="install-software.html#tex-optional"><i class="fa fa-check"></i><b>2.3</b> TeX (optional)</a>
 <ul>
-<li class="chapter" data-level="2.3.1" data-path="install-software.html"><a href="install-software.html#mac---use-mactex"><i class="fa fa-check"></i><b>2.3.1</b> Mac - use <code>MacTeX</code></a></li>
-<li class="chapter" data-level="2.3.2" data-path="install-software.html"><a href="install-software.html#windows---use-miktex"><i class="fa fa-check"></i><b>2.3.2</b> Windows - use <code>MikTeX</code></a></li>
-<li class="chapter" data-level="2.3.3" data-path="install-software.html"><a href="install-software.html#new-option-the-tinytex-package"><i class="fa fa-check"></i><b>2.3.3</b> New Option: the <code>tinytex</code> package???</a></li>
+<li class="chapter" data-level="2.3.1" data-path="install-software.html"><a href="install-software.html#new-option-the-tinytex-package"><i class="fa fa-check"></i><b>2.3.1</b> New Option: the <code>tinytex</code> package</a></li>
+<li class="chapter" data-level="2.3.2" data-path="install-software.html"><a href="install-software.html#mac---use-mactex"><i class="fa fa-check"></i><b>2.3.2</b> Mac - use <code>MacTeX</code></a></li>
+<li class="chapter" data-level="2.3.3" data-path="install-software.html"><a href="install-software.html#windows---use-miktex"><i class="fa fa-check"></i><b>2.3.3</b> Windows - use <code>MikTeX</code></a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="install-packages.html"><a href="install-packages.html"><i class="fa fa-check"></i><b>3</b> Install Packages</a>
@@ -276,48 +270,49 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="notebook-workflow" class="section level1" number="5">
-<h1><span class="header-section-number">5</span> Notebook Workflow</h1>
+<div id="notebook-workflow" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">5</span> Notebook Workflow<a href="notebook-workflow.html#notebook-workflow" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p><img src="images/workflow.PNG" />
 Dive in feet first and create your first R Notebook.</p>
 <div class="rmdconstruct">
 <p>
-<strong>ADD SECTION:</strong> this chapter needs lots of attention.
+<strong>ADD SECTION:</strong> this chapter needs lots of
+attention.
 </p>
 </div>
-<div id="create-a-new-notebook" class="section level2" number="5.1">
-<h2><span class="header-section-number">5.1</span> Create a New Notebook</h2>
+<div id="create-a-new-notebook" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Create a New Notebook<a href="notebook-workflow.html#create-a-new-notebook" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><img src="images/knit_notebook.png" /></p>
-<div id="yaml-header" class="section level3" number="5.1.1">
-<h3><span class="header-section-number">5.1.1</span> YAML header</h3>
+<div id="yaml-header" class="section level3 hasAnchor" number="5.1.1">
+<h3><span class="header-section-number">5.1.1</span> YAML header<a href="notebook-workflow.html#yaml-header" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 </div>
-<div id="plain-text" class="section level3" number="5.1.2">
-<h3><span class="header-section-number">5.1.2</span> Plain Text</h3>
+<div id="plain-text" class="section level3 hasAnchor" number="5.1.2">
+<h3><span class="header-section-number">5.1.2</span> Plain Text<a href="notebook-workflow.html#plain-text" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 </div>
-<div id="code-chunks" class="section level3" number="5.1.3">
-<h3><span class="header-section-number">5.1.3</span> Code Chunks</h3>
+<div id="code-chunks" class="section level3 hasAnchor" number="5.1.3">
+<h3><span class="header-section-number">5.1.3</span> Code Chunks<a href="notebook-workflow.html#code-chunks" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <hr />
 </div>
 </div>
-<div id="interact-within-a-notebook" class="section level2" number="5.2">
-<h2><span class="header-section-number">5.2</span> Interact within a Notebook</h2>
-<div id="run-code-chunks" class="section level3" number="5.2.1">
-<h3><span class="header-section-number">5.2.1</span> Run Code Chunks</h3>
+<div id="interact-within-a-notebook" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Interact within a Notebook<a href="notebook-workflow.html#interact-within-a-notebook" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="run-code-chunks" class="section level3 hasAnchor" number="5.2.1">
+<h3><span class="header-section-number">5.2.1</span> Run Code Chunks<a href="notebook-workflow.html#run-code-chunks" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 </div>
-<div id="chunk-options" class="section level3" number="5.2.2">
-<h3><span class="header-section-number">5.2.2</span> Chunk Options</h3>
+<div id="chunk-options" class="section level3 hasAnchor" number="5.2.2">
+<h3><span class="header-section-number">5.2.2</span> Chunk Options<a href="notebook-workflow.html#chunk-options" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <hr />
 </div>
 </div>
-<div id="knit-a-notebook" class="section level2" number="5.3">
-<h2><span class="header-section-number">5.3</span> Knit a Notebook</h2>
-<div id="storing-all-associated-files" class="section level3" number="5.3.1">
-<h3><span class="header-section-number">5.3.1</span> Storing all associated files</h3>
+<div id="knit-a-notebook" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> Knit a Notebook<a href="notebook-workflow.html#knit-a-notebook" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="storing-all-associated-files" class="section level3 hasAnchor" number="5.3.1">
+<h3><span class="header-section-number">5.3.1</span> Storing all associated files<a href="notebook-workflow.html#storing-all-associated-files" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>If you are using any files, such as <em>datasets</em> or <em>images</em>, they need to be stored in the same folder location as the R Notebook (<code>.Rmd</code> file).</p>
 <p>This folder location must be the <strong>Working Directory</strong> for the R Studio session. If you opened your <code>.Rmd</code> notebook file by double-clicking on its name, then this should be the case.</p>
 </div>
-<div id="setting-the-working-directory" class="section level3" number="5.3.2">
-<h3><span class="header-section-number">5.3.2</span> Setting the working directory</h3>
+<div id="setting-the-working-directory" class="section level3 hasAnchor" number="5.3.2">
+<h3><span class="header-section-number">5.3.2</span> Setting the working directory<a href="notebook-workflow.html#setting-the-working-directory" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>To ensure that R Studio knows where to find the files, you can manually set the <strong>Working Directory</strong> through the menu:</p>
 <ul>
 <li>Click <code>Session</code></li>
@@ -334,8 +329,8 @@ Dive in feet first and create your first R Notebook.</p>
 <p>At this point you should see all the files that reside in the folder location where the open <code>.Rmd</code> files is also saved.</p>
 <p><img src="images/files_goto_wd.png" width="600" /></p>
 </div>
-<div id="press-knit" class="section level3" number="5.3.3">
-<h3><span class="header-section-number">5.3.3</span> Press Knit</h3>
+<div id="press-knit" class="section level3 hasAnchor" number="5.3.3">
+<h3><span class="header-section-number">5.3.3</span> Press Knit<a href="notebook-workflow.html#press-knit" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 
 </div>
 </div>
@@ -350,7 +345,6 @@ Dive in feet first and create your first R Notebook.</p>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -391,7 +385,7 @@ gitbook.start({
 },
 "download": null,
 "search": {
-"engine": "lunr",
+"engine": "fuse",
 "options": null
 },
 "toc": {
@@ -407,7 +401,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');

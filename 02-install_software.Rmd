@@ -39,11 +39,12 @@ Each new release of $R$ is given a name that references a Peanuts strip or film.
 
 ## The R Studio IDE
 
-> **RStudio** is a company that is also an active member of the $R$ community. They believe free and open source data analysis software is a foundation for innovative and important work in science, education, and industry. Their namesake software, $RStudio$, is an integrated development environment (IDE) for $R$. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management. 
+> **Posit** (formorly named 'RStudio') is a company that is also an active member of the $R$ community. They believe free and open source data analysis software is a foundation for innovative and important work in science, education, and industry. Their namesake software, $RStudio$, is an integrated development environment (IDE) for $R$. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management. They haven also recently developed an alternate called $Quatro$ which I'm keeping a close eye on.
 
 ```{block type='rmddownload', echo=TRUE}
-Go to: [www.rstudio.com](http://www.rstudio.com) 
+Go to: [www.posit.co](http://www.posit.co) 
 
+* Click the blue "DOWNLOAD RSTUDIO" buttom in the upper-right hand corner
 * Select the FREE Open Source **Desktop** Edition of $R Studio$
 * The defaults are good...don't change them...just keep clicking *'Next'* 
 ```
@@ -56,7 +57,7 @@ Go to: [www.rstudio.com](http://www.rstudio.com)
 
 
 ```{block type='rmdlink', echo=TRUE}
-$R Studio$ has an entire [online learning library](https://education.rstudio.com/).  It is full of helpful links and resources for R programing, R markdown, and statistics.
+$Posit$ has an entire [online learning library](https://posit.co/resources/).  It is full of helpful links and resources for R programing, R markdown, and statistics.
 ```
 
 ```{block type='rmdlightbulb', echo=TRUE}
@@ -72,6 +73,18 @@ $R Studio$ has an entire [online learning library](https://education.rstudio.com
 
 
 > $\TeX$ or $\LaTeX$ is a typesetting or formatting system that is commonly used in printing and publishing, especially anything with formulas (see https://texfaq.org/FAQ-whatTeX).  It is NOT NEEDED to run $R$, but $R Studio$ must have access to it in order to `knit` a $R Notebook$ into a `.pdf` file.  There are many versions, but the following are the ones that work best with $R$, depending on your computer's platform.
+
+
+
+### New Option: the `tinytex` package
+ 
+ 
+`tinyteX` is still a relatively new project which strives to offer all the functionality of $\LaTeX$, but remain lightweight and easier to maintain.  
+
+```{block type='rmdlink', echo=TRUE}
+I am now using this in place of LaTeX!
+```
+
 
 
 ### Mac - use `MacTeX`
@@ -104,12 +117,3 @@ Go to: [http://miktex.org/download](http://miktex.org/download)
 
 ![](images/MikTeX_download.PNG){width=600px}
 
-
-### New Option: the `tinytex` package???
- 
- 
-`tinyteX` is still a relatively new project which strives to offer all the functionality of $\LaTeX$, but remain lightweight and easier to maintain.  As it is so new, we are not adopting it currently, but keeping an eye on what is to come.
-
-```{block type='rmdlink', echo=TRUE}
-Keep an eye on the developing `tinytex` package by checking back to it's [home page](https://yihui.name/tinytex/).
-```
