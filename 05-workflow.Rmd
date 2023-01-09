@@ -2,26 +2,57 @@
 
 
 ![](images/workflow.png)
-Dive in feet first and create your first R Notebook.
-
-```{block type='rmdconstruct', echo=TRUE}
-**ADD SECTION:** this chapter needs lots of attention.
-```
 
 
 ## Create a New Notebook 
 
 ![](images/knit_notebook.png)
 
+
+[R Markdown Codebook](https://bookdown.org/yihui/rmarkdown-cookbook/)
+
+
+
 ### YAML header
+
+YAML: YAML Ain’t Markup Language
+
+YAML is a human-readable data-serialization language. It is commonly used for configuration files and in applications where data is being stored or transmitted [Wikipedia: YAML](https://en.wikipedia.org/wiki/YAML)
+
+A YAML header contains YAML arguments, such as “title”, “author”, and “output”, demarcated by three dashes (`—--`) to start and end.
+
+[Example: YAML](https://bookdown.org/yihui/rmarkdown-cookbook/dynamic-yaml.html)
+
+
+### Headers
+
+[R Markdown Reference Guide](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf )
+
 
 
 ### Plain Text
 
+Simply add text below the YAML header. To start a new paragraph, you will need to end your plain text line with two (2) spaces.
+
+
+### Markup for Formatting
+
+
+Bold: surround text with double astrics (`**`)  
+
+Italics: surround text with single astric (`*`)
+
+
+
+
 
 ### Code Chunks
 
+Top line: ` ```{r} `  
 
+Bottom line: ` ``` `
+
+[Example: Code chunk](https://bookdown.org/yihui/rmarkdown-cookbook/r-code.html)
 
 ---------------------------------
 
@@ -29,13 +60,38 @@ Dive in feet first and create your first R Notebook.
 
 
 
-
 ### Run Code Chunks
+
+Press the "Run" button to run a chunk
+
+Key strokes:
+
+Run highlighted section or a single bit of code:  
+
+* Windows: `Ctrl` + `Enter`  
+
+* Mac: `Cmnd` + `Enter`
+
+
+Run an entire code chunk:  
+
+* Windows: `Ctrl` + `Shift` + `Enter`  
+
+* Mac: `Cmnd` + `Shift` + `Enter`  
+
+
+### Keyboard Shortcuts
+
+[Example: shortcuts](https://bookdown.org/yihui/rmarkdown-cookbook/rstudio-shortcuts.html)
+
 
 
 ### Chunk Options
 
 
+Add specification after the `r` inside the `{r}` at the start of the code chunk:
+
+[Examples: Chunk options](https://bookdown.org/yihui/rmarkdown-cookbook/chunk-options.html)
 
 ---------------------------------
 

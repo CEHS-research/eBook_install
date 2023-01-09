@@ -48,10 +48,13 @@ environment
 notebook-workflow
 create-a-new-notebook
 yaml-header
+headers
 plain-text
+markup-for-formatting
 code-chunks
 interact-within-a-notebook
 run-code-chunks
+keyboard-shortcuts
 chunk-options
 knit-a-notebook
 storing-all-associated-files

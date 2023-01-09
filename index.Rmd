@@ -27,7 +27,8 @@ link-citations: yes
 ![](images/common/EQM_v0_header.png)
 
 
-Website: www.SarahSchwartzStats.com](http://www.sarahschwartzstats.com/)
+Website: www.SarahSchwartzStats.com](http://www.sarahschwartzstats.com/)  
+
 eMail: Sarah.Schwartz@usu.edu
 
 ![](images/common/Sarah_headshot.jpg){width=400px}

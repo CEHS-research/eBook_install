@@ -228,13 +228,16 @@ div.csl-indent {
 <li class="chapter" data-level="5.1" data-path="notebook-workflow.html"><a href="notebook-workflow.html#create-a-new-notebook"><i class="fa fa-check"></i><b>5.1</b> Create a New Notebook</a>
 <ul>
 <li class="chapter" data-level="5.1.1" data-path="notebook-workflow.html"><a href="notebook-workflow.html#yaml-header"><i class="fa fa-check"></i><b>5.1.1</b> YAML header</a></li>
-<li class="chapter" data-level="5.1.2" data-path="notebook-workflow.html"><a href="notebook-workflow.html#plain-text"><i class="fa fa-check"></i><b>5.1.2</b> Plain Text</a></li>
-<li class="chapter" data-level="5.1.3" data-path="notebook-workflow.html"><a href="notebook-workflow.html#code-chunks"><i class="fa fa-check"></i><b>5.1.3</b> Code Chunks</a></li>
+<li class="chapter" data-level="5.1.2" data-path="notebook-workflow.html"><a href="notebook-workflow.html#headers"><i class="fa fa-check"></i><b>5.1.2</b> Headers</a></li>
+<li class="chapter" data-level="5.1.3" data-path="notebook-workflow.html"><a href="notebook-workflow.html#plain-text"><i class="fa fa-check"></i><b>5.1.3</b> Plain Text</a></li>
+<li class="chapter" data-level="5.1.4" data-path="notebook-workflow.html"><a href="notebook-workflow.html#markup-for-formatting"><i class="fa fa-check"></i><b>5.1.4</b> Markup for Formatting</a></li>
+<li class="chapter" data-level="5.1.5" data-path="notebook-workflow.html"><a href="notebook-workflow.html#code-chunks"><i class="fa fa-check"></i><b>5.1.5</b> Code Chunks</a></li>
 </ul></li>
 <li class="chapter" data-level="5.2" data-path="notebook-workflow.html"><a href="notebook-workflow.html#interact-within-a-notebook"><i class="fa fa-check"></i><b>5.2</b> Interact within a Notebook</a>
 <ul>
 <li class="chapter" data-level="5.2.1" data-path="notebook-workflow.html"><a href="notebook-workflow.html#run-code-chunks"><i class="fa fa-check"></i><b>5.2.1</b> Run Code Chunks</a></li>
-<li class="chapter" data-level="5.2.2" data-path="notebook-workflow.html"><a href="notebook-workflow.html#chunk-options"><i class="fa fa-check"></i><b>5.2.2</b> Chunk Options</a></li>
+<li class="chapter" data-level="5.2.2" data-path="notebook-workflow.html"><a href="notebook-workflow.html#keyboard-shortcuts"><i class="fa fa-check"></i><b>5.2.2</b> Keyboard Shortcuts</a></li>
+<li class="chapter" data-level="5.2.3" data-path="notebook-workflow.html"><a href="notebook-workflow.html#chunk-options"><i class="fa fa-check"></i><b>5.2.3</b> Chunk Options</a></li>
 </ul></li>
 <li class="chapter" data-level="5.3" data-path="notebook-workflow.html"><a href="notebook-workflow.html#knit-a-notebook"><i class="fa fa-check"></i><b>5.3</b> Knit a Notebook</a>
 <ul>
@@ -272,25 +275,36 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="notebook-workflow" class="section level1 hasAnchor" number="5">
 <h1><span class="header-section-number">5</span> Notebook Workflow<a href="notebook-workflow.html#notebook-workflow" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p><img src="images/workflow.PNG" />
-Dive in feet first and create your first R Notebook.</p>
-<div class="rmdconstruct">
-<p>
-<strong>ADD SECTION:</strong> this chapter needs lots of
-attention.
-</p>
-</div>
+<p><img src="images/workflow.PNG" /></p>
 <div id="create-a-new-notebook" class="section level2 hasAnchor" number="5.1">
 <h2><span class="header-section-number">5.1</span> Create a New Notebook<a href="notebook-workflow.html#create-a-new-notebook" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><img src="images/knit_notebook.png" /></p>
+<p><a href="https://bookdown.org/yihui/rmarkdown-cookbook/">R Markdown Codebook</a></p>
 <div id="yaml-header" class="section level3 hasAnchor" number="5.1.1">
 <h3><span class="header-section-number">5.1.1</span> YAML header<a href="notebook-workflow.html#yaml-header" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>YAML: YAML Ain’t Markup Language</p>
+<p>YAML is a human-readable data-serialization language. It is commonly used for configuration files and in applications where data is being stored or transmitted <a href="https://en.wikipedia.org/wiki/YAML">Wikipedia: YAML</a></p>
+<p>A YAML header contains YAML arguments, such as “title”, “author”, and “output”, demarcated by three dashes (<code>—--</code>) to start and end.</p>
+<p><a href="https://bookdown.org/yihui/rmarkdown-cookbook/dynamic-yaml.html">Example: YAML</a></p>
 </div>
-<div id="plain-text" class="section level3 hasAnchor" number="5.1.2">
-<h3><span class="header-section-number">5.1.2</span> Plain Text<a href="notebook-workflow.html#plain-text" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="headers" class="section level3 hasAnchor" number="5.1.2">
+<h3><span class="header-section-number">5.1.2</span> Headers<a href="notebook-workflow.html#headers" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><a href="https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf">R Markdown Reference Guide</a></p>
 </div>
-<div id="code-chunks" class="section level3 hasAnchor" number="5.1.3">
-<h3><span class="header-section-number">5.1.3</span> Code Chunks<a href="notebook-workflow.html#code-chunks" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="plain-text" class="section level3 hasAnchor" number="5.1.3">
+<h3><span class="header-section-number">5.1.3</span> Plain Text<a href="notebook-workflow.html#plain-text" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Simply add text below the YAML header. To start a new paragraph, you will need to end your plain text line with two (2) spaces.</p>
+</div>
+<div id="markup-for-formatting" class="section level3 hasAnchor" number="5.1.4">
+<h3><span class="header-section-number">5.1.4</span> Markup for Formatting<a href="notebook-workflow.html#markup-for-formatting" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Bold: surround text with double astrics (<code>**</code>)</p>
+<p>Italics: surround text with single astric (<code>*</code>)</p>
+</div>
+<div id="code-chunks" class="section level3 hasAnchor" number="5.1.5">
+<h3><span class="header-section-number">5.1.5</span> Code Chunks<a href="notebook-workflow.html#code-chunks" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Top line: <code>```{r}</code></p>
+<p>Bottom line: <code>```</code></p>
+<p><a href="https://bookdown.org/yihui/rmarkdown-cookbook/r-code.html">Example: Code chunk</a></p>
 <hr />
 </div>
 </div>
@@ -298,9 +312,27 @@ attention.
 <h2><span class="header-section-number">5.2</span> Interact within a Notebook<a href="notebook-workflow.html#interact-within-a-notebook" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="run-code-chunks" class="section level3 hasAnchor" number="5.2.1">
 <h3><span class="header-section-number">5.2.1</span> Run Code Chunks<a href="notebook-workflow.html#run-code-chunks" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Press the “Run” button to run a chunk</p>
+<p>Key strokes:</p>
+<p>Run highlighted section or a single bit of code:</p>
+<ul>
+<li><p>Windows: <code>Ctrl</code> + <code>Enter</code></p></li>
+<li><p>Mac: <code>Cmnd</code> + <code>Enter</code></p></li>
+</ul>
+<p>Run an entire code chunk:</p>
+<ul>
+<li><p>Windows: <code>Ctrl</code> + <code>Shift</code> + <code>Enter</code></p></li>
+<li><p>Mac: <code>Cmnd</code> + <code>Shift</code> + <code>Enter</code></p></li>
+</ul>
 </div>
-<div id="chunk-options" class="section level3 hasAnchor" number="5.2.2">
-<h3><span class="header-section-number">5.2.2</span> Chunk Options<a href="notebook-workflow.html#chunk-options" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="keyboard-shortcuts" class="section level3 hasAnchor" number="5.2.2">
+<h3><span class="header-section-number">5.2.2</span> Keyboard Shortcuts<a href="notebook-workflow.html#keyboard-shortcuts" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><a href="https://bookdown.org/yihui/rmarkdown-cookbook/rstudio-shortcuts.html">Example: shortcuts</a></p>
+</div>
+<div id="chunk-options" class="section level3 hasAnchor" number="5.2.3">
+<h3><span class="header-section-number">5.2.3</span> Chunk Options<a href="notebook-workflow.html#chunk-options" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Add specification after the <code>r</code> inside the <code>{r}</code> at the start of the code chunk:</p>
+<p><a href="https://bookdown.org/yihui/rmarkdown-cookbook/chunk-options.html">Examples: Chunk options</a></p>
 <hr />
 </div>
 </div>
