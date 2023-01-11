@@ -49,11 +49,11 @@ Go to: [www.posit.co](http://www.posit.co)
 * The defaults are good...don't change them...just keep clicking *'Next'* 
 ```
 
-![](images/RStudio_download.PNG){width=600px}
+![](images/RStudio_download.PNG){width=800px}
 
-![](images/RStudio_version.PNG){width=600px}
+![](images/RStudio_version.PNG){width=400px}
 
-![](images/RStudio_platform.PNG){width=600px}
+
 
 
 ```{block type='rmdlink', echo=TRUE}
@@ -68,8 +68,7 @@ $Posit$ has an entire [online learning library](https://posit.co/resources/).  I
 
 ---------------------------------
 
-## TeX (optional)
-
+## TeX 
 
 
 > $\TeX$ or $\LaTeX$ is a typesetting or formatting system that is commonly used in printing and publishing, especially anything with formulas (see https://texfaq.org/FAQ-whatTeX).  It is NOT NEEDED to run $R$, but $R Studio$ must have access to it in order to `knit` a $R Notebook$ into a `.pdf` file.  There are many versions, but the following are the ones that work best with $R$, depending on your computer's platform.
@@ -87,7 +86,7 @@ I am now using this in place of LaTeX!
 
 
 
-### Mac - use `MacTeX`
+### Mac - use `MacTeX` (no longer needed!)
 
 
 ```{block type='rmddownload', echo=TRUE}
@@ -103,7 +102,7 @@ Go to:  [http://tug.org/mactex/](http://tug.org/mactex/)
 
 
 
-### Windows - use `MikTeX`
+### Windows - use `MikTeX` (no longer needed!)
 
 ```{block type='rmddownload', echo=TRUE}
 Go to: [http://miktex.org/download](http://miktex.org/download)     
