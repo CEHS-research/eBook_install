@@ -13,17 +13,21 @@ Go to: [www.r-project.org](http://www.r-project.org)
 
 * Choose a CRAN mirror close to your geographical location    
 * Select **base** $R$ for your computer *(Windows, Mac, ect.)*    
-* Once it is downloaded, run the instalation.    
+* Once it is downloaded, run the installation.    
 * The defaults are good...don't change them...just keep clicking *'Next'*    
 ```
 
 ![](images/CRAN_download.PNG){width=600px}
 
+
 ![](images/CRAN_mirror.PNG){width=600px}
+
 
 ![](images/CRAN_version.PNG){width=600px}
 
+
 ![](images/CRAN_select.PNG){width=600px}
+
 
 
 ```{block type='rmdlink', echo=TRUE}
