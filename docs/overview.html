@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>1 Overview | Encyclopedia of Quantitative Methods in R, vol. 0: Setting up Your Computer</title>
   <meta name="description" content="Getting started with R and R Studio: installing software and package management." />
-  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.35 and GitBook 2.6.7" />
 
   <meta property="og:title" content="1 Overview | Encyclopedia of Quantitative Methods in R, vol. 0: Setting up Your Computer" />
   <meta property="og:type" content="book" />
@@ -119,6 +119,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </style>
 
 <style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
 /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
 div.csl-bib-body { }
 div.csl-entry {
@@ -180,12 +184,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="2.1" data-path="install-software.html"><a href="install-software.html#installR"><i class="fa fa-check"></i><b>2.1</b> The R Programing Language</a></li>
 <li class="chapter" data-level="2.2" data-path="install-software.html"><a href="install-software.html#the-r-studio-ide"><i class="fa fa-check"></i><b>2.2</b> The R Studio IDE</a></li>
-<li class="chapter" data-level="2.3" data-path="install-software.html"><a href="install-software.html#tex"><i class="fa fa-check"></i><b>2.3</b> TeX</a>
-<ul>
-<li class="chapter" data-level="2.3.1" data-path="install-software.html"><a href="install-software.html#new-option-the-tinytex-package"><i class="fa fa-check"></i><b>2.3.1</b> New Option: the <code>tinytex</code> package</a></li>
-<li class="chapter" data-level="2.3.2" data-path="install-software.html"><a href="install-software.html#mac---use-mactex-no-longer-needed"><i class="fa fa-check"></i><b>2.3.2</b> Mac - use <code>MacTeX</code> (no longer needed!)</a></li>
-<li class="chapter" data-level="2.3.3" data-path="install-software.html"><a href="install-software.html#windows---use-miktex-no-longer-needed"><i class="fa fa-check"></i><b>2.3.3</b> Windows - use <code>MikTeX</code> (no longer needed!)</a></li>
-</ul></li>
+<li class="chapter" data-level="2.3" data-path="install-software.html"><a href="install-software.html#tex"><i class="fa fa-check"></i><b>2.3</b> TeX</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="install-packages.html"><a href="install-packages.html"><i class="fa fa-check"></i><b>3</b> Install Packages</a>
 <ul>
@@ -380,7 +379,7 @@ A specific kind of <code>.Rmd</code> file in which the code chunks may be intera
 </table>
 <blockquote>
 <p><span class="math inline">\(R Markdown\)</span> documents are fully reproducible. You may use the productive <strong>notebook</strong> interface to <strong>weave together narrative text and code</strong> to produce elegantly formatted output.</p>
-<p>-<span class="citation">(<a href="references.html#ref-R-rmarkdown" role="doc-biblioref">Allaire et al. 2022</a>)</span>.</p>
+<p>-<span class="citation">(<a href="references.html#ref-R-rmarkdown">Allaire et al. 2023</a>)</span>.</p>
 </blockquote>
 <div class="rmdlink">
 <p>
@@ -395,14 +394,14 @@ Notebooks</a>
 <div id="knit-r" class="section level2 hasAnchor" number="1.3">
 <h2><span class="header-section-number">1.3</span> knit-R<a href="overview.html#knit-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><img src="images/cartoon_knit.PNG" /></p>
-<p>With the click of a button, the <code>knitr</code> package converts a <span class="math inline">\(R notebook\)</span> (<code>.Rmd</code>) to an intermediary <em>Markdown</em> file (<code>.md</code>), which <span class="math inline">\(R Studio\)</span> will further transform to various final file types, including <span class="citation">(<a href="references.html#ref-xie2015" role="doc-biblioref">Xie 2015</a>)</span>:</p>
+<p>With the click of a button, the <code>knitr</code> package converts a <span class="math inline">\(R notebook\)</span> (<code>.Rmd</code>) to an intermediary <em>Markdown</em> file (<code>.md</code>), which <span class="math inline">\(R Studio\)</span> will further transform to various final file types, including <span class="citation">(<a href="references.html#ref-xie2015">Xie 2015</a>)</span>:</p>
 <ul>
 <li><p><code>.pdf</code> using <span class="math inline">\(LaTeX\)</span> <em>(beautiful)</em></p></li>
 <li><p><code>.html</code> using another package called <span class="math inline">\(markdown\)</span> <em>(highly viewable)</em></p></li>
 <li><p><code>Word</code> document using Pandoc <em>(probably be ugly)</em></p></li>
 </ul>
 <p><img src="images/common/knitr_formats.PNG" width="500" /></p>
-<p><code>knitr</code> is an engine for dynamic report generation with <span class="math inline">\(R\)</span>. It is a package in the statistical programming language <span class="math inline">\(R\)</span> that enables integration of <strong>R code</strong> into <span class="math inline">\(LaTeX\)</span>, <span class="math inline">\(LyX\)</span>, <span class="math inline">\(HTML\)</span>, <span class="math inline">\(Markdown\)</span>, <span class="math inline">\(AsciiDoc\)</span>, and <span class="math inline">\(text\)</span>s documents <span class="citation">(<a href="references.html#ref-R-knitr" role="doc-biblioref">Xie 2022</a>)</span>.</p>
+<p><code>knitr</code> is an engine for dynamic report generation with <span class="math inline">\(R\)</span>. It is a package in the statistical programming language <span class="math inline">\(R\)</span> that enables integration of <strong>R code</strong> into <span class="math inline">\(LaTeX\)</span>, <span class="math inline">\(LyX\)</span>, <span class="math inline">\(HTML\)</span>, <span class="math inline">\(Markdown\)</span>, <span class="math inline">\(AsciiDoc\)</span>, and <span class="math inline">\(text\)</span>s documents <span class="citation">(<a href="references.html#ref-R-knitr">Xie 2023</a>)</span>.</p>
 <div class="rmdlink">
 <p>
 The professionals ar <span class="math inline"><span class="math inline">\(R Studio\)</span></span>
@@ -426,7 +425,7 @@ to R</a>
 <div id="what-is-r" class="section level3 unnumbered hasAnchor">
 <h3>What is R ?<a href="overview.html#what-is-r" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <blockquote>
-<p><span class="math inline">\(R\)</span> is a language and environment for statistical computing and graphics. <span class="citation">(<a href="references.html#ref-R-base" role="doc-biblioref">R Core Team 2022</a>)</span></p>
+<p><span class="math inline">\(R\)</span> is a language and environment for statistical computing and graphics. <span class="citation">(<a href="references.html#ref-R-base">R Core Team 2022</a>)</span></p>
 </blockquote>
 <p><span class="math inline">\(R\)</span> provides a wide variety of <strong>statistical</strong> <em>(linear and nonlinear modelling, classical statistical tests, time-series analysis, classification, clustering, …)</em> and <strong>graphical</strong> techniques, and is highly extensible. The <span class="math inline">\(S\)</span> language is often the vehicle of choice for research in statistical methodology, and <span class="math inline">\(R\)</span> provides an Open Source route to participation in that activity.</p>
 <p>One of <span class="math inline">\(R\)</span>’s strengths is the ease with which well-designed publication-quality plots can be produced, including mathematical symbols and formulae where needed. Great care has been taken over the defaults for the minor design choices in graphics, but the user retains full control.</p>

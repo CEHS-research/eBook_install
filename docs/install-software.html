@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>2 Install Software | Encyclopedia of Quantitative Methods in R, vol. 0: Setting up Your Computer</title>
   <meta name="description" content="Getting started with R and R Studio: installing software and package management." />
-  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.35 and GitBook 2.6.7" />
 
   <meta property="og:title" content="2 Install Software | Encyclopedia of Quantitative Methods in R, vol. 0: Setting up Your Computer" />
   <meta property="og:type" content="book" />
@@ -119,6 +119,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </style>
 
 <style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
 /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
 div.csl-bib-body { }
 div.csl-entry {
@@ -180,12 +184,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="2.1" data-path="install-software.html"><a href="install-software.html#installR"><i class="fa fa-check"></i><b>2.1</b> The R Programing Language</a></li>
 <li class="chapter" data-level="2.2" data-path="install-software.html"><a href="install-software.html#the-r-studio-ide"><i class="fa fa-check"></i><b>2.2</b> The R Studio IDE</a></li>
-<li class="chapter" data-level="2.3" data-path="install-software.html"><a href="install-software.html#tex"><i class="fa fa-check"></i><b>2.3</b> TeX</a>
-<ul>
-<li class="chapter" data-level="2.3.1" data-path="install-software.html"><a href="install-software.html#new-option-the-tinytex-package"><i class="fa fa-check"></i><b>2.3.1</b> New Option: the <code>tinytex</code> package</a></li>
-<li class="chapter" data-level="2.3.2" data-path="install-software.html"><a href="install-software.html#mac---use-mactex-no-longer-needed"><i class="fa fa-check"></i><b>2.3.2</b> Mac - use <code>MacTeX</code> (no longer needed!)</a></li>
-<li class="chapter" data-level="2.3.3" data-path="install-software.html"><a href="install-software.html#windows---use-miktex-no-longer-needed"><i class="fa fa-check"></i><b>2.3.3</b> Windows - use <code>MikTeX</code> (no longer needed!)</a></li>
-</ul></li>
+<li class="chapter" data-level="2.3" data-path="install-software.html"><a href="install-software.html#tex"><i class="fa fa-check"></i><b>2.3</b> TeX</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="install-packages.html"><a href="install-packages.html"><i class="fa fa-check"></i><b>3</b> Install Packages</a>
 <ul>
@@ -295,7 +294,7 @@ Select <strong>base</strong> <span class="math inline"><span class="math inline"
 for your computer <em>(Windows, Mac, ect.)</em><br />
 </li>
 <li>
-Once it is downloaded, run the instalation.<br />
+Once it is downloaded, run the installation.<br />
 </li>
 <li>
 The defaults are good…don’t change them…just keep clicking
@@ -374,70 +373,21 @@ become an even better platform for science, research, and industry.
 <blockquote>
 <p><span class="math inline">\(\TeX\)</span> or <span class="math inline">\(\LaTeX\)</span> is a typesetting or formatting system that is commonly used in printing and publishing, especially anything with formulas (see <a href="https://texfaq.org/FAQ-whatTeX" class="uri">https://texfaq.org/FAQ-whatTeX</a>). It is NOT NEEDED to run <span class="math inline">\(R\)</span>, but <span class="math inline">\(R Studio\)</span> must have access to it in order to <code>knit</code> a <span class="math inline">\(R Notebook\)</span> into a <code>.pdf</code> file. There are many versions, but the following are the ones that work best with <span class="math inline">\(R\)</span>, depending on your computer’s platform.</p>
 </blockquote>
-<div id="new-option-the-tinytex-package" class="section level3 hasAnchor" number="2.3.1">
-<h3><span class="header-section-number">2.3.1</span> New Option: the <code>tinytex</code> package<a href="install-software.html#new-option-the-tinytex-package" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><code>tinyteX</code> is still a relatively new project which strives to offer all the functionality of <span class="math inline">\(\LaTeX\)</span>, but remain lightweight and easier to maintain.</p>
+<p>The <strong>R</strong> package called<code>tinyteX</code> is still a relatively new project which strives to offer all the functionality of <span class="math inline">\(\LaTeX\)</span>, but remain lightweight and easier to maintain compared to full installations of <code>MacTeX</code> or <code>MikTeX</code>. I am now using this in place of LaTeX!</p>
 <div class="rmdlink">
 <p>
-I am now using this in place of LaTeX!
+Find out more about <code>tinytex</code> at
+<a href="https://yihui.org/tinytex/" class="uri">https://yihui.org/tinytex/</a>
 </p>
 </div>
-</div>
-<div id="mac---use-mactex-no-longer-needed" class="section level3 hasAnchor" number="2.3.2">
-<h3><span class="header-section-number">2.3.2</span> Mac - use <code>MacTeX</code> (no longer needed!)<a href="install-software.html#mac---use-mactex-no-longer-needed" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="rmddownload">
-<p>
-Go to: <a
-href="http://tug.org/mactex/">http://tug.org/mactex/</a>
-</p>
-<ul>
-<li>
-Download (5+ min) to a folder and them double click on the
-<strong>PKG file</strong>
-</li>
-<li>
-Follow the installation instructions.
-</li>
-<li>
-You don’t need to open anything after MacTeX is finished
-installing.
-</li>
-</ul>
-</div>
-<p><img src="images/MacTeX_download.PNG" width="600" /></p>
-</div>
-<div id="windows---use-miktex-no-longer-needed" class="section level3 hasAnchor" number="2.3.3">
-<h3><span class="header-section-number">2.3.3</span> Windows - use <code>MikTeX</code> (no longer needed!)<a href="install-software.html#windows---use-miktex-no-longer-needed" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="rmddownload">
-<p>
-Go to: <a
-href="http://miktex.org/download">http://miktex.org/download</a>
-</p>
-<ul>
-<li>
-Pick the latest version of the <strong>Net Installer</strong>, not
-the Basic!<br />
-</li>
-<li>
-You need the full version 64-bit is better, if you have a 64-bit
-machine<br />
-</li>
-<li>
-When your download is complete, run the downloaded installer.<br />
-</li>
-<li>
-Windows may ask you if you want to <em>“allow this app from an
-unknown publisher to make changes to your PC”</em>. If it does, make
-sure to click <strong>Yes!</strong><br />
-</li>
-<li>
-This is the slowest part…
-</li>
-</ul>
-</div>
-<p><img src="images/MikTeX_download.PNG" width="600" /></p>
+<p>To download and install <code>tinytex</code> you will need to copy-paste the following code into your console <em>(or a code chunk)</em> and run it. This only needs to be done once per computer.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="install-software.html#cb1-1" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;tinytex&#39;</span>)</span>
+<span id="cb1-2"><a href="install-software.html#cb1-2" tabindex="-1"></a>tinytex<span class="sc">::</span><span class="fu">install_tinytex</span>()</span></code></pre></div>
+<!-- ### Mac - use `MacTeX` (no longer needed!) -->
+<!-- ![](images/MacTeX_download.PNG){width=600px} -->
+<!-- ### Windows - use `MikTeX` (no longer needed!) -->
+<!-- ![](images/MikTeX_download.PNG){width=600px} -->
 
-</div>
 </div>
 </div>
             </section>

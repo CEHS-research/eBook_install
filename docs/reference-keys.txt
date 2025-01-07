@@ -7,9 +7,6 @@ install-software
 installR
 the-r-studio-ide
 tex
-new-option-the-tinytex-package
-mac---use-mactex-no-longer-needed
-windows---use-miktex-no-longer-needed
 install-packages
 package-faq
 what-are-packages

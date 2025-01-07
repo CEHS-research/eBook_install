@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>3 Install Packages | Encyclopedia of Quantitative Methods in R, vol. 0: Setting up Your Computer</title>
   <meta name="description" content="Getting started with R and R Studio: installing software and package management." />
-  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.35 and GitBook 2.6.7" />
 
   <meta property="og:title" content="3 Install Packages | Encyclopedia of Quantitative Methods in R, vol. 0: Setting up Your Computer" />
   <meta property="og:type" content="book" />
@@ -119,6 +119,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </style>
 
 <style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
 /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
 div.csl-bib-body { }
 div.csl-entry {
@@ -180,12 +184,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="2.1" data-path="install-software.html"><a href="install-software.html#installR"><i class="fa fa-check"></i><b>2.1</b> The R Programing Language</a></li>
 <li class="chapter" data-level="2.2" data-path="install-software.html"><a href="install-software.html#the-r-studio-ide"><i class="fa fa-check"></i><b>2.2</b> The R Studio IDE</a></li>
-<li class="chapter" data-level="2.3" data-path="install-software.html"><a href="install-software.html#tex"><i class="fa fa-check"></i><b>2.3</b> TeX</a>
-<ul>
-<li class="chapter" data-level="2.3.1" data-path="install-software.html"><a href="install-software.html#new-option-the-tinytex-package"><i class="fa fa-check"></i><b>2.3.1</b> New Option: the <code>tinytex</code> package</a></li>
-<li class="chapter" data-level="2.3.2" data-path="install-software.html"><a href="install-software.html#mac---use-mactex-no-longer-needed"><i class="fa fa-check"></i><b>2.3.2</b> Mac - use <code>MacTeX</code> (no longer needed!)</a></li>
-<li class="chapter" data-level="2.3.3" data-path="install-software.html"><a href="install-software.html#windows---use-miktex-no-longer-needed"><i class="fa fa-check"></i><b>2.3.3</b> Windows - use <code>MikTeX</code> (no longer needed!)</a></li>
-</ul></li>
+<li class="chapter" data-level="2.3" data-path="install-software.html"><a href="install-software.html#tex"><i class="fa fa-check"></i><b>2.3</b> TeX</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="install-packages.html"><a href="install-packages.html"><i class="fa fa-check"></i><b>3</b> Install Packages</a>
 <ul>
@@ -275,7 +274,7 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="install-packages" class="section level1 hasAnchor" number="3">
 <h1><span class="header-section-number">3</span> Install Packages<a href="install-packages.html#install-packages" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p><img src="images/packages.PNG" /></p>
+<p><img src="images/packages.png" /></p>
 <p>Learn what packages are and how to get them.</p>
 <hr />
 <div id="package-faq" class="section level2 hasAnchor" number="3.1">
@@ -288,9 +287,8 @@ div.csl-indent {
 <p>When you download <span class="math inline">\(R\)</span> you are only getting the bare-bones, most basic files. This is nice, as it keeps the program from hogging your entire hard drive, but doesn’t offer much in terms of data anaysis. Today there are over 10,000 packages available on <span class="math inline">\(CRAN\)</span> alone, so downloading all of them would be silly and probably fill your computer several times over. Individual users are left with the freedom to choose which packages they need.</p>
 <div class="rmdlink">
 <p>
-More information may be found here: <a
-href="https://www.datacamp.com/community/tutorials/r-packages-guide"
-class="uri">https://www.datacamp.com/community/tutorials/r-packages-guide</a>
+More information may be found here:
+<a href="https://www.datacamp.com/community/tutorials/r-packages-guide" class="uri">https://www.datacamp.com/community/tutorials/r-packages-guide</a>
 </p>
 </div>
 </div>
@@ -310,7 +308,7 @@ Repository
 <tbody>
 <tr>
 <td style="text-align:left;">
-<img src="images/CRAN_logo.png" />
+<img src="images/cran_logo.png" />
 </td>
 <td style="text-align:left;">
 <strong><a href="https://cran.r-project.org/"><span class="math inline">\(CRAN\)</span>:</a></strong> the official repository, it is a network of <span class="math inline">\(ftp\)</span> and web servers mantained by the <span class="math inline">\(R\)</span> community around the world. It is coordinated by the <span class="math inline">\(R\)</span> foundation, and for a package to be published here it needs to pass several tests <a href="https://cran.r-project.org/web/packages/policies.html">here</a>.
@@ -984,7 +982,7 @@ href="https://awesome-r.com/">awesome-r.com</a>
 <div id="userful-packages-on-github" class="section level2 hasAnchor" number="3.4">
 <h2><span class="header-section-number">3.4</span> Userful Packages on <span class="math inline">\(GitHub\)</span><a href="install-packages.html#userful-packages-on-github" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>First, make sure you have the <code>devtools</code> package installed on your computer <em>(hint: it is included in the list above)</em>.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="install-packages.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;devtools&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="install-packages.html#cb2-1" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;devtools&quot;</span>)</span></code></pre></div>
 <div id="templates-for-writing-tutorials-practicals-or-examination-papers-with-r-markdown" class="section level3 hasAnchor" number="3.4.1">
 <h3><span class="header-section-number">3.4.1</span> Templates for writing tutorials, practicals or examination papers with <span class="math inline">\(R Markdown\)</span><a href="install-packages.html#templates-for-writing-tutorials-practicals-or-examination-papers-with-r-markdown" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><code>unilur</code> is a <span class="math inline">\(R\)</span> package to help writing tutorials, practicals or examination papers with <span class="math inline">\(R Markdown\)</span>.</p>
@@ -1013,7 +1011,7 @@ href="http://eric.koncina.eu/posts/introducing-the-unilur-rmarkdown-template/">b
 post - <code>unilur</code></a>
 </p>
 </div>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="install-packages.html#cb2-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;koncina/unilur&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="install-packages.html#cb3-1" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;koncina/unilur&quot;</span>)</span></code></pre></div>
 </div>
 <div id="prepare-apa-journal-articles-with-r-markdown" class="section level3 hasAnchor" number="3.4.2">
 <h3><span class="header-section-number">3.4.2</span> Prepare APA journal articles with <span class="math inline">\(R Markdown\)</span><a href="install-packages.html#prepare-apa-journal-articles-with-r-markdown" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -1027,11 +1025,11 @@ Tutorial: <a href="https://crsh.github.io/papaja_man/">eBook -
 <code>papaja</code></a>
 </p>
 </div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="install-packages.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install the stable development verions from GitHub</span></span>
-<span id="cb3-2"><a href="install-packages.html#cb3-2" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;crsh/papaja&quot;</span>)</span>
-<span id="cb3-3"><a href="install-packages.html#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="install-packages.html#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Install the latest development snapshot from GitHub</span></span>
-<span id="cb3-5"><a href="install-packages.html#cb3-5" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;crsh/papaja@devel&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="install-packages.html#cb4-1" tabindex="-1"></a><span class="co"># Install the stable development verions from GitHub</span></span>
+<span id="cb4-2"><a href="install-packages.html#cb4-2" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;crsh/papaja&quot;</span>)</span>
+<span id="cb4-3"><a href="install-packages.html#cb4-3" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="install-packages.html#cb4-4" tabindex="-1"></a><span class="co"># Install the latest development snapshot from GitHub</span></span>
+<span id="cb4-5"><a href="install-packages.html#cb4-5" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;crsh/papaja@devel&quot;</span>)</span></code></pre></div>
 
 </div>
 </div>
